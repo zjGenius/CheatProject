@@ -1,0 +1,69 @@
+cmake_minimum_required(VERSION 2.5)
+
+if(COMMAND cmake_policy)
+cmake_policy(SET CMP0003 NEW)
+endif(COMMAND cmake_policy)
+
+set(DEBUG_VERSION "DebugMode")
+set(RELEASE_VERSION "ReleaseMode")
+set(COMPILE_MODE ${DebugMode})            # 编译模式
+set(TARGET_NAME "myproject")              # 目标可执行程序名称
+string(TIMESTAMP COMPILE_TIME %m%d_%H%M)        # 生成编译时间
+
+# Debug模式（目标：工程名+编译时间）
+if(${COMPILE_MODE} MATCHES ${DEBUG_VERSION})   
+    message(STATUS "Compile mode: ${COMPILE_MODE}")
+    set(USE_RELEASE_MODE 0)
+    set(CMAKE_BUILD_TYPE "Debug")
+    set(target ${TARGET_NAME}_${COMPILE_TIME})
+# Release模式（目标：工程名+版本号）
+else()
+    message(STATUS "Compile mode: ${COMPILE_MODE}")
+    set(USE_RELEASE_MODE 1)
+    set(CMAKE_BUILD_TYPE "Release") 
+    set(VERSION_MAJOR  0)    # 一级版本号
+    set(VERSION_MINOR  0)    # 二级版本号
+    set(VERSION_LEVEL3 1)    # 三级版本号
+    message(STATUS "USE_RELEASE_MODE: ${USE_RELEASE_MODE}")
+    set(target ${TARGET_NAME}_V${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_LEVEL3})
+endif()
+
+project(MyProject)
+set(CMAKE_BUILD_TYPE "Debug")
+set(PROJECT_BINARY_DIR ${PROJECT_SOURCE_DIR}/output)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR})
+set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
+
+configure_file("version_config.h.in"  "../include/version_config.h")
+
+execute_process(
+    COMMAND echo "copy ini file"
+    COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/version.ini ${PROJECT_BINARY_DIR}/version.ini
+)
+
+
+#添加.h文件
+include_directories(./include)
+
+
+#添加.c文件
+aux_source_directory(./src SRC_LIST)
+
+
+#打印src信息
+message(STATUS "${SRC_LIST}" )
+#该条指令告诉 CMake 创建可执行文件所使用的源文件
+add_executable(MyProject ${SRC_LIST})
+
+
+# 操作系统架构
+message(${CMAKE_HOST_SYSTEM_PROCESSOR})
+
+# 添加c++ 11标准支持
+set( CMAKE_CXX_FLAGS "-std=c++11 -O0" )
+
+
+
+#链接库
+TARGET_LINK_LIBRARIES( MyProject pthread )
+#TARGET_LINK_LIBRARIES( E310 pthread iio gprofHelp_cxx)
