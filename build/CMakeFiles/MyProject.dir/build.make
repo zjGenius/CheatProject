@@ -57,22 +57,9 @@ include CMakeFiles/MyProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyProject.dir/flags.make
 
-CMakeFiles/MyProject.dir/src/file_compress_huffman.o: CMakeFiles/MyProject.dir/flags.make
-CMakeFiles/MyProject.dir/src/file_compress_huffman.o: ../src/file_compress_huffman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyProject.dir/src/file_compress_huffman.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/file_compress_huffman.o -c /home/jun/code/CheatProject/src/file_compress_huffman.cpp
-
-CMakeFiles/MyProject.dir/src/file_compress_huffman.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/file_compress_huffman.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jun/code/CheatProject/src/file_compress_huffman.cpp > CMakeFiles/MyProject.dir/src/file_compress_huffman.i
-
-CMakeFiles/MyProject.dir/src/file_compress_huffman.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/file_compress_huffman.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jun/code/CheatProject/src/file_compress_huffman.cpp -o CMakeFiles/MyProject.dir/src/file_compress_huffman.s
-
 CMakeFiles/MyProject.dir/src/func.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/func.o: ../src/func.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/src/func.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyProject.dir/src/func.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/func.o -c /home/jun/code/CheatProject/src/func.cpp
 
 CMakeFiles/MyProject.dir/src/func.i: cmake_force
@@ -83,22 +70,9 @@ CMakeFiles/MyProject.dir/src/func.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/func.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jun/code/CheatProject/src/func.cpp -o CMakeFiles/MyProject.dir/src/func.s
 
-CMakeFiles/MyProject.dir/src/huffman.o: CMakeFiles/MyProject.dir/flags.make
-CMakeFiles/MyProject.dir/src/huffman.o: ../src/huffman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/src/huffman.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/huffman.o -c /home/jun/code/CheatProject/src/huffman.cpp
-
-CMakeFiles/MyProject.dir/src/huffman.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/huffman.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jun/code/CheatProject/src/huffman.cpp > CMakeFiles/MyProject.dir/src/huffman.i
-
-CMakeFiles/MyProject.dir/src/huffman.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/huffman.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jun/code/CheatProject/src/huffman.cpp -o CMakeFiles/MyProject.dir/src/huffman.s
-
 CMakeFiles/MyProject.dir/src/main.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/main.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/src/main.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/src/main.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/main.o -c /home/jun/code/CheatProject/src/main.cpp
 
 CMakeFiles/MyProject.dir/src/main.i: cmake_force
@@ -111,7 +85,7 @@ CMakeFiles/MyProject.dir/src/main.s: cmake_force
 
 CMakeFiles/MyProject.dir/src/paramRead.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/paramRead.o: ../src/paramRead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyProject.dir/src/paramRead.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/src/paramRead.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/paramRead.o -c /home/jun/code/CheatProject/src/paramRead.cpp
 
 CMakeFiles/MyProject.dir/src/paramRead.i: cmake_force
@@ -122,22 +96,48 @@ CMakeFiles/MyProject.dir/src/paramRead.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/paramRead.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jun/code/CheatProject/src/paramRead.cpp -o CMakeFiles/MyProject.dir/src/paramRead.s
 
+CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o: ../src/Huffman/file_compress_huffman.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o -c /home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp
+
+CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp > CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.i
+
+CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp -o CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.s
+
+CMakeFiles/MyProject.dir/src/Huffman/huffman.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Huffman/huffman.o: ../src/Huffman/huffman.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyProject.dir/src/Huffman/huffman.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/src/Huffman/huffman.o -c /home/jun/code/CheatProject/src/Huffman/huffman.cpp
+
+CMakeFiles/MyProject.dir/src/Huffman/huffman.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Huffman/huffman.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jun/code/CheatProject/src/Huffman/huffman.cpp > CMakeFiles/MyProject.dir/src/Huffman/huffman.i
+
+CMakeFiles/MyProject.dir/src/Huffman/huffman.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Huffman/huffman.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jun/code/CheatProject/src/Huffman/huffman.cpp -o CMakeFiles/MyProject.dir/src/Huffman/huffman.s
+
 # Object files for target MyProject
 MyProject_OBJECTS = \
-"CMakeFiles/MyProject.dir/src/file_compress_huffman.o" \
 "CMakeFiles/MyProject.dir/src/func.o" \
-"CMakeFiles/MyProject.dir/src/huffman.o" \
 "CMakeFiles/MyProject.dir/src/main.o" \
-"CMakeFiles/MyProject.dir/src/paramRead.o"
+"CMakeFiles/MyProject.dir/src/paramRead.o" \
+"CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o" \
+"CMakeFiles/MyProject.dir/src/Huffman/huffman.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
-../output/MyProject: CMakeFiles/MyProject.dir/src/file_compress_huffman.o
 ../output/MyProject: CMakeFiles/MyProject.dir/src/func.o
-../output/MyProject: CMakeFiles/MyProject.dir/src/huffman.o
 ../output/MyProject: CMakeFiles/MyProject.dir/src/main.o
 ../output/MyProject: CMakeFiles/MyProject.dir/src/paramRead.o
+../output/MyProject: CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o
+../output/MyProject: CMakeFiles/MyProject.dir/src/Huffman/huffman.o
 ../output/MyProject: CMakeFiles/MyProject.dir/build.make
 ../output/MyProject: CMakeFiles/MyProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../output/MyProject"

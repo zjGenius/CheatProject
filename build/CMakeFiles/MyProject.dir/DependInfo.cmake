@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jun/code/CheatProject/src/file_compress_huffman.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/file_compress_huffman.o"
+  "/home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o"
+  "/home/jun/code/CheatProject/src/Huffman/huffman.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/Huffman/huffman.o"
   "/home/jun/code/CheatProject/src/func.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/func.o"
-  "/home/jun/code/CheatProject/src/huffman.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/huffman.o"
   "/home/jun/code/CheatProject/src/main.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/main.o"
   "/home/jun/code/CheatProject/src/paramRead.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/MyProject.dir/src/paramRead.o"
   )
@@ -15,6 +15,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include"
+  ".././include/Huffman"
   )
 
 # Targets to which this target links.

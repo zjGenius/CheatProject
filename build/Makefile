@@ -124,19 +124,34 @@ MyProject/fast:
 .PHONY : MyProject/fast
 
 # target to build an object file
-src/file_compress_huffman.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/file_compress_huffman.o
-.PHONY : src/file_compress_huffman.o
+src/Huffman/file_compress_huffman.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o
+.PHONY : src/Huffman/file_compress_huffman.o
 
 # target to preprocess a source file
-src/file_compress_huffman.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/file_compress_huffman.i
-.PHONY : src/file_compress_huffman.i
+src/Huffman/file_compress_huffman.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.i
+.PHONY : src/Huffman/file_compress_huffman.i
 
 # target to generate assembly for a file
-src/file_compress_huffman.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/file_compress_huffman.s
-.PHONY : src/file_compress_huffman.s
+src/Huffman/file_compress_huffman.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.s
+.PHONY : src/Huffman/file_compress_huffman.s
+
+# target to build an object file
+src/Huffman/huffman.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/huffman.o
+.PHONY : src/Huffman/huffman.o
+
+# target to preprocess a source file
+src/Huffman/huffman.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/huffman.i
+.PHONY : src/Huffman/huffman.i
+
+# target to generate assembly for a file
+src/Huffman/huffman.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/huffman.s
+.PHONY : src/Huffman/huffman.s
 
 # target to build an object file
 src/func.o:
@@ -152,21 +167,6 @@ src/func.i:
 src/func.s:
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/func.s
 .PHONY : src/func.s
-
-# target to build an object file
-src/huffman.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/huffman.o
-.PHONY : src/huffman.o
-
-# target to preprocess a source file
-src/huffman.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/huffman.i
-.PHONY : src/huffman.i
-
-# target to generate assembly for a file
-src/huffman.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/huffman.s
-.PHONY : src/huffman.s
 
 # target to build an object file
 src/main.o:
@@ -207,15 +207,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MyProject"
-	@echo "... src/file_compress_huffman.o"
-	@echo "... src/file_compress_huffman.i"
-	@echo "... src/file_compress_huffman.s"
+	@echo "... src/Huffman/file_compress_huffman.o"
+	@echo "... src/Huffman/file_compress_huffman.i"
+	@echo "... src/Huffman/file_compress_huffman.s"
+	@echo "... src/Huffman/huffman.o"
+	@echo "... src/Huffman/huffman.i"
+	@echo "... src/Huffman/huffman.s"
 	@echo "... src/func.o"
 	@echo "... src/func.i"
 	@echo "... src/func.s"
-	@echo "... src/huffman.o"
-	@echo "... src/huffman.i"
-	@echo "... src/huffman.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

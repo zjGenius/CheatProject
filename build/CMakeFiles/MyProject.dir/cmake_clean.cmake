@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "../output/MyProject"
   "../output/MyProject.pdb"
-  "CMakeFiles/MyProject.dir/src/file_compress_huffman.o"
+  "CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o"
+  "CMakeFiles/MyProject.dir/src/Huffman/huffman.o"
   "CMakeFiles/MyProject.dir/src/func.o"
-  "CMakeFiles/MyProject.dir/src/huffman.o"
   "CMakeFiles/MyProject.dir/src/main.o"
   "CMakeFiles/MyProject.dir/src/paramRead.o"
 )

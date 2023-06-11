@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -O0 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jun/code/CheatProject/./include 
+CXX_INCLUDES = -I/home/jun/code/CheatProject/./include -I/home/jun/code/CheatProject/./include/Huffman 
 

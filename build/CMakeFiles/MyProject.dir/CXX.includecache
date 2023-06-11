@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../include/command.h
+../include/Huffman/command.h
 
-../include/file_compress_huffman.h
+../include/Huffman/file_compress_huffman.h
 string
 -
 vector
 -
 command.h
-../include/command.h
+../include/Huffman/command.h
 
-../include/func.h
-paramRead.h
-../include/paramRead.h
-
-../include/huffman.h
+../include/Huffman/huffman.h
 iostream
 -
 fstream
@@ -34,16 +30,16 @@ queue
 unordered_map
 -
 paramRead.h
+../include/Huffman/paramRead.h
+
+../include/func.h
+paramRead.h
 ../include/paramRead.h
 
-../include/huffman_tree.hpp
-iostream
+../include/log.h
+string.h
 -
-vector
--
-queue
--
-initializer_list
+stdio.h
 -
 
 ../include/paramRead.h
@@ -62,24 +58,6 @@ sstream
 
 ../include/version_config.h
 
-/home/jun/code/CheatProject/src/file_compress_huffman.cpp
-file_compress_huffman.h
-/home/jun/code/CheatProject/src/file_compress_huffman.h
-huffman_tree.hpp
-/home/jun/code/CheatProject/src/huffman_tree.hpp
-command.h
-/home/jun/code/CheatProject/src/command.h
-
-/home/jun/code/CheatProject/src/func.cpp
-stdio.h
--
-func.h
-/home/jun/code/CheatProject/src/func.h
-
-/home/jun/code/CheatProject/src/huffman.cpp
-huffman.h
-/home/jun/code/CheatProject/src/huffman.h
-
 /home/jun/code/CheatProject/src/main.cpp
 stdio.h
 -
@@ -93,14 +71,6 @@ huffman.h
 /home/jun/code/CheatProject/src/huffman.h
 file_compress_huffman.h
 /home/jun/code/CheatProject/src/file_compress_huffman.h
-
-/home/jun/code/CheatProject/src/paramRead.cpp
-paramRead.h
-/home/jun/code/CheatProject/src/paramRead.h
-time.h
-/home/jun/code/CheatProject/src/time.h
-sys/types.h
--
-sys/stat.h
--
+log.h
+/home/jun/code/CheatProject/src/log.h
 

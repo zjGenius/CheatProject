@@ -4,6 +4,7 @@
 #include "version_config.h"
 #include "huffman.h"
 #include "file_compress_huffman.h"
+#include "log.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -32,13 +33,17 @@ int main(void)
 	compressedFile += compressedFile_path;
 	compressedFile += file_name[0];
 	compressedFile += ".hz.bin";
+	LOG_DEBUG("hello world\n");
+	LOG_INFO("hello world\n");
+	LOG_WARN("hello world\n");
+	LOG_ERR("hello world\n");
 	printf("compressedFile: %s\n", compressedFile.c_str());
 
-	int sum1 = 0 , sum2 = 0, m = 5, n = 11;
+	int sum1 = 0, sum2 = 0, m = 5, n = 11;
 
 	sum1 = (m + n) * (n - m + 1) / 2;
 
-	for(int i = m; i <= n; i++)
+	for (int i = m; i <= n; i++)
 	{
 		sum2 += i;
 	}
