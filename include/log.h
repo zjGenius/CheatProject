@@ -45,28 +45,28 @@ typedef enum
 #define GET_FILE_NAME(path) strrchr(path, PATH_SEPARATOR) ? strrchr(path, PATH_SEPARATOR) + 1 : path
 
 // 调试log输出 青色
-#define LOG_DEBUG(format, ...)                                                                                                 \
+#define LOG_D(format, ...)                                                                                                 \
     if (CURRENT_LOG_LEVEL <= LOG_LEVEL_DEBUG)                                                                                  \
     {                                                                                                                          \
         LOG_PRINT(LOG_COLOUR_CYAN "[DEBUG %s %d] " LOG_COLOUR_RESET format, GET_FILE_NAME(__FILE__), __LINE__, ##__VA_ARGS__); \
     }
 
 // 信息log输出 绿色
-#define LOG_INFO(format, ...)                                                                                                  \
+#define LOG_I(format, ...)                                                                                                  \
     if (CURRENT_LOG_LEVEL <= LOG_LEVEL_INFO)                                                                                   \
     {                                                                                                                          \
         LOG_PRINT(LOG_COLOUR_GREEN "[INFO  %s %d] " LOG_COLOUR_RESET format, GET_FILE_NAME(__FILE__), __LINE__, ##__VA_ARGS__); \
     }
 
 // 警告log输出 黄色
-#define LOG_WARN(format, ...)                                                                                                   \
+#define LOG_W(format, ...)                                                                                                   \
     if (CURRENT_LOG_LEVEL <= LOG_LEVEL_WARN)                                                                                    \
     {                                                                                                                           \
         LOG_PRINT(LOG_COLOUR_YELLOW "[WARN  %s %d] " LOG_COLOUR_RESET format, GET_FILE_NAME(__FILE__), __LINE__, ##__VA_ARGS__); \
     }
 
 // 错误log输出 玫红色
-#define LOG_ERR(format, ...)                                                                                                \
+#define LOG_E(format, ...)                                                                                                \
     if (CURRENT_LOG_LEVEL <= LOG_LEVEL_ERR)                                                                                 \
     {                                                                                                                       \
         LOG_PRINT(LOG_COLOUR_RED "[ERROR %s %d] " LOG_COLOUR_RESET format, GET_FILE_NAME(__FILE__), __LINE__, ##__VA_ARGS__); \

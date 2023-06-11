@@ -33,10 +33,14 @@ int main(void)
 	compressedFile += compressedFile_path;
 	compressedFile += file_name[0];
 	compressedFile += ".hz.bin";
-	LOG_DEBUG("hello world\n");
-	LOG_INFO("hello world\n");
-	LOG_WARN("hello world\n");
-	LOG_ERR("hello world\n");
+
+	LOG_D("hello world\n");
+	LOG_I("hello world\n");
+	LOG_W("hello world\n");
+	LOG_E("hello world\n");
+
+
+
 	printf("compressedFile: %s\n", compressedFile.c_str());
 
 	int sum1 = 0, sum2 = 0, m = 5, n = 11;
