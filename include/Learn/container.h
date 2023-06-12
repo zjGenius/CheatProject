@@ -8,6 +8,7 @@
 #include <numeric>
 #include <algorithm>
 #include <map>
+#include <set>
 
 #include "paramRead.h"
 #include "log.h"
@@ -17,5 +18,6 @@ using namespace std;
 void deque_test();
 void list_test();
 void map_test(int Mode);
+void set_test(int Mode);
 
 #endif

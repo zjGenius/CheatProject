@@ -202,7 +202,7 @@ void list_test()
     swap()           交换两个map
     upper_bound()    返回键值>给定元素的第一个位置
     value_comp()     返回比较元素value的函数
- * @param Mode 
+ * @param Mode
     1.Mode==0 小于号 < 重载
     2.Mode==1 仿函数的应用，这个时候结构体中没有直接的小于号重载
  */
@@ -327,4 +327,153 @@ void map_test(int Mode)
      *      如果你需要对map中的数据排序，就首选map， 他会把你的数据按照key的自然排序排序（由于它的底层实现红黑树机制所以会排序）
      *      如果不需要排序，就看你对内存和cpu的选择了，不过一般都会选择unordered_map，它的查找效率会更高。
      */
+}
+
+// 仿函数
+class CompareSet
+{
+public:
+    // 从大到小排序
+    bool operator()(int v1, int v2)
+    {
+        return v1 > v2;
+    }
+    // 从小到大排序
+    // bool operator()(int v1, int v2)
+    //{
+    //     return v1 < v2;
+    // }
+};
+
+/* Person类，用于test03 */
+class Person
+{
+    friend ostream &operator<<(ostream &out, const Person &person);
+
+public:
+    Person(string name, int age)
+    {
+        mName = name;
+        mAge = age;
+    }
+
+public:
+    string mName;
+    int mAge;
+};
+
+/* 仿函数ComparePerson,用于test03 */
+class ComparePerson
+{
+public:
+    // 名字大的在前面，如果名字相同，年龄大的排前面
+    bool operator()(const Person &p1, const Person &p2)
+    {
+        if (p1.mName == p2.mName)
+        {
+            return p1.mAge > p2.mAge;
+        }
+        return p1.mName > p2.mName;
+    }
+};
+
+ostream &operator<<(ostream &out, const Person &person)
+{
+    out << "name:" << person.mName << " age:" << person.mAge << endl;
+    return out;
+}
+
+/* 打印set类型的函数模板 */
+template <typename T>
+void PrintSet(T &s)
+{
+    for (typename T::iterator iter = s.begin(); iter != s.end(); ++iter)
+        cout << *iter << " ";
+    cout << endl;
+}
+
+/**
+ * @brief set/multiset
+ * std::set 是关联容器，含有 Key 类型对象的已排序集
+ * set 通常以红黑树实现。
+ * set中的元素即是键值又是实值，set不允许两个元素有相同的键值。
+ * 不能通过set的迭代器去修改set元素，原因是修改元素会破坏set组织。当对容器中的元素进行插入或者删除时，操作之前的所有迭代器在操作之后依然有效。
+ * set和multiset的底层实现是一种高效的平衡二叉树，即红黑树（Red-Black Tree）
+ * set常用成员函数:
+        begin()--返回指向第一个元素的迭代器
+        clear()--清除所有元素
+        count()--返回某个值元素的个数
+        empty()--如果集合为空，返回true
+        end()--返回指向最后一个元素的迭代器
+        equal_range()--返回集合中与给定值相等的上下限的两个迭代器
+        erase()--删除集合中的元素
+        find()--返回一个指向被查找到元素的迭代器
+        get_allocator()--返回集合的分配器
+        insert()--在集合中插入元素
+        lower_bound()--返回指向大于（或等于）某值的第一个元素的迭代器
+        key_comp()--返回一个用于元素间值比较的函数
+        max_size()--返回集合能容纳的元素的最大限值
+        rbegin()--返回指向集合中最后一个元素的反向迭代器
+        rend()--返回指向集合中第一个元素的反向迭代器
+        size()--集合中元素的数目
+        swap()--交换两个集合变量
+        upper_bound()--返回大于某个值元素的迭代器
+        value_comp()--返回一个用于比较元素间的值的函数
+ */
+void set_test(int Mode)
+{
+    if (Mode == 0)
+    {
+        // set容器默认从小到大排序
+        set<int> s;
+        s.insert(10);
+        s.insert(20);
+        s.insert(30);
+
+        // 输出set
+        PrintSet(s);
+        // 结果为:10 20 30
+
+        /* set的insert函数返回值为一个对组(pair)。
+           对组的第一个值first为set类型的迭代器：
+           1、若插入成功，迭代器指向该元素。
+           2、若插入失败，迭代器指向之前已经存在的元素
+           对组的第二个值seconde为bool类型：
+           1、若插入成功，bool值为true
+           2、若插入失败，bool值为false
+        */
+        pair<set<int>::iterator, bool> ret = s.insert(40);
+        if (true == ret.second)
+            cout << *ret.first << " 插入成功" << endl;
+        else
+            cout << *ret.first << " 插入失败" << endl;
+    }
+    else if (Mode == 1)
+    {
+        /* 如果想让set容器从大到小排序，需要给set容
+           器提供一个仿函数,本例的仿函数为CompareSet
+        */
+        set<int, CompareSet> s;
+        s.insert(10);
+        s.insert(20);
+        s.insert(30);
+
+        // 打印set
+        PrintSet(s);
+    }
+    else if (Mode == 2)
+    {
+        /* set元素类型为Person，当set元素类型为自定义类型的时候
+           必须给set提供一个仿函数，用于比较自定义类型的大小，
+           否则无法通过编译
+        */
+        set<Person, ComparePerson> s;
+        s.insert(Person("John", 22));
+        s.insert(Person("Peter", 25));
+        s.insert(Person("Marry", 18));
+        s.insert(Person("Peter", 36));
+
+        // 打印set
+        PrintSet(s);
+    }
 }

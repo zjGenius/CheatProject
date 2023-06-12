@@ -49,7 +49,8 @@ int main(void)
 
 	// deque_test();
 	// list_test();
-	map_test(0);
+	// map_test(0);
+	set_test(2);
 
 	// printf("sum1:%d sum2:%d\n", sum1, sum2);
 
