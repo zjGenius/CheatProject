@@ -45,11 +45,13 @@ execute_process(
 #添加.h文件
 include_directories(./include)
 include_directories(./include/Huffman)
+include_directories(./include/Learn)
 
 
 #添加.c文件
 aux_source_directory(./src SRC_LIST)
 aux_source_directory(./src/Huffman SRC_LIST)
+aux_source_directory(./src/Learn SRC_LIST)
 
 
 #打印src信息

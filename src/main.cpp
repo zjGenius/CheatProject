@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <deque>
 #include "func.h"
 #include "paramRead.h"
 #include "version_config.h"
 #include "huffman.h"
 #include "file_compress_huffman.h"
 #include "log.h"
+#include "container.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -34,13 +36,6 @@ int main(void)
 	compressedFile += file_name[0];
 	compressedFile += ".hz.bin";
 
-	LOG_D("hello world\n");
-	LOG_I("hello world\n");
-	LOG_W("hello world\n");
-	LOG_E("hello world\n");
-
-
-
 	printf("compressedFile: %s\n", compressedFile.c_str());
 
 	int sum1 = 0, sum2 = 0, m = 5, n = 11;
@@ -52,7 +47,16 @@ int main(void)
 		sum2 += i;
 	}
 
-	printf("sum1:%d sum2:%d\n", sum1, sum2);
+	// deque_test();
+	// list_test();
+	map_test(0);
+
+	// printf("sum1:%d sum2:%d\n", sum1, sum2);
+
+	// LOG_D("hello world sum1:%d sum2:%d\n", sum1, sum2);
+	// LOG_I("hello world\n");
+	// LOG_W("hello world\n");
+	// LOG_E("hello world\n");
 
 	// compressFile(inputFile, compressedFile);
 	// decompressFile(compressedFile, decompressedFile);

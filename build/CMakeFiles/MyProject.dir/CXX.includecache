@@ -6,35 +6,25 @@
 
 #IncludeRegexTransform: 
 
-../include/Huffman/command.h
-
-../include/Huffman/file_compress_huffman.h
-string
--
-vector
--
-command.h
-../include/Huffman/command.h
-
-../include/Huffman/huffman.h
+../include/Learn/container.h
 iostream
 -
-fstream
+stdio.h
 -
-cstring
+deque
 -
-vector
+list
 -
-queue
+numeric
 -
-unordered_map
+algorithm
+-
+map
 -
 paramRead.h
-../include/Huffman/paramRead.h
-
-../include/func.h
-paramRead.h
-../include/paramRead.h
+../include/Learn/paramRead.h
+log.h
+../include/Learn/log.h
 
 ../include/log.h
 string.h
@@ -56,21 +46,7 @@ string
 sstream
 -
 
-../include/version_config.h
-
-/home/jun/code/CheatProject/src/main.cpp
-stdio.h
--
-func.h
-/home/jun/code/CheatProject/src/func.h
-paramRead.h
-/home/jun/code/CheatProject/src/paramRead.h
-version_config.h
-/home/jun/code/CheatProject/src/version_config.h
-huffman.h
-/home/jun/code/CheatProject/src/huffman.h
-file_compress_huffman.h
-/home/jun/code/CheatProject/src/file_compress_huffman.h
-log.h
-/home/jun/code/CheatProject/src/log.h
+/home/zhangjun/code/CheatProject/src/Learn/container.cpp
+container.h
+/home/zhangjun/code/CheatProject/src/Learn/container.h
 
