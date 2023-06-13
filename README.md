@@ -1,14 +1,17 @@
 # CheatProject
 个人工具类汇总
 
-## 第一次提交
+## 第一次提交 (paramRead.cpp file_compress_huffman.cpp)
 1.文件压缩 <br />
 2.读取ini文件 <br />
 
-## 2023-06-11
-1.增加日志打印等级 <br />
+## 日志打印 (log.h)
+1.包含四种等级debug info warry error <br />
+2.不同颜色显示 <br />
+3.log.h <br />
 
-## 2023-06-12
-1.增加Learn文件夹 <br />
-2.deque、list、map、set <br />
+## 容器 deque、list、map、set (container.cpp)
+1.包含四种容器常用的方法 <br />
+2.map的两种自定义排序方法 <br />
+3.set中引入模板函数的使用 <br />
 
