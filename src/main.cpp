@@ -7,6 +7,7 @@
 #include "file_compress_huffman.h"
 #include "log.h"
 #include "container.h"
+#include "l_opencv.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -50,7 +51,11 @@ int main(void)
 	// deque_test();
 	// list_test();
 	// map_test(0);
-	set_test(2);
+	// set_test(2);
+	// test_imge1();
+	// test_imge2();
+	// test_mat();
+	// test_draw();
 
 	// printf("sum1:%d sum2:%d\n", sum1, sum2);
 

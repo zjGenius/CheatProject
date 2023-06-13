@@ -169,6 +169,21 @@ src/Learn/container.s:
 .PHONY : src/Learn/container.s
 
 # target to build an object file
+src/Learn/l_opencv.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/l_opencv.o
+.PHONY : src/Learn/l_opencv.o
+
+# target to preprocess a source file
+src/Learn/l_opencv.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/l_opencv.i
+.PHONY : src/Learn/l_opencv.i
+
+# target to generate assembly for a file
+src/Learn/l_opencv.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/l_opencv.s
+.PHONY : src/Learn/l_opencv.s
+
+# target to build an object file
 src/func.o:
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/func.o
 .PHONY : src/func.o
@@ -231,6 +246,9 @@ help:
 	@echo "... src/Learn/container.o"
 	@echo "... src/Learn/container.i"
 	@echo "... src/Learn/container.s"
+	@echo "... src/Learn/l_opencv.o"
+	@echo "... src/Learn/l_opencv.i"
+	@echo "... src/Learn/l_opencv.s"
 	@echo "... src/func.o"
 	@echo "... src/func.i"
 	@echo "... src/func.s"
