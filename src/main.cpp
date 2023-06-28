@@ -75,10 +75,6 @@ int main(void)
 	// file_compress.compress_file(inputFile);
 	// file_compress.un_compress_file(compressedFile);
 
-	// std::string aaa = "+";
-	// int aabb = (int)aaa.c_str();
-	// printf("aabb:%d", aabb);
-
 	/***************简单的工厂模式 实现加减乘除********************/
 	Operation *oper;
 	oper = OperationFactory::createOperate('/');
