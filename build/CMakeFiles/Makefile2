@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/zhangjun/code/CheatProject/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyProject.dir/all
+all: CMakeFiles/ExternalPlugIn.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyProject.dir/clean
+clean: CMakeFiles/ExternalPlugIn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyProject.dir
+# Target rules for target CMakeFiles/ExternalPlugIn.dir
 
 # All Build rule for target.
-CMakeFiles/MyProject.dir/all:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/depend
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target MyProject"
-.PHONY : CMakeFiles/MyProject.dir/all
+CMakeFiles/ExternalPlugIn.dir/all:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/depend
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target ExternalPlugIn"
+.PHONY : CMakeFiles/ExternalPlugIn.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangjun/code/CheatProject/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MyProject.dir/all
+CMakeFiles/ExternalPlugIn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangjun/code/CheatProject/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExternalPlugIn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangjun/code/CheatProject/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyProject.dir/rule
+.PHONY : CMakeFiles/ExternalPlugIn.dir/rule
 
 # Convenience name for target.
-MyProject: CMakeFiles/MyProject.dir/rule
+ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/rule
 
-.PHONY : MyProject
+.PHONY : ExternalPlugIn
 
 # clean rule for target.
-CMakeFiles/MyProject.dir/clean:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/clean
-.PHONY : CMakeFiles/MyProject.dir/clean
+CMakeFiles/ExternalPlugIn.dir/clean:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/clean
+.PHONY : CMakeFiles/ExternalPlugIn.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

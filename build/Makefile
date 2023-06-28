@@ -111,121 +111,136 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyProject
+# Target rules for targets named ExternalPlugIn
 
 # Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
+ExternalPlugIn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExternalPlugIn
+.PHONY : ExternalPlugIn
 
 # fast build rule for target.
-MyProject/fast:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
+ExternalPlugIn/fast:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/build
+.PHONY : ExternalPlugIn/fast
+
+# target to build an object file
+src/DesignPatterns/Factory/SampleFactory.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/Factory/SampleFactory.o
+.PHONY : src/DesignPatterns/Factory/SampleFactory.o
+
+# target to preprocess a source file
+src/DesignPatterns/Factory/SampleFactory.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/Factory/SampleFactory.i
+.PHONY : src/DesignPatterns/Factory/SampleFactory.i
+
+# target to generate assembly for a file
+src/DesignPatterns/Factory/SampleFactory.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/Factory/SampleFactory.s
+.PHONY : src/DesignPatterns/Factory/SampleFactory.s
 
 # target to build an object file
 src/Huffman/file_compress_huffman.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o
 .PHONY : src/Huffman/file_compress_huffman.o
 
 # target to preprocess a source file
 src/Huffman/file_compress_huffman.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.i
 .PHONY : src/Huffman/file_compress_huffman.i
 
 # target to generate assembly for a file
 src/Huffman/file_compress_huffman.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/file_compress_huffman.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.s
 .PHONY : src/Huffman/file_compress_huffman.s
 
 # target to build an object file
 src/Huffman/huffman.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/huffman.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o
 .PHONY : src/Huffman/huffman.o
 
 # target to preprocess a source file
 src/Huffman/huffman.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/huffman.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.i
 .PHONY : src/Huffman/huffman.i
 
 # target to generate assembly for a file
 src/Huffman/huffman.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Huffman/huffman.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.s
 .PHONY : src/Huffman/huffman.s
 
 # target to build an object file
 src/Learn/container.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/container.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o
 .PHONY : src/Learn/container.o
 
 # target to preprocess a source file
 src/Learn/container.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/container.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/container.i
 .PHONY : src/Learn/container.i
 
 # target to generate assembly for a file
 src/Learn/container.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/container.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/container.s
 .PHONY : src/Learn/container.s
 
 # target to build an object file
 src/Learn/l_opencv.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/l_opencv.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
 .PHONY : src/Learn/l_opencv.o
 
 # target to preprocess a source file
 src/Learn/l_opencv.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/l_opencv.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.i
 .PHONY : src/Learn/l_opencv.i
 
 # target to generate assembly for a file
 src/Learn/l_opencv.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Learn/l_opencv.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.s
 .PHONY : src/Learn/l_opencv.s
 
 # target to build an object file
 src/func.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/func.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/func.o
 .PHONY : src/func.o
 
 # target to preprocess a source file
 src/func.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/func.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/func.i
 .PHONY : src/func.i
 
 # target to generate assembly for a file
 src/func.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/func.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/func.s
 .PHONY : src/func.s
 
 # target to build an object file
 src/main.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/main.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/main.o
 .PHONY : src/main.o
 
 # target to preprocess a source file
 src/main.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/main.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/main.i
 .PHONY : src/main.i
 
 # target to generate assembly for a file
 src/main.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/main.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/main.s
 .PHONY : src/main.s
 
 # target to build an object file
 src/paramRead.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/paramRead.o
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/paramRead.o
 .PHONY : src/paramRead.o
 
 # target to preprocess a source file
 src/paramRead.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/paramRead.i
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/paramRead.i
 .PHONY : src/paramRead.i
 
 # target to generate assembly for a file
 src/paramRead.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/paramRead.s
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/paramRead.s
 .PHONY : src/paramRead.s
 
 # Help Target
@@ -236,7 +251,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... MyProject"
+	@echo "... ExternalPlugIn"
+	@echo "... src/DesignPatterns/Factory/SampleFactory.o"
+	@echo "... src/DesignPatterns/Factory/SampleFactory.i"
+	@echo "... src/DesignPatterns/Factory/SampleFactory.s"
 	@echo "... src/Huffman/file_compress_huffman.o"
 	@echo "... src/Huffman/file_compress_huffman.i"
 	@echo "... src/Huffman/file_compress_huffman.s"

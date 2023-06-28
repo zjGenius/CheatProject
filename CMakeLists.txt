@@ -28,7 +28,7 @@ else()
     set(target ${TARGET_NAME}_V${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_LEVEL3})
 endif()
 
-project(MyProject)
+project(ExternalPlugIn)
 set(CMAKE_BUILD_TYPE "Debug")
 set(PROJECT_BINARY_DIR ${PROJECT_SOURCE_DIR}/output)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR})
@@ -46,18 +46,20 @@ execute_process(
 include_directories(./include)
 include_directories(./include/Huffman)
 include_directories(./include/Learn)
+include_directories(./include/DesignPatterns/Factory)
 
 
 #添加.c文件
 aux_source_directory(./src SRC_LIST)
 aux_source_directory(./src/Huffman SRC_LIST)
 aux_source_directory(./src/Learn SRC_LIST)
+aux_source_directory(./src/DesignPatterns/Factory SRC_LIST)
 
 
 #打印src信息
 message(STATUS "${SRC_LIST}" )
 #该条指令告诉 CMake 创建可执行文件所使用的源文件
-add_executable(MyProject ${SRC_LIST})
+add_executable(ExternalPlugIn ${SRC_LIST})
 
 
 # 操作系统架构
@@ -69,19 +71,19 @@ if(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "armv7l")
     # 添加头文件
     include_directories( ${OpenCV_INCLUDE_DIRS} )
     # 链接OpenCV库
-    target_link_libraries( MyProject ${OpenCV_LIBS} )
+    target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
 elseif(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "x86_64")
     # set(CMAKE_CXX_FLAGS "-fsanitize=address  -g")
     # set(CMAKE_EXE_LINKER_FLAGS "-fsanitize=address -static-libasan")
     find_package( OpenCV 4 REQUIRED )
     include_directories( ${OpenCV_INCLUDE_DIRS} )
-    target_link_libraries( MyProject ${OpenCV_LIBS} )
+    target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
 else()
     # set(CMAKE_CXX_FLAGS "-fsanitize=address  -g")
     # set(CMAKE_EXE_LINKER_FLAGS "-fsanitize=address -static-libasan")
     find_package( OpenCV REQUIRED )
     include_directories( ${OpenCV_INCLUDE_DIRS} )
-    target_link_libraries( MyProject ${OpenCV_LIBS} )
+    target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
 endif()
 
 # 添加c++ 11标准支持
@@ -90,5 +92,5 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O0" )
 
 
 #链接库
-TARGET_LINK_LIBRARIES( MyProject pthread )
+TARGET_LINK_LIBRARIES( ExternalPlugIn pthread )
 #TARGET_LINK_LIBRARIES( E310 pthread iio gprofHelp_cxx)

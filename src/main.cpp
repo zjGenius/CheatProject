@@ -8,6 +8,7 @@
 #include "log.h"
 #include "container.h"
 #include "l_opencv.h"
+#include "SampleFactory.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -22,7 +23,36 @@ int main(void)
 #endif
 	printf("-----------------------------------------\n");
 
+	/***************读取ini文件********************/
 	// func(200);
+	/**************累加运算********************/
+	int sum1 = 0, sum2 = 0, m = 5, n = 11;
+	sum1 = (m + n) * (n - m + 1) / 2;
+	for (int i = m; i <= n; i++)
+	{
+		sum2 += i;
+	}
+	// printf("sum1:%d sum2:%d\n", sum1, sum2);
+
+	/***************容器********************/
+	// deque_test();
+	// list_test();
+	// map_test(0);
+	// set_test(2);
+
+	/***************opencv********************/
+	// test_imge1();
+	// test_imge2();
+	// test_mat();
+	// test_draw();
+
+	/***************等级打印********************/
+	// LOG_D("hello world sum1:%d sum2:%d\n", sum1, sum2);
+	// LOG_I("hello world\n");
+	// LOG_W("hello world\n");
+	// LOG_E("hello world\n");
+
+	/***************Huffman文件压缩********************/
 	string inputFile = "/home/bekl/zhangjun/code/MyProject/output/CtrPulseResult.txt";
 	string compressedFile_path = "/home/bekl/zhangjun/code/MyProject/output/";
 	// string decompressedFile = "/home/bekl/zhangjun/code/MyProject/output/output.txt";
@@ -36,33 +66,7 @@ int main(void)
 	compressedFile += compressedFile_path;
 	compressedFile += file_name[0];
 	compressedFile += ".hz.bin";
-
 	printf("compressedFile: %s\n", compressedFile.c_str());
-
-	int sum1 = 0, sum2 = 0, m = 5, n = 11;
-
-	sum1 = (m + n) * (n - m + 1) / 2;
-
-	for (int i = m; i <= n; i++)
-	{
-		sum2 += i;
-	}
-
-	// deque_test();
-	// list_test();
-	// map_test(0);
-	// set_test(2);
-	// test_imge1();
-	// test_imge2();
-	// test_mat();
-	// test_draw();
-
-	// printf("sum1:%d sum2:%d\n", sum1, sum2);
-
-	// LOG_D("hello world sum1:%d sum2:%d\n", sum1, sum2);
-	// LOG_I("hello world\n");
-	// LOG_W("hello world\n");
-	// LOG_E("hello world\n");
 
 	// compressFile(inputFile, compressedFile);
 	// decompressFile(compressedFile, decompressedFile);
@@ -70,6 +74,19 @@ int main(void)
 	file_compress_huffman file_compress;
 	// file_compress.compress_file(inputFile);
 	// file_compress.un_compress_file(compressedFile);
+
+	// std::string aaa = "+";
+	// int aabb = (int)aaa.c_str();
+	// printf("aabb:%d", aabb);
+
+	/***************简单的工厂模式 实现加减乘除********************/
+	Operation *oper;
+	oper = OperationFactory::createOperate('/');
+	oper->setNumberA(10.2);
+	oper->setNumberB(2.2);
+	double result_num = oper->getResult();
+
+	printf("result_num:%lf\n", result_num);
 
 	return 0;
 }

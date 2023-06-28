@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/DesignPatterns/Factory/SampleFactory.h
+stdio.h
+-
+string
+-
+
 ../include/Huffman/command.h
 
 ../include/Huffman/file_compress_huffman.h
@@ -115,4 +121,6 @@ container.h
 /home/zhangjun/code/CheatProject/src/container.h
 l_opencv.h
 /home/zhangjun/code/CheatProject/src/l_opencv.h
+SampleFactory.h
+/home/zhangjun/code/CheatProject/src/SampleFactory.h
 
