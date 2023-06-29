@@ -1,3 +1,13 @@
+/**
+ * @file Strategy.h
+ * @author zhangjun (1905212905@qq.com)
+ * @brief 策略模式 实现商场促销活动 打折 满减
+ * @version 0.1
+ * @date 2023-06-29
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef __Strategy__
 #define __Strategy__
 
