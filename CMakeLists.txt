@@ -47,6 +47,7 @@ include_directories(./include)
 include_directories(./include/Huffman)
 include_directories(./include/Learn)
 include_directories(./include/DesignPatterns/Factory)
+include_directories(./include/DesignPatterns/Strategy)
 
 
 #添加.c文件
@@ -54,6 +55,7 @@ aux_source_directory(./src SRC_LIST)
 aux_source_directory(./src/Huffman SRC_LIST)
 aux_source_directory(./src/Learn SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Factory SRC_LIST)
+aux_source_directory(./src/DesignPatterns/Strategy SRC_LIST)
 
 
 #打印src信息

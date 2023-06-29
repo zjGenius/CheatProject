@@ -124,21 +124,6 @@ ExternalPlugIn/fast:
 .PHONY : ExternalPlugIn/fast
 
 # target to build an object file
-src/DesignPatterns/Factory/SampleFactory.o:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/Factory/SampleFactory.o
-.PHONY : src/DesignPatterns/Factory/SampleFactory.o
-
-# target to preprocess a source file
-src/DesignPatterns/Factory/SampleFactory.i:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/Factory/SampleFactory.i
-.PHONY : src/DesignPatterns/Factory/SampleFactory.i
-
-# target to generate assembly for a file
-src/DesignPatterns/Factory/SampleFactory.s:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/Factory/SampleFactory.s
-.PHONY : src/DesignPatterns/Factory/SampleFactory.s
-
-# target to build an object file
 src/Huffman/file_compress_huffman.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o
 .PHONY : src/Huffman/file_compress_huffman.o
@@ -252,9 +237,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ExternalPlugIn"
-	@echo "... src/DesignPatterns/Factory/SampleFactory.o"
-	@echo "... src/DesignPatterns/Factory/SampleFactory.i"
-	@echo "... src/DesignPatterns/Factory/SampleFactory.s"
 	@echo "... src/Huffman/file_compress_huffman.o"
 	@echo "... src/Huffman/file_compress_huffman.i"
 	@echo "... src/Huffman/file_compress_huffman.s"

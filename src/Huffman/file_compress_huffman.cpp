@@ -1,5 +1,13 @@
-//file_compress_huffman.cpp文件
-//Huffman文件压缩的具体实现
+/**
+ * @file file_compress_huffman.cpp
+ * @author zhangjun (1905212905@qq.com)
+ * @brief Huffman文件压缩的具体实现
+ * @version 0.1
+ * @date 2023-06-20
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #define _CRT_SECURE_NO_WARNINGS
 #include "file_compress_huffman.h"
 #include "huffman_tree.hpp"

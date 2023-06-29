@@ -1,3 +1,13 @@
+/**
+ * @file SampleFactory.h
+ * @author zhangjun (1905212905@qq.com)
+ * @brief 简单工厂模式 实现加减乘除
+ * @version 0.1
+ * @date 2023-06-21
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef __SAMPLE_FACTORY__
 #define __SAMPLE_FACTORY__
 
@@ -6,6 +16,10 @@
 
 class Operation
 {
+private:
+    double _numberA = 0;
+    double _numberB = 0;
+
 public:
     virtual double getResult()
     {
@@ -31,10 +45,6 @@ public:
     {
         return _numberB;
     }
-
-private:
-    double _numberA = 0;
-    double _numberB = 0;
 };
 
 class OperationAdd : public Operation

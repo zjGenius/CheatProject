@@ -12,6 +12,14 @@ stdio.h
 string
 -
 
+../include/DesignPatterns/Strategy/Strategy.h
+stdio.h
+-
+iostream
+-
+math.h
+-
+
 ../include/Huffman/command.h
 
 ../include/Huffman/file_compress_huffman.h
@@ -123,4 +131,6 @@ l_opencv.h
 /home/zhangjun/code/CheatProject/src/l_opencv.h
 SampleFactory.h
 /home/zhangjun/code/CheatProject/src/SampleFactory.h
+Strategy.h
+/home/zhangjun/code/CheatProject/src/Strategy.h
 
