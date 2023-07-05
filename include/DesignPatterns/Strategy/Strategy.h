@@ -21,7 +21,7 @@ enum MyType
     Return, // 返现
     Rebate  // 打折
 };
-
+// 超类
 class CrashSuper
 {
 public:
@@ -31,7 +31,7 @@ public:
         return result;
     }
 };
-
+// 正常收费模式
 class CrashNormal : CrashSuper
 {
 public:
@@ -43,7 +43,7 @@ public:
     }
 };
 
-// 返现
+// 满减返现模式
 class CrashReturn : CrashSuper
 {
 private:
@@ -68,7 +68,7 @@ public:
     }
 };
 
-// 打折
+// 打折模式
 class CrashRebate : CrashSuper
 {
 private:
