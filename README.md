@@ -28,5 +28,7 @@
 
 ## UDP传输文件 (IQTransmitCenter.cpp IQRecvData.cpp) 
 1.读取文件并通过udp传输 <br />
-1.接收到udp存储到文件 <br />
+2.接收到udp存储到文件 <br />
 
+## 装饰模式 (Decorator.h) 
+1.模拟食堂买饭 <br />

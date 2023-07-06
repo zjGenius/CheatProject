@@ -49,6 +49,8 @@ include_directories(./include/Learn)
 include_directories(./include/NetWork)
 include_directories(./include/DesignPatterns/Factory)
 include_directories(./include/DesignPatterns/Strategy)
+include_directories(./include/DesignPatterns/Decorator)
+
 
 
 #添加.c文件
@@ -58,6 +60,7 @@ aux_source_directory(./src/Learn SRC_LIST)
 aux_source_directory(./src/NetWork SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Factory SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Strategy SRC_LIST)
+aux_source_directory(./src/DesignPatterns/Decorator SRC_LIST)
 
 
 #打印src信息

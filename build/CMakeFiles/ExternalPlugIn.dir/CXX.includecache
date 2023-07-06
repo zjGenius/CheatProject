@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/DesignPatterns/Decorator/Decorator.h
+stdio.h
+-
+string
+-
+
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h
 -
@@ -173,4 +179,6 @@ IQTransmitCenter.h
 /home/zhangjun/code/CheatProject/src/IQTransmitCenter.h
 IQRecvData.h
 /home/zhangjun/code/CheatProject/src/IQRecvData.h
+Decorator.h
+/home/zhangjun/code/CheatProject/src/Decorator.h
 

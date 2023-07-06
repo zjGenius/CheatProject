@@ -33,6 +33,7 @@ CMakeFiles/ExternalPlugIn.dir/src/func.o: ../include/func.h
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../include/paramRead.h
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../src/func.cpp
 
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Decorator/Decorator.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Factory/SampleFactory.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Strategy/Strategy.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/command.h

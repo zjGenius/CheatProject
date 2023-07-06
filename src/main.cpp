@@ -14,6 +14,7 @@
 #include "Strategy.h"
 #include "IQTransmitCenter.h"
 #include "IQRecvData.h"
+#include "Decorator.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -152,6 +153,8 @@ main_function:
 	printf("最终金额: %.1lf\n", result);
 */
 
+	/******************udp传输文件*************************/
+	/*
 	pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
 
 	IQTransmit *transmit = new IQTransmit(ip, port);
@@ -162,6 +165,27 @@ main_function:
 
 	sleep(2);
 	transmit->readIQFile(writeFile);
+	*/
+
+	// 搭配方案1 (面条6.6 + 鸡蛋0.5 = 7.1元)
+	printf("搭配方案1:");
+	Food *aaa1 = new FoodNoodle();
+	Food *bbb1 = new EggDecorator(aaa1);
+	bbb1->myInterface();
+	printf("=%f\n\n", bbb1->getPrice());
+
+	// 搭配方案2 （米饭2.5 + 鸡蛋0.5 + 牛肉10 + 火腿5 = 18元）
+	printf("搭配方案2:");
+	Food *aaa2 = new FoodRice();		  // aaa2
+	Food *bbb2 = new EggDecorator(aaa2);  // 装饰1（aaa2 + bbb2）
+	Food *ccc2 = new BeefDecorator(bbb2); // 装饰2（aaa2 + bbb2 + ccc2）
+	Food *ddd2 = new HamDecorator(ccc2);  // 装饰3（aaa2 + bbb2 + ccc2 + ddd2）
+
+	// 此处的ddd2->myInterface()其实是一个链式调用。
+	// 链式调用过程：HamDecorator::myInterface() ——> BeefDecorator::myInterface() ——> EggDecorator::myInterface() ——> FoodRice::myInterface()
+	// 在每个装饰类的myInterface函数中又加入了具体的装饰操作，所以，装饰顺序与链式调用顺序正好相反。
+	ddd2->myInterface();
+	printf("=%f\n\n", ddd2->getPrice());
 
 	return 0;
 }
