@@ -26,3 +26,7 @@
 ## 策略模式 (Strategy.h) 
 1.实现商场促销活动 打折 满减 <br />
 
+## UDP传输文件 (IQTransmitCenter.cpp IQRecvData.cpp) 
+1.读取文件并通过udp传输 <br />
+1.接收到udp存储到文件 <br />
+

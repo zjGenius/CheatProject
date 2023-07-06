@@ -19,6 +19,16 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../include/Learn/l_opencv.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../src/Learn/l_opencv.cpp
 
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQRecvData.h
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQTransmitCenter.h
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../src/NetWork/IQRecvData.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: ../include/NetWork/IQTransmitCenter.h
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: ../src/NetWork/IQTransmitCenter.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o: ../include/NetWork/tcp_server.h
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o: ../src/NetWork/tcp_server.cpp
+
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../include/func.h
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../include/paramRead.h
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../src/func.cpp
@@ -30,6 +40,8 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/file_compress_huffm
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/container.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/l_opencv.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQRecvData.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQTransmitCenter.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/func.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/paramRead.h

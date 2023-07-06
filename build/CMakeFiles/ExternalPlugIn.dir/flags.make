@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -O0 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zhangjun/code/CheatProject/./include -I/home/zhangjun/code/CheatProject/./include/Huffman -I/home/zhangjun/code/CheatProject/./include/Learn -I/home/zhangjun/code/CheatProject/./include/DesignPatterns/Factory -I/home/zhangjun/code/CheatProject/./include/DesignPatterns/Strategy -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/zhangjun/code/CheatProject/./include -I/home/zhangjun/code/CheatProject/./include/Huffman -I/home/zhangjun/code/CheatProject/./include/Learn -I/home/zhangjun/code/CheatProject/./include/NetWork -I/home/zhangjun/code/CheatProject/./include/DesignPatterns/Factory -I/home/zhangjun/code/CheatProject/./include/DesignPatterns/Strategy -isystem /usr/local/include/opencv4 
 

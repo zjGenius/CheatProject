@@ -184,6 +184,51 @@ src/Learn/l_opencv.s:
 .PHONY : src/Learn/l_opencv.s
 
 # target to build an object file
+src/NetWork/IQRecvData.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o
+.PHONY : src/NetWork/IQRecvData.o
+
+# target to preprocess a source file
+src/NetWork/IQRecvData.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.i
+.PHONY : src/NetWork/IQRecvData.i
+
+# target to generate assembly for a file
+src/NetWork/IQRecvData.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.s
+.PHONY : src/NetWork/IQRecvData.s
+
+# target to build an object file
+src/NetWork/IQTransmitCenter.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o
+.PHONY : src/NetWork/IQTransmitCenter.o
+
+# target to preprocess a source file
+src/NetWork/IQTransmitCenter.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.i
+.PHONY : src/NetWork/IQTransmitCenter.i
+
+# target to generate assembly for a file
+src/NetWork/IQTransmitCenter.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.s
+.PHONY : src/NetWork/IQTransmitCenter.s
+
+# target to build an object file
+src/NetWork/tcp_server.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o
+.PHONY : src/NetWork/tcp_server.o
+
+# target to preprocess a source file
+src/NetWork/tcp_server.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.i
+.PHONY : src/NetWork/tcp_server.i
+
+# target to generate assembly for a file
+src/NetWork/tcp_server.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.s
+.PHONY : src/NetWork/tcp_server.s
+
+# target to build an object file
 src/func.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/func.o
 .PHONY : src/func.o
@@ -249,6 +294,15 @@ help:
 	@echo "... src/Learn/l_opencv.o"
 	@echo "... src/Learn/l_opencv.i"
 	@echo "... src/Learn/l_opencv.s"
+	@echo "... src/NetWork/IQRecvData.o"
+	@echo "... src/NetWork/IQRecvData.i"
+	@echo "... src/NetWork/IQRecvData.s"
+	@echo "... src/NetWork/IQTransmitCenter.o"
+	@echo "... src/NetWork/IQTransmitCenter.i"
+	@echo "... src/NetWork/IQTransmitCenter.s"
+	@echo "... src/NetWork/tcp_server.o"
+	@echo "... src/NetWork/tcp_server.i"
+	@echo "... src/NetWork/tcp_server.s"
 	@echo "... src/func.o"
 	@echo "... src/func.i"
 	@echo "... src/func.s"

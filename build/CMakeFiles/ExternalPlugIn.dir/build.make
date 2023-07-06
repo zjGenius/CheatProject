@@ -148,6 +148,45 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/Learn/l_opencv.cpp -o CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.s
 
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: CMakeFiles/ExternalPlugIn.dir/flags.make
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../src/NetWork/IQRecvData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o -c /home/zhangjun/code/CheatProject/src/NetWork/IQRecvData.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangjun/code/CheatProject/src/NetWork/IQRecvData.cpp > CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.i
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/NetWork/IQRecvData.cpp -o CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.s
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: CMakeFiles/ExternalPlugIn.dir/flags.make
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: ../src/NetWork/IQTransmitCenter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o -c /home/zhangjun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangjun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp > CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.i
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp -o CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.s
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o: CMakeFiles/ExternalPlugIn.dir/flags.make
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o: ../src/NetWork/tcp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o -c /home/zhangjun/code/CheatProject/src/NetWork/tcp_server.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangjun/code/CheatProject/src/NetWork/tcp_server.cpp > CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.i
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/NetWork/tcp_server.cpp -o CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.s
+
 # Object files for target ExternalPlugIn
 ExternalPlugIn_OBJECTS = \
 "CMakeFiles/ExternalPlugIn.dir/src/func.o" \
@@ -156,7 +195,10 @@ ExternalPlugIn_OBJECTS = \
 "CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o" \
 "CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o" \
 "CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o" \
-"CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o"
+"CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o" \
+"CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o" \
+"CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o" \
+"CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o"
 
 # External object files for target ExternalPlugIn
 ExternalPlugIn_EXTERNAL_OBJECTS =
@@ -168,6 +210,9 @@ ExternalPlugIn_EXTERNAL_OBJECTS =
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
+../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o
+../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o
+../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/build.make
 ../output/ExternalPlugIn: /usr/local/lib/libopencv_dnn.so.4.1.1
 ../output/ExternalPlugIn: /usr/local/lib/libopencv_gapi.so.4.1.1
@@ -185,7 +230,7 @@ ExternalPlugIn_EXTERNAL_OBJECTS =
 ../output/ExternalPlugIn: /usr/local/lib/libopencv_imgproc.so.4.1.1
 ../output/ExternalPlugIn: /usr/local/lib/libopencv_core.so.4.1.1
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../output/ExternalPlugIn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../output/ExternalPlugIn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ExternalPlugIn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

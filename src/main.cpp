@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <deque>
+#include <pthread.h>
+
 #include "func.h"
 #include "paramRead.h"
 #include "version_config.h"
@@ -10,8 +12,28 @@
 #include "l_opencv.h"
 #include "SampleFactory.h"
 #include "Strategy.h"
+#include "IQTransmitCenter.h"
+#include "IQRecvData.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
+
+pthread_t signal_IQRecv;
+
+std::string ip = "127.0.0.1";
+int port = 1122;
+std::string readFile = "sig_pragma.dat";
+std::string writeFile = "recv_IQ11.dat";
+
+void *Recv_relay(void *arg)
+{
+	IQRecv *recv_data = new IQRecv(ip, port);
+	// WifiRelay *wifirelay = new WifiRelay(&target_info, target_mac);
+	printf("\n-------IQRecv-------\n");
+	while (1)
+	{
+		recv_data->recv_fun(writeFile);
+	}
+}
 
 int main(void)
 {
@@ -86,6 +108,7 @@ int main(void)
 	// printf("result_num:%lf\n", result_num);
 
 	/***************简单的策略模式 商场促销案例********************/
+	/*
 	double result = 0.0;
 	int mode = 0;
 	double all_money = 0.0;
@@ -127,20 +150,18 @@ main_function:
 	scanf("%lf", &all_money);
 	result = csuper->getResult(all_money);
 	printf("最终金额: %.1lf\n", result);
+*/
 
+	pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
 
+	IQTransmit *transmit = new IQTransmit(ip, port);
+	int mode;
+	printf("请选择发送模式： \n 0-文件模式 1-iio模式:  ");
+	scanf("%d", &mode);
+	transmit->sendMode(mode, readFile);
 
-
-
-
-
-
-
-
-
-
-
-
+	sleep(2);
+	transmit->readIQFile(writeFile);
 
 	return 0;
 }
