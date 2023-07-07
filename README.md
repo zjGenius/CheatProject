@@ -33,3 +33,6 @@
 ## 装饰模式 (Decorator.h myDecorator.h) 
 1.模拟食堂买饭 <br />
 2.模拟穿衣服 <br />
+
+## 代理模式 (Proxy.h) 
+1.追女生的故事 <br />

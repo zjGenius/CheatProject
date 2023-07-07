@@ -50,6 +50,7 @@ include_directories(./include/NetWork)
 include_directories(./include/DesignPatterns/Factory)
 include_directories(./include/DesignPatterns/Strategy)
 include_directories(./include/DesignPatterns/Decorator)
+include_directories(./include/DesignPatterns/Proxy)
 
 
 
@@ -61,6 +62,7 @@ aux_source_directory(./src/NetWork SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Factory SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Strategy SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Decorator SRC_LIST)
+aux_source_directory(./src/DesignPatterns/Proxy SRC_LIST)
 
 
 #打印src信息

@@ -24,6 +24,12 @@ stdio.h
 string
 -
 
+../include/DesignPatterns/Proxy/Proxy.h
+stdio.h
+-
+string
+-
+
 ../include/DesignPatterns/Strategy/Strategy.h
 stdio.h
 -
@@ -189,4 +195,6 @@ Decorator.h
 /home/zhangjun/code/CheatProject/src/Decorator.h
 myDecorator.h
 /home/zhangjun/code/CheatProject/src/myDecorator.h
+Proxy.h
+/home/zhangjun/code/CheatProject/src/Proxy.h
 

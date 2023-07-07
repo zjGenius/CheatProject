@@ -16,6 +16,7 @@
 #include "IQRecvData.h"
 #include "Decorator.h"
 #include "myDecorator.h"
+#include "Proxy.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -169,6 +170,7 @@ main_function:
 	*/
 
 	/******************设计模式之装饰模式*************************/
+	/*
 	// 搭配方案1 (面条6.6 + 鸡蛋0.5 = 7.1元)
 	printf("搭配方案1:");
 	Food *aaa1 = new FoodNoodle();
@@ -198,6 +200,16 @@ main_function:
 	ts->Deracte(per);
 	je->Deracte(ts);
 	je->show();
+	*/
+
+	/******************设计模式之代理模式*************************/
+
+	SchoolGirl *girl = new SchoolGirl("小花");
+	Bulb *proxy = new Bulb(girl);
+	proxy->sendChocolate();
+	proxy->sendFlowers();
+	proxy->sendMilk();
+
 
 	return 0;
 }
