@@ -12,6 +12,12 @@ stdio.h
 string
 -
 
+../include/DesignPatterns/Decorator/myDecorator.h
+stdio.h
+-
+string
+-
+
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h
 -
@@ -181,4 +187,6 @@ IQRecvData.h
 /home/zhangjun/code/CheatProject/src/IQRecvData.h
 Decorator.h
 /home/zhangjun/code/CheatProject/src/Decorator.h
+myDecorator.h
+/home/zhangjun/code/CheatProject/src/myDecorator.h
 

@@ -15,6 +15,7 @@
 #include "IQTransmitCenter.h"
 #include "IQRecvData.h"
 #include "Decorator.h"
+#include "myDecorator.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -58,13 +59,13 @@ int main(void)
 	}
 	// printf("sum1:%d sum2:%d\n", sum1, sum2);
 
-	/***************容器********************/
+	/***************容器类学习********************/
 	// deque_test();
 	// list_test();
 	// map_test(0);
 	// set_test(2);
 
-	/***************opencv********************/
+	/***************opencv学习********************/
 	// test_imge1();
 	// test_imge2();
 	// test_mat();
@@ -95,11 +96,11 @@ int main(void)
 	// compressFile(inputFile, compressedFile);
 	// decompressFile(compressedFile, decompressedFile);
 
-	file_compress_huffman file_compress;
+	file_compress_huffman file_compress; // 成功案例
 	// file_compress.compress_file(inputFile);
 	// file_compress.un_compress_file(compressedFile);
 
-	/***************简单的工厂模式 实现加减乘除********************/
+	/***************设计模式之工厂模式 实现加减乘除********************/
 	// Operation *oper;
 	// oper = OperationFactory::createOperate('/');
 	// oper->setNumberA(10.2);
@@ -108,7 +109,7 @@ int main(void)
 
 	// printf("result_num:%lf\n", result_num);
 
-	/***************简单的策略模式 商场促销案例********************/
+	/***************设计模式之策略模式 商场促销案例********************/
 	/*
 	double result = 0.0;
 	int mode = 0;
@@ -167,6 +168,7 @@ main_function:
 	transmit->readIQFile(writeFile);
 	*/
 
+	/******************设计模式之装饰模式*************************/
 	// 搭配方案1 (面条6.6 + 鸡蛋0.5 = 7.1元)
 	printf("搭配方案1:");
 	Food *aaa1 = new FoodNoodle();
@@ -186,6 +188,16 @@ main_function:
 	// 在每个装饰类的myInterface函数中又加入了具体的装饰操作，所以，装饰顺序与链式调用顺序正好相反。
 	ddd2->myInterface();
 	printf("=%f\n\n", ddd2->getPrice());
+
+	// 衣服装饰
+	Person *per = new Person("xiaoming");
+
+	TShirt *ts = new TShirt();
+	Jeans *je = new Jeans();
+
+	ts->Deracte(per);
+	je->Deracte(ts);
+	je->show();
 
 	return 0;
 }

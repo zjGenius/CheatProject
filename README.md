@@ -30,5 +30,6 @@
 1.读取文件并通过udp传输 <br />
 2.接收到udp存储到文件 <br />
 
-## 装饰模式 (Decorator.h) 
+## 装饰模式 (Decorator.h myDecorator.h) 
 1.模拟食堂买饭 <br />
+2.模拟穿衣服 <br />

@@ -35,6 +35,7 @@ CMakeFiles/ExternalPlugIn.dir/src/func.o
  /home/zhangjun/code/CheatProject/src/func.cpp
 CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/Decorator/Decorator.h
+ ../include/DesignPatterns/Decorator/myDecorator.h
  ../include/DesignPatterns/Factory/SampleFactory.h
  ../include/DesignPatterns/Strategy/Strategy.h
  ../include/Huffman/command.h
