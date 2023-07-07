@@ -17,6 +17,7 @@
 #include "Decorator.h"
 #include "myDecorator.h"
 #include "Proxy.h"
+#include "FactoryMethod.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -203,13 +204,25 @@ main_function:
 	*/
 
 	/******************设计模式之代理模式*************************/
-
+	/*
 	SchoolGirl *girl = new SchoolGirl("小花");
 	Bulb *proxy = new Bulb(girl);
 	proxy->sendChocolate();
 	proxy->sendFlowers();
 	proxy->sendMilk();
+	*/
 
+	/******************设计模式之工厂方法模式*************************/
+	LeiFengFactory *factory1 = new StudentFactory();
+	L_Student *student = (L_Student *)factory1->createLeiFeng();
+	LeiFengFactory *factory2 = new VolunteerFactory();
+	L_Volunteer *volunteer = (L_Volunteer *)factory2->createLeiFeng();
+
+	student->buyRice();
+	student->sweep();
+
+	volunteer->buyRice();
+	volunteer->sweep();
 
 	return 0;
 }

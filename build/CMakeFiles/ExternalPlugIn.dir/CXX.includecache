@@ -24,6 +24,12 @@ stdio.h
 string
 -
 
+../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+stdio.h
+-
+string
+-
+
 ../include/DesignPatterns/Proxy/Proxy.h
 stdio.h
 -
@@ -197,4 +203,6 @@ myDecorator.h
 /home/zhangjun/code/CheatProject/src/myDecorator.h
 Proxy.h
 /home/zhangjun/code/CheatProject/src/Proxy.h
+FactoryMethod.h
+/home/zhangjun/code/CheatProject/src/FactoryMethod.h
 

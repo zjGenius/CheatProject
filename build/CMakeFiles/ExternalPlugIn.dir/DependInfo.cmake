@@ -27,6 +27,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Strategy"
   ".././include/DesignPatterns/Decorator"
   ".././include/DesignPatterns/Proxy"
+  ".././include/DesignPatterns/FactoryMethod"
   "/usr/local/include/opencv4"
   )
 
