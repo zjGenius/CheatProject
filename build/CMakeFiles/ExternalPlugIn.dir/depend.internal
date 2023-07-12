@@ -65,6 +65,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
  ../include/DesignPatterns/Strategy/Strategy.h
+ ../include/DesignPatterns/Template/Template.h
  ../include/Huffman/command.h
  ../include/Huffman/file_compress_huffman.h
  ../include/Huffman/huffman.h

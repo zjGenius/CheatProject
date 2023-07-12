@@ -21,6 +21,7 @@
 #include "context.h"
 #include "device.h"
 #include "Prototype.h"
+#include "Template.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -255,15 +256,38 @@ main_function:
 	// pDev->_getIQData();
 
 	/******************设计模式之原型模式*************************/
-	Resume *person = new Resume("小明");
-	person->SetPersonalInfo("男", "23");
-	person->SetWorkExperience("2022-04-19~", "湖南小金刚");
+	// Resume *person = new Resume("小明");
+	// person->SetPersonalInfo("男", "23");
+	// person->SetWorkExperience("2022-04-19~", "湖南小金刚");
 
-	Resume person1 = person->clone();
-	person1.SetWorkExperience("2022-04-19~2023-01-01", "北京小金刚");
+	// Resume person1 = person->clone();
+	// person1.SetWorkExperience("2022-04-19~2023-01-01", "北京小金刚");
 
-	person->Display();
-	person1.Display();
+	// person->Display();
+	// person1.Display();
+
+
+	/******************设计模式之模板模式*************************/
+	TestPaper *test1 = new TestPaperA();
+	TestPaper *test2 = new TestPaperB();
+	printf("考生A\n");
+	test1->TestQuestion1();
+	test1->TestQuestion2();
+	test1->TestQuestion3();
+	printf("\n");
+	printf("考生B\n");
+	test2->TestQuestion1();
+	test2->TestQuestion2();
+	test2->TestQuestion3();
+
+
+
+
+
+
+
+
+
 
 	return 0;
 }

@@ -62,6 +62,10 @@ iostream
 math.h
 -
 
+../include/DesignPatterns/Template/Template.h
+string
+-
+
 ../include/Huffman/command.h
 
 ../include/Huffman/file_compress_huffman.h
@@ -287,4 +291,6 @@ device.h
 /home/zhangjun/code/CheatProject/src/device.h
 Prototype.h
 /home/zhangjun/code/CheatProject/src/Prototype.h
+Template.h
+/home/zhangjun/code/CheatProject/src/Template.h
 

@@ -34,6 +34,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Proxy"
   ".././include/DesignPatterns/FactoryMethod"
   ".././include/DesignPatterns/Prototype"
+  ".././include/DesignPatterns/Template"
   ".././include/SDR"
   ".././include/3rdparty"
   ".././include/Tools"
