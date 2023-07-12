@@ -52,11 +52,15 @@ include_directories(./include/DesignPatterns/Strategy)
 include_directories(./include/DesignPatterns/Decorator)
 include_directories(./include/DesignPatterns/Proxy)
 include_directories(./include/DesignPatterns/FactoryMethod)
+include_directories(./include/SDR)
+include_directories(./include/3rdparty)
+include_directories(./include/Tools)
 
 
 
 #添加.c文件
 aux_source_directory(./src SRC_LIST)
+list(REMOVE_ITEM SRC_LIST "main.cpp")
 aux_source_directory(./src/Huffman SRC_LIST)
 aux_source_directory(./src/Learn SRC_LIST)
 aux_source_directory(./src/NetWork SRC_LIST)
@@ -65,6 +69,7 @@ aux_source_directory(./src/DesignPatterns/Strategy SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Decorator SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Proxy SRC_LIST)
 aux_source_directory(./src/DesignPatterns/FactoryMethod SRC_LIST)
+aux_source_directory(./src/SDR SRC_LIST)
 
 
 #打印src信息
@@ -103,5 +108,5 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O0" )
 
 
 #链接库
-TARGET_LINK_LIBRARIES( ExternalPlugIn pthread )
+TARGET_LINK_LIBRARIES( ExternalPlugIn pthread iio )
 #TARGET_LINK_LIBRARIES( E310 pthread iio gprofHelp_cxx)

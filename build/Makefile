@@ -229,6 +229,81 @@ src/NetWork/tcp_server.s:
 .PHONY : src/NetWork/tcp_server.s
 
 # target to build an object file
+src/SDR/buffer.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/buffer.o
+.PHONY : src/SDR/buffer.o
+
+# target to preprocess a source file
+src/SDR/buffer.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/buffer.i
+.PHONY : src/SDR/buffer.i
+
+# target to generate assembly for a file
+src/SDR/buffer.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/buffer.s
+.PHONY : src/SDR/buffer.s
+
+# target to build an object file
+src/SDR/context.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/context.o
+.PHONY : src/SDR/context.o
+
+# target to preprocess a source file
+src/SDR/context.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/context.i
+.PHONY : src/SDR/context.i
+
+# target to generate assembly for a file
+src/SDR/context.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/context.s
+.PHONY : src/SDR/context.s
+
+# target to build an object file
+src/SDR/device.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o
+.PHONY : src/SDR/device.o
+
+# target to preprocess a source file
+src/SDR/device.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/device.i
+.PHONY : src/SDR/device.i
+
+# target to generate assembly for a file
+src/SDR/device.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/device.s
+.PHONY : src/SDR/device.s
+
+# target to build an object file
+src/SDR/rxstream.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/rxstream.o
+.PHONY : src/SDR/rxstream.o
+
+# target to preprocess a source file
+src/SDR/rxstream.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/rxstream.i
+.PHONY : src/SDR/rxstream.i
+
+# target to generate assembly for a file
+src/SDR/rxstream.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/SDR/rxstream.s
+.PHONY : src/SDR/rxstream.s
+
+# target to build an object file
+src/ad9361-iiostream.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o
+.PHONY : src/ad9361-iiostream.o
+
+# target to preprocess a source file
+src/ad9361-iiostream.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.i
+.PHONY : src/ad9361-iiostream.i
+
+# target to generate assembly for a file
+src/ad9361-iiostream.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.s
+.PHONY : src/ad9361-iiostream.s
+
+# target to build an object file
 src/func.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/func.o
 .PHONY : src/func.o
@@ -303,6 +378,21 @@ help:
 	@echo "... src/NetWork/tcp_server.o"
 	@echo "... src/NetWork/tcp_server.i"
 	@echo "... src/NetWork/tcp_server.s"
+	@echo "... src/SDR/buffer.o"
+	@echo "... src/SDR/buffer.i"
+	@echo "... src/SDR/buffer.s"
+	@echo "... src/SDR/context.o"
+	@echo "... src/SDR/context.i"
+	@echo "... src/SDR/context.s"
+	@echo "... src/SDR/device.o"
+	@echo "... src/SDR/device.i"
+	@echo "... src/SDR/device.s"
+	@echo "... src/SDR/rxstream.o"
+	@echo "... src/SDR/rxstream.i"
+	@echo "... src/SDR/rxstream.s"
+	@echo "... src/ad9361-iiostream.o"
+	@echo "... src/ad9361-iiostream.i"
+	@echo "... src/ad9361-iiostream.s"
 	@echo "... src/func.o"
 	@echo "... src/func.i"
 	@echo "... src/func.s"

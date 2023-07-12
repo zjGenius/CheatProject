@@ -18,6 +18,8 @@
 #include "myDecorator.h"
 #include "Proxy.h"
 #include "FactoryMethod.h"
+#include "context.h"
+#include "device.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -157,18 +159,17 @@ main_function:
 */
 
 	/******************udp传输文件*************************/
-	/*
-	pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
 
-	IQTransmit *transmit = new IQTransmit(ip, port);
-	int mode;
-	printf("请选择发送模式： \n 0-文件模式 1-iio模式:  ");
-	scanf("%d", &mode);
-	transmit->sendMode(mode, readFile);
+	// pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
 
-	sleep(2);
-	transmit->readIQFile(writeFile);
-	*/
+	// IQTransmit *transmit = new IQTransmit(ip, port);
+	// int mode;
+	// printf("请选择发送模式： \n 0-文件模式 1-iio模式:  ");
+	// scanf("%d", &mode);
+	// transmit->sendMode(mode, readFile);
+
+	// sleep(2);
+	// transmit->readIQFile(writeFile);
 
 	/******************设计模式之装饰模式*************************/
 	/*
@@ -213,6 +214,7 @@ main_function:
 	*/
 
 	/******************设计模式之工厂方法模式*************************/
+	/*
 	LeiFengFactory *factory1 = new StudentFactory();
 	L_Student *student = (L_Student *)factory1->createLeiFeng();
 	LeiFengFactory *factory2 = new VolunteerFactory();
@@ -223,6 +225,33 @@ main_function:
 
 	volunteer->buyRice();
 	volunteer->sweep();
+	*/
+
+	std::string ip = "ip:192.168.100.10";
+	Context *context = new Context(ip);
+	if (context->context() == nullptr)
+	{
+		printf("connect %s error\n", ip.c_str());
+		return 0;
+	}
+	Device *pDev = new Device(context);
+	if (pDev == nullptr)
+	{
+		delete context;
+		printf("make Device error\n");
+		return 0;
+	}
+	uint32_t data = 0;
+	pDev->alarm(data, 0);
+	printf("alarm:%08X\n", data);
+
+	// pDev->set_rx_lo_frequency(2450 * 1000 );
+	// pDev->set_rx_samplerate(61.44 * 1000 * 1000, 0);
+	// pDev->set_rx_bandwidth(61.44 * 1000 * 1000, 0);
+	// pDev->set_rx_gain(30, 0);
+
+	usleep(50);
+	pDev->_getIQData();
 
 	return 0;
 }
