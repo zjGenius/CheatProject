@@ -42,3 +42,6 @@
 
 ## IIO接收IQ数据 (ad9361-iiostream.c) 
 1.接收到IQ数据 <br />
+
+## 原型模式 (Prototype.h) 
+1.深浅拷贝 <br />

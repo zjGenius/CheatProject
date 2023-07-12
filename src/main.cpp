@@ -20,6 +20,7 @@
 #include "FactoryMethod.h"
 #include "context.h"
 #include "device.h"
+#include "Prototype.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -160,16 +161,16 @@ main_function:
 
 	/******************udp传输文件*************************/
 
-	pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
+	// pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
 
-	IQTransmit *transmit = new IQTransmit(ip, port);
-	int mode;
-	printf("请选择发送模式： \n 0-文件模式 1-iio模式:  ");
-	scanf("%d", &mode);
-	transmit->sendMode(mode, readFile);
+	// IQTransmit *transmit = new IQTransmit(ip, port);
+	// int mode;
+	// printf("请选择发送模式： \n 0-文件模式 1-iio模式:  ");
+	// scanf("%d", &mode);
+	// transmit->sendMode(mode, readFile);
 
-	sleep(2);
-	transmit->readIQFile(writeFile);
+	// sleep(2);
+	// transmit->readIQFile(writeFile);
 
 	/******************设计模式之装饰模式*************************/
 	/*
@@ -252,6 +253,17 @@ main_function:
 
 	// usleep(50);
 	// pDev->_getIQData();
+
+	/******************设计模式之原型模式*************************/
+	Resume *person = new Resume("小明");
+	person->SetPersonalInfo("男", "23");
+	person->SetWorkExperience("2022-04-19~", "湖南小金刚");
+
+	Resume person1 = person->clone();
+	person1.SetWorkExperience("2022-04-19~2023-01-01", "北京小金刚");
+
+	person->Display();
+	person1.Display();
 
 	return 0;
 }
