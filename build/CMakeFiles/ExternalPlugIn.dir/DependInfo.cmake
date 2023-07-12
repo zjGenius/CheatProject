@@ -33,6 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Decorator"
   ".././include/DesignPatterns/Proxy"
   ".././include/DesignPatterns/FactoryMethod"
+  ".././include/DesignPatterns/Prototype"
   ".././include/SDR"
   ".././include/3rdparty"
   ".././include/Tools"

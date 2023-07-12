@@ -61,6 +61,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Decorator/De
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Decorator/myDecorator.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Factory/SampleFactory.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Prototype/Prototype.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Proxy/Proxy.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Strategy/Strategy.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/command.h
