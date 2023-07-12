@@ -58,17 +58,17 @@ include CMakeFiles/ExternalPlugIn.dir/progress.make
 include CMakeFiles/ExternalPlugIn.dir/flags.make
 
 CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o: CMakeFiles/ExternalPlugIn.dir/flags.make
-CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o: ../src/ad9361-iiostream.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o   -c /home/zhangjun/code/CheatProject/src/ad9361-iiostream.c
+CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o: ../src/ad9361-iiostream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o -c /home/zhangjun/code/CheatProject/src/ad9361-iiostream.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhangjun/code/CheatProject/src/ad9361-iiostream.c > CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangjun/code/CheatProject/src/ad9361-iiostream.cpp > CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.i
 
 CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhangjun/code/CheatProject/src/ad9361-iiostream.c -o CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/ad9361-iiostream.cpp -o CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.s
 
 CMakeFiles/ExternalPlugIn.dir/src/func.o: CMakeFiles/ExternalPlugIn.dir/flags.make
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../src/func.cpp

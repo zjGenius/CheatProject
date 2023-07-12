@@ -19,6 +19,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang CXX)
   include(CMakeFiles/ExternalPlugIn.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

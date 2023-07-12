@@ -1,8 +1,12 @@
 #include "IQTransmitCenter.h"
 
+int udp_fd = -1; // 套接字
+struct sockaddr_in udp_Addr;
+
 IQTransmit::IQTransmit(std::string ip, int port)
 {
     udp_fd = socket(PF_INET, SOCK_DGRAM, 0);
+    udp_ip = ip;
     if (udp_fd == -1)
     {
         perror("date time socket error");
@@ -24,6 +28,9 @@ void IQTransmit::sendMode(int mode, std::string filePath)
     }
     else
     {
+        printf("READMode::IIO_R\n");
+        printf("\n\n\n");
+        sendIQData("ip:192.168.10.226", udp_Addr);
         printf("READMode::IIO_R\n");
     }
 }
@@ -90,6 +97,6 @@ void IQTransmit::readIQFile(std::string filePath)
     for (int i = 0; i < 100; i++)
     {
         printf("%d, ", info.data[i]);
-    }  
+    }
     printf("\n");
 }

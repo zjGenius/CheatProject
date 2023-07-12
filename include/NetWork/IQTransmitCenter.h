@@ -9,6 +9,8 @@
 #include <cstring>
 #include <arpa/inet.h>
 
+#include "ad9361-iiostream.h"
+
 #define PACK_HEAD 0xEEEEEEEE
 #define PACK_END 0xEEEEEEFF
 #define BUFF_SIZE 1024
@@ -40,10 +42,8 @@ typedef struct signalInfo
 class IQTransmit
 {
 private:
-    int udp_fd; // 套接字
-    struct sockaddr_in udp_Addr;
-
     int sendIQMode; // 读iq数据模式
+    std::string udp_ip;
 
 public:
     explicit IQTransmit(std::string ip, int port);
