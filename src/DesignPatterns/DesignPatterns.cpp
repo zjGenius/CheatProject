@@ -167,6 +167,23 @@ void DesignPatterns::appearance_display()
     facade->MethodB();
 }
 
+void DesignPatterns::builder_display()
+{
+    /******************设计模式之建造者模式*************************/
+    printf("建造者模式\n");
+    Director *director = new Director();
+    BuilderA *buildA = new BuilderA();
+    BuilderB *buildB = new BuilderB();
+
+    director->Construct(buildA);
+    Product *pro1 = buildA->getResult();
+    pro1->Show();
+
+    director->Construct(buildB);
+    Product *pro2 = buildB->getResult();
+    pro2->Show();
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

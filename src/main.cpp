@@ -151,7 +151,8 @@ int main(void)
 	// design->factoryMethod_display();
 	// design->prototype_display();
 	// design->template_display();
-	design->appearance_display();
+	// design->appearance_display();
+	design->builder_display();
 
 	return 0;
 }

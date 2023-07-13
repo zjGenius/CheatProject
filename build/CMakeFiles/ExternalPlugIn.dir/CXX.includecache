@@ -24,6 +24,12 @@ stdbool.h
 stdio.h
 -
 
+../include/DesignPatterns/Builder/Builder.h
+list
+-
+string
+-
+
 ../include/DesignPatterns/Decorator/Decorator.h
 stdio.h
 -
@@ -55,6 +61,8 @@ Template.h
 ../include/DesignPatterns/Template.h
 Appearance.h
 ../include/DesignPatterns/Appearance.h
+Builder.h
+../include/DesignPatterns/Builder.h
 
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h

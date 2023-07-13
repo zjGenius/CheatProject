@@ -3,6 +3,7 @@
 
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
  ../include/DesignPatterns/Appearance/Appearance.h
+ ../include/DesignPatterns/Builder/Builder.h
  ../include/DesignPatterns/Decorator/Decorator.h
  ../include/DesignPatterns/Decorator/myDecorator.h
  ../include/DesignPatterns/DesignPatterns.h
@@ -71,6 +72,7 @@ CMakeFiles/ExternalPlugIn.dir/src/func.o
 CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/3rdparty/iio/include/iio.h
  ../include/DesignPatterns/Appearance/Appearance.h
+ ../include/DesignPatterns/Builder/Builder.h
  ../include/DesignPatterns/Decorator/Decorator.h
  ../include/DesignPatterns/Decorator/myDecorator.h
  ../include/DesignPatterns/DesignPatterns.h

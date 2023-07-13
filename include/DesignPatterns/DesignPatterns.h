@@ -10,6 +10,7 @@
 #include "Prototype.h"
 #include "Template.h"
 #include "Appearance.h"
+#include "Builder.h"
 
 class DesignPatterns
 {
@@ -26,6 +27,7 @@ public:
     void prototype_display();
     void template_display();
     void appearance_display();
+    void builder_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_
