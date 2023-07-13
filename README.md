@@ -46,5 +46,8 @@
 ## 原型模式 (Prototype.h) 
 1.深浅拷贝 <br />
 
-## 模板模式 (Prototype.h) 
+## 模板模式 (Template.h) 
 1.考试案例 <br />
+
+## 外观模式 (Appearance.h) 
+1.高层模型调用低层系统方法 <br />

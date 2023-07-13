@@ -1,3 +1,13 @@
+/**
+ * @file Template.h
+ * @author zhangjun (1905212905@qq.com)
+ * @brief 设计模式之模板模式
+ * @version 0.1
+ * @date 2023-07-12
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef _TEMPLATE_H_
 #define _TEMPLATE_H_
 

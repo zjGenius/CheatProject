@@ -124,6 +124,21 @@ ExternalPlugIn/fast:
 .PHONY : ExternalPlugIn/fast
 
 # target to build an object file
+src/DesignPatterns/DesignPatterns.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
+.PHONY : src/DesignPatterns/DesignPatterns.o
+
+# target to preprocess a source file
+src/DesignPatterns/DesignPatterns.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.i
+.PHONY : src/DesignPatterns/DesignPatterns.i
+
+# target to generate assembly for a file
+src/DesignPatterns/DesignPatterns.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.s
+.PHONY : src/DesignPatterns/DesignPatterns.s
+
+# target to build an object file
 src/Huffman/file_compress_huffman.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o
 .PHONY : src/Huffman/file_compress_huffman.o
@@ -357,6 +372,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ExternalPlugIn"
+	@echo "... src/DesignPatterns/DesignPatterns.o"
+	@echo "... src/DesignPatterns/DesignPatterns.i"
+	@echo "... src/DesignPatterns/DesignPatterns.s"
 	@echo "... src/Huffman/file_compress_huffman.o"
 	@echo "... src/Huffman/file_compress_huffman.i"
 	@echo "... src/Huffman/file_compress_huffman.s"

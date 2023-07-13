@@ -20,6 +20,10 @@ sys/types.h
 stdbool.h
 -
 
+../include/DesignPatterns/Appearance/Appearance.h
+stdio.h
+-
+
 ../include/DesignPatterns/Decorator/Decorator.h
 stdio.h
 -
@@ -31,6 +35,26 @@ stdio.h
 -
 string
 -
+
+../include/DesignPatterns/DesignPatterns.h
+SampleFactory.h
+../include/DesignPatterns/SampleFactory.h
+Strategy.h
+../include/DesignPatterns/Strategy.h
+Decorator.h
+../include/DesignPatterns/Decorator.h
+myDecorator.h
+../include/DesignPatterns/myDecorator.h
+Proxy.h
+../include/DesignPatterns/Proxy.h
+FactoryMethod.h
+../include/DesignPatterns/FactoryMethod.h
+Prototype.h
+../include/DesignPatterns/Prototype.h
+Template.h
+../include/DesignPatterns/Template.h
+Appearance.h
+../include/DesignPatterns/Appearance.h
 
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h
@@ -246,6 +270,10 @@ sstream
 
 ../include/version_config.h
 
+/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp
+DesignPatterns.h
+/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.h
+
 /home/zhangjun/code/CheatProject/src/main.cpp
 stdio.h
 -
@@ -269,28 +297,14 @@ container.h
 /home/zhangjun/code/CheatProject/src/container.h
 l_opencv.h
 /home/zhangjun/code/CheatProject/src/l_opencv.h
-SampleFactory.h
-/home/zhangjun/code/CheatProject/src/SampleFactory.h
-Strategy.h
-/home/zhangjun/code/CheatProject/src/Strategy.h
 IQTransmitCenter.h
 /home/zhangjun/code/CheatProject/src/IQTransmitCenter.h
 IQRecvData.h
 /home/zhangjun/code/CheatProject/src/IQRecvData.h
-Decorator.h
-/home/zhangjun/code/CheatProject/src/Decorator.h
-myDecorator.h
-/home/zhangjun/code/CheatProject/src/myDecorator.h
-Proxy.h
-/home/zhangjun/code/CheatProject/src/Proxy.h
-FactoryMethod.h
-/home/zhangjun/code/CheatProject/src/FactoryMethod.h
 context.h
 /home/zhangjun/code/CheatProject/src/context.h
 device.h
 /home/zhangjun/code/CheatProject/src/device.h
-Prototype.h
-/home/zhangjun/code/CheatProject/src/Prototype.h
-Template.h
-/home/zhangjun/code/CheatProject/src/Template.h
+DesignPatterns.h
+/home/zhangjun/code/CheatProject/src/DesignPatterns.h
 
