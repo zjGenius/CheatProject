@@ -39,6 +39,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Template"
   ".././include/DesignPatterns/Appearance"
   ".././include/DesignPatterns/Builder"
+  ".././include/DesignPatterns/Observer"
   ".././include/SDR"
   ".././include/3rdparty"
   ".././include/Tools"

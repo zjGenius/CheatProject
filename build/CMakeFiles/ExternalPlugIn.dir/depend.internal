@@ -9,6 +9,8 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
  ../include/DesignPatterns/DesignPatterns.h
  ../include/DesignPatterns/Factory/SampleFactory.h
  ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+ ../include/DesignPatterns/Observer/Observer.h
+ ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
  ../include/DesignPatterns/Strategy/Strategy.h
@@ -78,6 +80,8 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/DesignPatterns.h
  ../include/DesignPatterns/Factory/SampleFactory.h
  ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+ ../include/DesignPatterns/Observer/Observer.h
+ ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
  ../include/DesignPatterns/Strategy/Strategy.h

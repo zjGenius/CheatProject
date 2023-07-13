@@ -18,7 +18,6 @@
 #include "DesignPatterns.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
-
 pthread_t signal_IQRecv;
 
 std::string ip = "127.0.0.1";
@@ -152,7 +151,13 @@ int main(void)
 	// design->prototype_display();
 	// design->template_display();
 	// design->appearance_display();
-	design->builder_display();
+	// design->builder_display();
+	design->observer_display();
+
+
+
+
+
 
 	return 0;
 }

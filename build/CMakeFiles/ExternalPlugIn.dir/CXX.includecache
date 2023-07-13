@@ -63,6 +63,10 @@ Appearance.h
 ../include/DesignPatterns/Appearance.h
 Builder.h
 ../include/DesignPatterns/Builder.h
+Subject.h
+../include/DesignPatterns/Subject.h
+Observer.h
+../include/DesignPatterns/Observer.h
 
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h
@@ -75,6 +79,20 @@ stdio.h
 -
 string
 -
+
+../include/DesignPatterns/Observer/Observer.h
+string
+-
+Subject.h
+../include/DesignPatterns/Observer/Subject.h
+
+../include/DesignPatterns/Observer/Subject.h
+string
+-
+list
+-
+Observer.h
+../include/DesignPatterns/Observer/Observer.h
 
 ../include/DesignPatterns/Prototype/Prototype.h
 string
@@ -277,10 +295,6 @@ sstream
 -
 
 ../include/version_config.h
-
-/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp
-DesignPatterns.h
-/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.h
 
 /home/zhangjun/code/CheatProject/src/main.cpp
 stdio.h

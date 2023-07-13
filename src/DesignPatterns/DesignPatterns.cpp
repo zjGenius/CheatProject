@@ -184,6 +184,22 @@ void DesignPatterns::builder_display()
     pro2->Show();
 }
 
+void DesignPatterns::observer_display()
+{
+    /******************设计模式之观察者模式*************************/
+    printf("观察者模式\n");
+    StockObserver observer1("jams"), observer2("kobe");
+    Boss boss;
+
+    boss.addObserver(&observer1);
+    boss.addObserver(&observer2);
+
+    boss.Come();
+
+    boss.delObserver(&observer1);
+    boss.Leave();
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

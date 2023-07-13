@@ -12,6 +12,9 @@
 #include "Appearance.h"
 #include "Builder.h"
 
+#include "Subject.h"
+#include "Observer.h"
+
 class DesignPatterns
 {
 private:
@@ -28,6 +31,7 @@ public:
     void template_display();
     void appearance_display();
     void builder_display();
+    void observer_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_
