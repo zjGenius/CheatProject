@@ -200,6 +200,28 @@ void DesignPatterns::observer_display()
     boss.Leave();
 }
 
+void DesignPatterns::abstractFactory_display()
+{
+    /******************设计模式之抽象工厂模式*************************/
+    printf("抽象工厂模式\n");
+    Student *std = new Student();
+    std->setId(1);
+    std->setName("张三");
+    Student *std1 = new Student();
+    std->setId(2);
+    std->setName("李四");
+
+    SQL_Factory *sqlFactory = new SQLServerFactory();
+    Student_SQL *studentSql = sqlFactory->createStudent_SQL();
+
+    studentSql->Insert(std);
+    studentSql->Insert(std1);
+
+
+    Student *findStudent = studentSql->getStudent(1);
+    printf("Name:%s\n", findStudent->getName().c_str());
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

@@ -57,3 +57,6 @@
 
 ## 观察者模式 (Observer.h Subject.h) 
 1.发布订阅模式 <br />
+
+## 抽象工厂模式 (AbstractFactory.h) 
+1.数据库例 <br />
