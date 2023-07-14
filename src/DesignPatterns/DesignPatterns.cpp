@@ -208,8 +208,8 @@ void DesignPatterns::abstractFactory_display()
     std->setId(1);
     std->setName("张三");
     Student *std1 = new Student();
-    std->setId(2);
-    std->setName("李四");
+    std1->setId(2);
+    std1->setName("李四");
 
     SQL_Factory *sqlFactory = new SQLServerFactory();
     Student_SQL *studentSql = sqlFactory->createStudent_SQL();
@@ -218,8 +218,7 @@ void DesignPatterns::abstractFactory_display()
     studentSql->Insert(std1);
 
 
-    Student *findStudent = studentSql->getStudent(1);
-    printf("Name:%s\n", findStudent->getName().c_str());
+    printf("Name:%s\n", studentSql->getStudent(1)->getName().c_str());
 }
 
 DesignPatterns::~DesignPatterns()

@@ -82,12 +82,10 @@ public:
     Student *getStudent(int id)
     {
         std::list<Student *>::iterator iter;
-        for (iter = students.begin(); iter != students.end(); iter++)
+        for (iter = students.begin(); iter != students.end(); ++iter)
         {
             if ((*iter)->getId() == id)
-            {
                 return *iter;
-            }
         }
         return nullptr;
     }
