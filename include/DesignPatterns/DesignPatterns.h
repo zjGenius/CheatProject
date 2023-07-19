@@ -15,6 +15,7 @@
 #include "Subject.h"
 #include "Observer.h"
 #include "AbstractFactory.h"
+#include "Work.h"
 
 class DesignPatterns
 {
@@ -34,6 +35,7 @@ public:
     void builder_display();
     void observer_display();
     void abstractFactory_display();
+    void state_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

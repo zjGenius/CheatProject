@@ -217,8 +217,41 @@ void DesignPatterns::abstractFactory_display()
     studentSql->Insert(std);
     studentSql->Insert(std1);
 
-
     printf("Name:%s\n", studentSql->getStudent(1)->getName().c_str());
+}
+
+void DesignPatterns::state_display()
+{
+    /******************设计模式之状态模式*************************/
+    printf("状态模式\n");
+
+    Work emergencyProject;
+
+    emergencyProject.setHour(9);
+    emergencyProject.writeProgram();
+
+    emergencyProject.setHour(10);
+    emergencyProject.writeProgram();
+
+    emergencyProject.setHour(12);
+    emergencyProject.writeProgram();
+
+    emergencyProject.setHour(13);
+    emergencyProject.writeProgram();
+
+    emergencyProject.setHour(14);
+    emergencyProject.writeProgram();
+
+    emergencyProject.setHour(17);
+    emergencyProject.writeProgram();
+    emergencyProject.setFinish(true);
+    // emergencyProject.setFinish(false);
+
+    emergencyProject.setHour(19);
+    emergencyProject.writeProgram();
+
+    emergencyProject.setHour(22);
+    emergencyProject.writeProgram();
 }
 
 DesignPatterns::~DesignPatterns()

@@ -139,6 +139,36 @@ src/DesignPatterns/DesignPatterns.s:
 .PHONY : src/DesignPatterns/DesignPatterns.s
 
 # target to build an object file
+src/DesignPatterns/State/State.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o
+.PHONY : src/DesignPatterns/State/State.o
+
+# target to preprocess a source file
+src/DesignPatterns/State/State.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.i
+.PHONY : src/DesignPatterns/State/State.i
+
+# target to generate assembly for a file
+src/DesignPatterns/State/State.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.s
+.PHONY : src/DesignPatterns/State/State.s
+
+# target to build an object file
+src/DesignPatterns/State/Work.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o
+.PHONY : src/DesignPatterns/State/Work.o
+
+# target to preprocess a source file
+src/DesignPatterns/State/Work.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.i
+.PHONY : src/DesignPatterns/State/Work.i
+
+# target to generate assembly for a file
+src/DesignPatterns/State/Work.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.s
+.PHONY : src/DesignPatterns/State/Work.s
+
+# target to build an object file
 src/Huffman/file_compress_huffman.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o
 .PHONY : src/Huffman/file_compress_huffman.o
@@ -375,6 +405,12 @@ help:
 	@echo "... src/DesignPatterns/DesignPatterns.o"
 	@echo "... src/DesignPatterns/DesignPatterns.i"
 	@echo "... src/DesignPatterns/DesignPatterns.s"
+	@echo "... src/DesignPatterns/State/State.o"
+	@echo "... src/DesignPatterns/State/State.i"
+	@echo "... src/DesignPatterns/State/State.s"
+	@echo "... src/DesignPatterns/State/Work.o"
+	@echo "... src/DesignPatterns/State/Work.i"
+	@echo "... src/DesignPatterns/State/Work.s"
 	@echo "... src/Huffman/file_compress_huffman.o"
 	@echo "... src/Huffman/file_compress_huffman.i"
 	@echo "... src/Huffman/file_compress_huffman.s"

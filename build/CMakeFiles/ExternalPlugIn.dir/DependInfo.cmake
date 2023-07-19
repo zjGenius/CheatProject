@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o"
+  "/home/zhangjun/code/CheatProject/src/DesignPatterns/State/State.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o"
+  "/home/zhangjun/code/CheatProject/src/DesignPatterns/State/Work.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o"
   "/home/zhangjun/code/CheatProject/src/Huffman/file_compress_huffman.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o"
   "/home/zhangjun/code/CheatProject/src/Huffman/huffman.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o"
   "/home/zhangjun/code/CheatProject/src/Learn/container.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o"
@@ -41,6 +43,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Builder"
   ".././include/DesignPatterns/Observer"
   ".././include/DesignPatterns/AbstractFactory"
+  ".././include/DesignPatterns/State"
   ".././include/SDR"
   ".././include/3rdparty"
   ".././include/Tools"

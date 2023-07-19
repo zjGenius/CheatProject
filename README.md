@@ -60,3 +60,6 @@
 
 ## 抽象工厂模式 (AbstractFactory.h) 
 1.数据库例 <br />
+
+## 状态模式 (State.h Work.h State.cpp Work.cpp) 
+1.加班状态模拟 <br />

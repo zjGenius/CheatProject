@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "../output/ExternalPlugIn"
   "../output/ExternalPlugIn.pdb"
   "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o"
+  "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o"
+  "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o"

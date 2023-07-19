@@ -14,9 +14,19 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
  ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
+ ../include/DesignPatterns/State/State.h
+ ../include/DesignPatterns/State/Work.h
  ../include/DesignPatterns/Strategy/Strategy.h
  ../include/DesignPatterns/Template/Template.h
  /home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o
+ ../include/DesignPatterns/State/State.h
+ ../include/DesignPatterns/State/Work.h
+ /home/zhangjun/code/CheatProject/src/DesignPatterns/State/State.cpp
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o
+ ../include/DesignPatterns/State/State.h
+ ../include/DesignPatterns/State/Work.h
+ /home/zhangjun/code/CheatProject/src/DesignPatterns/State/Work.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o
  ../include/Huffman/command.h
  ../include/Huffman/file_compress_huffman.h
@@ -86,6 +96,8 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
+ ../include/DesignPatterns/State/State.h
+ ../include/DesignPatterns/State/Work.h
  ../include/DesignPatterns/Strategy/Strategy.h
  ../include/DesignPatterns/Template/Template.h
  ../include/Huffman/command.h

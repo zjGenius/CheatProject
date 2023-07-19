@@ -153,7 +153,8 @@ int main(void)
 	// design->appearance_display();
 	// design->builder_display();
 	// design->observer_display();
-	design->abstractFactory_display();
+	// design->abstractFactory_display();
+	design->state_display();
 
 
 

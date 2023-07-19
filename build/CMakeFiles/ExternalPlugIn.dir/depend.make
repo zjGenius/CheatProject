@@ -13,9 +13,19 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/De
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Observer/Subject.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Prototype/Prototype.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Proxy/Proxy.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/State/State.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/State/Work.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Strategy/Strategy.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Template/Template.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../src/DesignPatterns/DesignPatterns.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o: ../include/DesignPatterns/State/State.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o: ../include/DesignPatterns/State/Work.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o: ../src/DesignPatterns/State/State.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o: ../include/DesignPatterns/State/State.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o: ../include/DesignPatterns/State/Work.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o: ../src/DesignPatterns/State/Work.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o: ../include/Huffman/command.h
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o: ../include/Huffman/file_compress_huffman.h
@@ -85,6 +95,8 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Observer/Obs
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Observer/Subject.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Prototype/Prototype.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Proxy/Proxy.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/State/State.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/State/Work.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Strategy/Strategy.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Template/Template.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/command.h
