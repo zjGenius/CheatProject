@@ -45,6 +45,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/AbstractFactory"
   ".././include/DesignPatterns/State"
   ".././include/DesignPatterns/Adapter"
+  ".././include/DesignPatterns/Memento"
   ".././include/SDR"
   ".././include/3rdparty"
   ".././include/Tools"

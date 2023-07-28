@@ -155,7 +155,8 @@ int main(void)
 	// design->observer_display();
 	// design->abstractFactory_display();
 	// design->state_display();
-	design->adapter_display();
+	// design->adapter_display();
+	design->memento_display();
 
 
 

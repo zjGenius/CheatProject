@@ -263,10 +263,31 @@ void DesignPatterns::adapter_display()
     z->Attack();
     Player *k = new Forwark("库里");
     k->Defence();
-    
+
     Player *ym = new Transmit("姚明");
     ym->Attack();
     ym->Defence();
+}
+
+void DesignPatterns::memento_display()
+{
+    /******************设计模式之备忘录模式*************************/
+    printf("备忘录模式\n");
+
+    GameCharacters *gamer = new GameCharacters("钢铁侠");
+    gamer->initState();
+    gamer->StateDisplay();
+
+    // 保存进度
+    RoleStateCaretaker *stateTaker = new RoleStateCaretaker();
+    stateTaker->setRoleStateMememto(gamer->SaveState());
+
+    gamer->Fight();
+    gamer->StateDisplay();
+
+    //恢复
+    gamer->RecoveryState(stateTaker->getRoleStateMememto());
+    gamer->StateDisplay();
 }
 
 DesignPatterns::~DesignPatterns()

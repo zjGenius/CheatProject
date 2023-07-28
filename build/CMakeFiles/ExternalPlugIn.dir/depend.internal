@@ -11,6 +11,7 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
  ../include/DesignPatterns/DesignPatterns.h
  ../include/DesignPatterns/Factory/SampleFactory.h
  ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+ ../include/DesignPatterns/Memento/Memento.h
  ../include/DesignPatterns/Observer/Observer.h
  ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
@@ -94,6 +95,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/DesignPatterns.h
  ../include/DesignPatterns/Factory/SampleFactory.h
  ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+ ../include/DesignPatterns/Memento/Memento.h
  ../include/DesignPatterns/Observer/Observer.h
  ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h

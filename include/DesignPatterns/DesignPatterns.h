@@ -17,6 +17,7 @@
 #include "AbstractFactory.h"
 #include "Work.h"
 #include "adapter.h"
+#include "Memento.h"
 
 class DesignPatterns
 {
@@ -38,6 +39,7 @@ public:
     void abstractFactory_display();
     void state_display();
     void adapter_display();
+    void memento_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

@@ -83,6 +83,8 @@ Work.h
 ../include/DesignPatterns/Work.h
 adapter.h
 ../include/DesignPatterns/adapter.h
+Memento.h
+../include/DesignPatterns/Memento.h
 
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h
@@ -93,6 +95,10 @@ string
 ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
 stdio.h
 -
+string
+-
+
+../include/DesignPatterns/Memento/Memento.h
 string
 -
 
@@ -317,10 +323,6 @@ sstream
 -
 
 ../include/version_config.h
-
-/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp
-DesignPatterns.h
-/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.h
 
 /home/zhangjun/code/CheatProject/src/main.cpp
 stdio.h

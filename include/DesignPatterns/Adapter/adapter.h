@@ -1,3 +1,13 @@
+/**
+ * @file adapter.h
+ * @author zhangjun (1905212905@qq.com)
+ * @brief 设计模式之适配器模式
+ * @version 0.1
+ * @date 2023-07-28
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef _ADAPTER_H_
 #define _ADAPTER_H_
 
