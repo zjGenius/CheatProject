@@ -254,6 +254,21 @@ void DesignPatterns::state_display()
     emergencyProject.writeProgram();
 }
 
+void DesignPatterns::adapter_display()
+{
+    /******************设计模式之适配器模式*************************/
+    printf("适配器模式\n");
+
+    Player *z = new Forwark("詹姆斯");
+    z->Attack();
+    Player *k = new Forwark("库里");
+    k->Defence();
+    
+    Player *ym = new Transmit("姚明");
+    ym->Attack();
+    ym->Defence();
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

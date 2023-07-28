@@ -63,3 +63,6 @@
 
 ## 状态模式 (State.h Work.h State.cpp Work.cpp) 
 1.加班状态模拟 <br />
+
+## 适配器模式 (adapter.h) 
+1.NBA翻译 <br />

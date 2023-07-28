@@ -154,7 +154,8 @@ int main(void)
 	// design->builder_display();
 	// design->observer_display();
 	// design->abstractFactory_display();
-	design->state_display();
+	// design->state_display();
+	design->adapter_display();
 
 
 
