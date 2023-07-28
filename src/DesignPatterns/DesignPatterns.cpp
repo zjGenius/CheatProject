@@ -285,9 +285,49 @@ void DesignPatterns::memento_display()
     gamer->Fight();
     gamer->StateDisplay();
 
-    //恢复
+    // 恢复
     gamer->RecoveryState(stateTaker->getRoleStateMememto());
     gamer->StateDisplay();
+}
+
+void DesignPatterns::compsite_display()
+{
+    /******************设计模式之组合模式*************************/
+    printf("组合模式\n");
+
+    ConcreateCompany *root = new ConcreateCompany("总公司");
+    root->Add(new HRDepartment("总人力资源部"));
+    root->Add(new FinanceDepartment("总财务部"));
+
+    ConcreateCompany *comp = new ConcreateCompany("北方地区分公司");
+    comp->Add(new HRDepartment("北方地区人力资源部"));
+    comp->Add(new FinanceDepartment("北方地区财务部"));
+    root->Add(comp);
+
+    ConcreateCompany *comp1 = new ConcreateCompany("北京分公司");
+    comp1->Add(new HRDepartment("北京分公司人力资源部"));
+    comp1->Add(new FinanceDepartment("北京分公司财务部"));
+    comp->Add(comp1);
+
+    ConcreateCompany *comp2 = new ConcreateCompany("河北分公司");
+    HRDepartment *hebeiHR = new HRDepartment("河北分公司人力资源部");
+    comp2->Add(hebeiHR);
+    comp2->Add(new FinanceDepartment("河北分公司财务部"));
+    comp->Add(comp2);
+
+    printf("结构图:\n");
+    root->Display(1);
+
+    printf("\n\n职责:\n");
+    root->LineOfDuty();
+
+    comp2->Remove(hebeiHR);
+
+    printf("\n\nmove\n\n结构图:\n");
+    root->Display(1);
+
+    printf("\n\n职责:\n");
+    root->LineOfDuty();
 }
 
 DesignPatterns::~DesignPatterns()

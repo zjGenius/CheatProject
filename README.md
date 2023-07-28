@@ -66,3 +66,9 @@
 
 ## 适配器模式 (adapter.h) 
 1.NBA翻译 <br />
+
+## 备忘录模式 (adapter.h) 
+1.打怪存档 <br />
+
+## 组合模式 (Composite.h) 
+1.公司组织结构 <br />
