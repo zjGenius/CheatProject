@@ -20,6 +20,10 @@ string
 stdio.h
 -
 
+../include/DesignPatterns/Bridge/Bridge.h
+stdio.h
+-
+
 ../include/DesignPatterns/Builder/Builder.h
 list
 -
@@ -79,6 +83,8 @@ Memento.h
 ../include/DesignPatterns/Memento.h
 Composite.h
 ../include/DesignPatterns/Composite.h
+Bridge.h
+../include/DesignPatterns/Bridge.h
 
 ../include/DesignPatterns/Factory/SampleFactory.h
 stdio.h

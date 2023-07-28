@@ -19,6 +19,7 @@
 #include "adapter.h"
 #include "Memento.h"
 #include "Composite.h"
+#include "Bridge.h"
 
 class DesignPatterns
 {
@@ -42,6 +43,7 @@ public:
     void adapter_display();
     void memento_display();
     void compsite_display();
+    void bridge_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

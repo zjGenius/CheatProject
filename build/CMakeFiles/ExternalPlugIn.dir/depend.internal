@@ -5,6 +5,7 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
  ../include/DesignPatterns/AbstractFactory/AbstractFactory.h
  ../include/DesignPatterns/Adapter/adapter.h
  ../include/DesignPatterns/Appearance/Appearance.h
+ ../include/DesignPatterns/Bridge/Bridge.h
  ../include/DesignPatterns/Builder/Builder.h
  ../include/DesignPatterns/Composite/Composite.h
  ../include/DesignPatterns/Decorator/Decorator.h
@@ -90,6 +91,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/AbstractFactory/AbstractFactory.h
  ../include/DesignPatterns/Adapter/adapter.h
  ../include/DesignPatterns/Appearance/Appearance.h
+ ../include/DesignPatterns/Bridge/Bridge.h
  ../include/DesignPatterns/Builder/Builder.h
  ../include/DesignPatterns/Composite/Composite.h
  ../include/DesignPatterns/Decorator/Decorator.h

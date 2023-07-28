@@ -330,6 +330,28 @@ void DesignPatterns::compsite_display()
     root->LineOfDuty();
 }
 
+void DesignPatterns::bridge_display()
+{
+    /******************设计模式之桥接模式*************************/
+    printf("桥接模式\n");
+
+    Phone *phone;
+
+    printf("手机A:\n");
+    phone = new PhoneA();
+    phone->setPhoneSoftware(new PhoneChat());
+    phone->Run();
+    phone->setPhoneSoftware(new PhoneGames());
+    phone->Run();
+
+    printf("手机B:\n");
+    phone = new PhoneB();
+    phone->setPhoneSoftware(new PhoneGames());
+    phone->Run();
+    phone->setPhoneSoftware(new PhoneChat());
+    phone->Run();
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }
