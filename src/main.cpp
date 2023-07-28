@@ -158,7 +158,8 @@ int main(void)
 	// design->adapter_display();
 	// design->memento_display();
 	// design->compsite_display();
-	design->bridge_display();
+	// design->bridge_display();
+	design->command_display();
 
 
 

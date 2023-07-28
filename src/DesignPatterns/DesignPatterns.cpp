@@ -352,6 +352,29 @@ void DesignPatterns::bridge_display()
     phone->Run();
 }
 
+void DesignPatterns::command_display()
+{
+    /******************设计模式之命令模式*************************/
+    printf("命令模式\n");
+
+
+    Cooking *boy = new Cooking();
+
+    Command *beaf1 = new BeafCommand(boy);
+    Command *beaf2 = new BeafCommand(boy);
+    Command *chicken = new ChickenCommand(boy);
+    Waiter *girl = new Waiter();
+
+    //营业
+    girl->SetOrder(beaf1);
+    girl->SetOrder(beaf2);
+    girl->SetOrder(chicken);
+    
+    girl->Notify();
+
+
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

@@ -20,6 +20,7 @@
 #include "Memento.h"
 #include "Composite.h"
 #include "Bridge.h"
+#include "Command.h"
 
 class DesignPatterns
 {
@@ -44,6 +45,7 @@ public:
     void memento_display();
     void compsite_display();
     void bridge_display();
+    void command_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

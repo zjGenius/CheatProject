@@ -48,6 +48,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Memento"
   ".././include/DesignPatterns/Composite"
   ".././include/DesignPatterns/Bridge"
+  ".././include/DesignPatterns/Command"
   ".././include/SDR"
   ".././include/3rdparty"
   ".././include/Tools"
