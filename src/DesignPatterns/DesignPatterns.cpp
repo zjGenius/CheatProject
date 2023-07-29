@@ -357,7 +357,6 @@ void DesignPatterns::command_display()
     /******************设计模式之命令模式*************************/
     printf("命令模式\n");
 
-
     Cooking *boy = new Cooking();
 
     Command *beaf1 = new BeafCommand(boy);
@@ -365,14 +364,56 @@ void DesignPatterns::command_display()
     Command *chicken = new ChickenCommand(boy);
     Waiter *girl = new Waiter();
 
-    //营业
+    // 营业
     girl->SetOrder(beaf1);
     girl->SetOrder(beaf2);
     girl->SetOrder(chicken);
-    
+
     girl->Notify();
+}
 
+void DesignPatterns::responsibility_display()
+{
+    /******************设计模式之职责链模式*************************/
+    printf("职责链模式\n\n");
 
+    Manager *HR = new HRManager("人事经理");
+    Manager *derector = new CommonManager("总监");
+    Manager *general = new GeneralManager("董事");
+    HR->setSuperManager(derector);
+    derector->setSuperManager(general);
+
+    Requesed request;
+
+    request.requesedType = RequseType::vacation;
+    request.description = "张三请假";
+    request.num = 2;
+    HR->RequesedHandle(request);
+
+    request.requesedType = RequseType::vacation;
+    request.description = "李四请假";
+    request.num = 10;
+    HR->RequesedHandle(request);
+
+    request.requesedType = RequseType::vacation;
+    request.description = "王五请假";
+    request.num = 50;
+    HR->RequesedHandle(request);
+
+    request.requesedType = RequseType::raises;
+    request.description = "张三加薪";
+    request.num = 100;
+    HR->RequesedHandle(request);
+
+    request.requesedType = RequseType::raises;
+    request.description = "李四加薪";
+    request.num = 500;
+    HR->RequesedHandle(request);
+
+    request.requesedType = RequseType::raises;
+    request.description = "王五加薪";
+    request.num = 1000;
+    HR->RequesedHandle(request);
 }
 
 DesignPatterns::~DesignPatterns()

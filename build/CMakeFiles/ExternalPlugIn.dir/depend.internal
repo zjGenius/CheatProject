@@ -19,76 +19,53 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
  ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
+ ../include/DesignPatterns/Responsibility/Responsibility.h
  ../include/DesignPatterns/State/State.h
  ../include/DesignPatterns/State/Work.h
  ../include/DesignPatterns/Strategy/Strategy.h
  ../include/DesignPatterns/Template/Template.h
- /home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp
+ /home/jun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o
  ../include/DesignPatterns/State/State.h
  ../include/DesignPatterns/State/Work.h
- /home/zhangjun/code/CheatProject/src/DesignPatterns/State/State.cpp
+ /home/jun/code/CheatProject/src/DesignPatterns/State/State.cpp
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o
  ../include/DesignPatterns/State/State.h
  ../include/DesignPatterns/State/Work.h
- /home/zhangjun/code/CheatProject/src/DesignPatterns/State/Work.cpp
+ /home/jun/code/CheatProject/src/DesignPatterns/State/Work.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o
  ../include/Huffman/command.h
  ../include/Huffman/file_compress_huffman.h
  ../include/Huffman/huffman_tree.hpp
- /home/zhangjun/code/CheatProject/src/Huffman/file_compress_huffman.cpp
+ /home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o
  ../include/Huffman/huffman.h
  ../include/paramRead.h
- /home/zhangjun/code/CheatProject/src/Huffman/huffman.cpp
+ /home/jun/code/CheatProject/src/Huffman/huffman.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o
  ../include/Learn/container.h
  ../include/log.h
  ../include/paramRead.h
- /home/zhangjun/code/CheatProject/src/Learn/container.cpp
+ /home/jun/code/CheatProject/src/Learn/container.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
- ../include/Learn/l_opencv.h
- ../include/log.h
- /home/zhangjun/code/CheatProject/src/Learn/l_opencv.cpp
+ /home/jun/code/CheatProject/src/Learn/l_opencv.cpp
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o
  ../include/NetWork/IQRecvData.h
  ../include/NetWork/IQTransmitCenter.h
  ../include/ad9361-iiostream.h
- /home/zhangjun/code/CheatProject/src/NetWork/IQRecvData.cpp
+ /home/jun/code/CheatProject/src/NetWork/IQRecvData.cpp
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o
- ../include/NetWork/IQTransmitCenter.h
- ../include/ad9361-iiostream.h
- /home/zhangjun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp
+ /home/jun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o
  ../include/NetWork/tcp_server.h
- /home/zhangjun/code/CheatProject/src/NetWork/tcp_server.cpp
-CMakeFiles/ExternalPlugIn.dir/src/SDR/buffer.o
- ../include/SDR/buffer.h
- /home/zhangjun/code/CheatProject/src/SDR/buffer.cpp
-CMakeFiles/ExternalPlugIn.dir/src/SDR/context.o
- ../include/3rdparty/iio/include/iio.h
- ../include/SDR/context.h
- /home/zhangjun/code/CheatProject/src/SDR/context.cpp
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o
- ../include/3rdparty/iio/include/iio.h
- ../include/SDR/Utils.hpp
- ../include/SDR/context.h
- ../include/SDR/device.h
- ../include/Tools/Tools.hpp
- /home/zhangjun/code/CheatProject/src/SDR/device.cpp
-CMakeFiles/ExternalPlugIn.dir/src/SDR/rxstream.o
- ../include/SDR/rxstream.h
- /home/zhangjun/code/CheatProject/src/SDR/rxstream.cpp
+ /home/jun/code/CheatProject/src/NetWork/tcp_server.cpp
 CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o
- ../include/NetWork/IQTransmitCenter.h
- ../include/ad9361-iiostream.h
- /home/zhangjun/code/CheatProject/src/ad9361-iiostream.cpp
+ /home/jun/code/CheatProject/src/ad9361-iiostream.cpp
 CMakeFiles/ExternalPlugIn.dir/src/func.o
  ../include/func.h
  ../include/paramRead.h
- /home/zhangjun/code/CheatProject/src/func.cpp
+ /home/jun/code/CheatProject/src/func.cpp
 CMakeFiles/ExternalPlugIn.dir/src/main.o
- ../include/3rdparty/iio/include/iio.h
  ../include/DesignPatterns/AbstractFactory/AbstractFactory.h
  ../include/DesignPatterns/Adapter/adapter.h
  ../include/DesignPatterns/Appearance/Appearance.h
@@ -106,6 +83,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/DesignPatterns/Observer/Subject.h
  ../include/DesignPatterns/Prototype/Prototype.h
  ../include/DesignPatterns/Proxy/Proxy.h
+ ../include/DesignPatterns/Responsibility/Responsibility.h
  ../include/DesignPatterns/State/State.h
  ../include/DesignPatterns/State/Work.h
  ../include/DesignPatterns/Strategy/Strategy.h
@@ -114,19 +92,14 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/Huffman/file_compress_huffman.h
  ../include/Huffman/huffman.h
  ../include/Learn/container.h
- ../include/Learn/l_opencv.h
  ../include/NetWork/IQRecvData.h
  ../include/NetWork/IQTransmitCenter.h
- ../include/SDR/Utils.hpp
- ../include/SDR/context.h
- ../include/SDR/device.h
- ../include/Tools/Tools.hpp
  ../include/ad9361-iiostream.h
  ../include/func.h
  ../include/log.h
  ../include/paramRead.h
  ../include/version_config.h
- /home/zhangjun/code/CheatProject/src/main.cpp
+ /home/jun/code/CheatProject/src/main.cpp
 CMakeFiles/ExternalPlugIn.dir/src/paramRead.o
  ../include/paramRead.h
- /home/zhangjun/code/CheatProject/src/paramRead.cpp
+ /home/jun/code/CheatProject/src/paramRead.cpp

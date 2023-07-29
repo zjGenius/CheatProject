@@ -78,3 +78,6 @@
 
 ## 命令模式 (Bridge.h) 
 1.点烧烤 <br />
+
+## 职责链模式 (Responsibility.h) 
+1.请假加薪 <br />

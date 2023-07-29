@@ -65,9 +65,10 @@ include_directories(./include/DesignPatterns/Memento)
 include_directories(./include/DesignPatterns/Composite)
 include_directories(./include/DesignPatterns/Bridge)
 include_directories(./include/DesignPatterns/Command)
-include_directories(./include/SDR)
-include_directories(./include/3rdparty)
-include_directories(./include/Tools)
+include_directories(./include/DesignPatterns/Responsibility)
+# include_directories(./include/SDR)
+# include_directories(./include/3rdparty)
+# include_directories(./include/Tools)
 
 
 
@@ -84,7 +85,7 @@ aux_source_directory(./src/DesignPatterns/Decorator SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Proxy SRC_LIST)
 aux_source_directory(./src/DesignPatterns/FactoryMethod SRC_LIST)
 aux_source_directory(./src/DesignPatterns/State SRC_LIST)
-aux_source_directory(./src/SDR SRC_LIST)
+# aux_source_directory(./src/SDR SRC_LIST)
 
 
 #打印src信息
@@ -96,26 +97,26 @@ add_executable(ExternalPlugIn ${SRC_LIST})
 # 操作系统架构
 message(${CMAKE_HOST_SYSTEM_PROCESSOR})
 
-if(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "armv7l")
-    # 寻找OpenCV库
-    find_package( OpenCV REQUIRED )
-    # 添加头文件
-    include_directories( ${OpenCV_INCLUDE_DIRS} )
-    # 链接OpenCV库
-    target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
-elseif(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "x86_64")
-    # set(CMAKE_CXX_FLAGS "-fsanitize=address  -g")
-    # set(CMAKE_EXE_LINKER_FLAGS "-fsanitize=address -static-libasan")
-    find_package( OpenCV 4 REQUIRED )
-    include_directories( ${OpenCV_INCLUDE_DIRS} )
-    target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
-else()
-    # set(CMAKE_CXX_FLAGS "-fsanitize=address  -g")
-    # set(CMAKE_EXE_LINKER_FLAGS "-fsanitize=address -static-libasan")
-    find_package( OpenCV REQUIRED )
-    include_directories( ${OpenCV_INCLUDE_DIRS} )
-    target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
-endif()
+# if(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "armv7l")
+#     # 寻找OpenCV库
+#     find_package( OpenCV REQUIRED )
+#     # 添加头文件
+#     include_directories( ${OpenCV_INCLUDE_DIRS} )
+#     # 链接OpenCV库
+#     target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
+# elseif(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "x86_64")
+#     # set(CMAKE_CXX_FLAGS "-fsanitize=address  -g")
+#     # set(CMAKE_EXE_LINKER_FLAGS "-fsanitize=address -static-libasan")
+#     find_package( OpenCV 4 REQUIRED )
+#     include_directories( ${OpenCV_INCLUDE_DIRS} )
+#     target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
+# else()
+#     # set(CMAKE_CXX_FLAGS "-fsanitize=address  -g")
+#     # set(CMAKE_EXE_LINKER_FLAGS "-fsanitize=address -static-libasan")
+#     find_package( OpenCV REQUIRED )
+#     include_directories( ${OpenCV_INCLUDE_DIRS} )
+#     target_link_libraries( ExternalPlugIn ${OpenCV_LIBS} )
+# endif()
 
 # 添加c++ 11标准支持
 set( CMAKE_CXX_FLAGS "-std=c++11 -O0" )
@@ -123,5 +124,6 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O0" )
 
 
 #链接库
-TARGET_LINK_LIBRARIES( ExternalPlugIn pthread iio )
+TARGET_LINK_LIBRARIES( ExternalPlugIn pthread )
+# TARGET_LINK_LIBRARIES( ExternalPlugIn pthread iio )
 #TARGET_LINK_LIBRARIES( E310 pthread iio gprofHelp_cxx)

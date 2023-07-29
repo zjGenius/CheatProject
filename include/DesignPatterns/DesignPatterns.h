@@ -21,6 +21,7 @@
 #include "Composite.h"
 #include "Bridge.h"
 #include "Command.h"
+#include "Responsibility.h"
 
 class DesignPatterns
 {
@@ -46,6 +47,7 @@ public:
     void compsite_display();
     void bridge_display();
     void command_display();
+    void responsibility_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

@@ -18,6 +18,7 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/De
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Observer/Subject.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Prototype/Prototype.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Proxy/Proxy.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Responsibility/Responsibility.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/State/State.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/State/Work.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Strategy/Strategy.h
@@ -46,8 +47,6 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o: ../include/paramRead.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o: ../src/Learn/container.cpp
 
-CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../include/Learn/l_opencv.h
-CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../src/Learn/l_opencv.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQRecvData.h
@@ -55,39 +54,17 @@ CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQTra
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/ad9361-iiostream.h
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../src/NetWork/IQRecvData.cpp
 
-CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: ../include/NetWork/IQTransmitCenter.h
-CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: ../include/ad9361-iiostream.h
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o: ../src/NetWork/IQTransmitCenter.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o: ../include/NetWork/tcp_server.h
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o: ../src/NetWork/tcp_server.cpp
 
-CMakeFiles/ExternalPlugIn.dir/src/SDR/buffer.o: ../include/SDR/buffer.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/buffer.o: ../src/SDR/buffer.cpp
-
-CMakeFiles/ExternalPlugIn.dir/src/SDR/context.o: ../include/3rdparty/iio/include/iio.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/context.o: ../include/SDR/context.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/context.o: ../src/SDR/context.cpp
-
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o: ../include/3rdparty/iio/include/iio.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o: ../include/SDR/Utils.hpp
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o: ../include/SDR/context.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o: ../include/SDR/device.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o: ../include/Tools/Tools.hpp
-CMakeFiles/ExternalPlugIn.dir/src/SDR/device.o: ../src/SDR/device.cpp
-
-CMakeFiles/ExternalPlugIn.dir/src/SDR/rxstream.o: ../include/SDR/rxstream.h
-CMakeFiles/ExternalPlugIn.dir/src/SDR/rxstream.o: ../src/SDR/rxstream.cpp
-
-CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o: ../include/NetWork/IQTransmitCenter.h
-CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o: ../include/ad9361-iiostream.h
 CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o: ../src/ad9361-iiostream.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../include/func.h
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../include/paramRead.h
 CMakeFiles/ExternalPlugIn.dir/src/func.o: ../src/func.cpp
 
-CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/3rdparty/iio/include/iio.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/AbstractFactory/AbstractFactory.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Adapter/adapter.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Appearance/Appearance.h
@@ -105,6 +82,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Observer/Obs
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Observer/Subject.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Prototype/Prototype.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Proxy/Proxy.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Responsibility/Responsibility.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/State/State.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/State/Work.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Strategy/Strategy.h
@@ -113,13 +91,8 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/command.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/file_compress_huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/container.h
-CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/l_opencv.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQRecvData.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQTransmitCenter.h
-CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/SDR/Utils.hpp
-CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/SDR/context.h
-CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/SDR/device.h
-CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Tools/Tools.hpp
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/ad9361-iiostream.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/func.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/log.h

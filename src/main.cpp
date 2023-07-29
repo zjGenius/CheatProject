@@ -9,11 +9,11 @@
 #include "file_compress_huffman.h"
 #include "log.h"
 #include "container.h"
-#include "l_opencv.h"
+// #include "l_opencv.h"
 #include "IQTransmitCenter.h"
 #include "IQRecvData.h"
-#include "context.h"
-#include "device.h"
+// #include "context.h"
+// #include "device.h"
 
 #include "DesignPatterns.h"
 // #include "huffman1.h"
@@ -159,7 +159,8 @@ int main(void)
 	// design->memento_display();
 	// design->compsite_display();
 	// design->bridge_display();
-	design->command_display();
+	// design->command_display();
+	design->responsibility_display();
 
 
 
