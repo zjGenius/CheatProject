@@ -99,7 +99,6 @@ int main(void)
 										 // file_compress.compress_file(inputFile);
 										 // file_compress.un_compress_file(compressedFile);
 
-
 	/******************udp传输文件*************************/
 
 	// pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
@@ -112,7 +111,6 @@ int main(void)
 
 	// sleep(2);
 	// transmit->readIQFile(writeFile);
-
 
 	// std::string ip = "ip:192.168.100.10";
 	// Context *context = new Context(ip);
@@ -140,7 +138,6 @@ int main(void)
 	// usleep(50);
 	// pDev->_getIQData();
 
-
 	/******************设计模式************************/
 	DesignPatterns *design = new DesignPatterns();
 	// design->sampleFactory_display();
@@ -161,12 +158,8 @@ int main(void)
 	// design->bridge_display();
 	// design->command_display();
 	// design->responsibility_display();
-	design->mediator_display();
-
-
-
-
-
+	// design->mediator_display();
+	design->flyWeight_display();
 
 	return 0;
 }

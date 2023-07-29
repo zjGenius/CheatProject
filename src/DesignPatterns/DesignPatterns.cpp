@@ -433,6 +433,30 @@ void DesignPatterns::mediator_display()
     iraq->Declare("我们没有核武器,也不怕发动侵略!");
 }
 
+void DesignPatterns::flyWeight_display()
+{
+    /******************设计模式之享元模式*************************/
+    printf("享元模式\n\n");
+
+    WebSiteFactory *webfac = new WebSiteFactory();
+
+    WebSite *z1 = webfac->getWebSite("产品展示");
+    z1->Use(new User("张三"));
+
+    WebSite *z2 = webfac->getWebSite("产品展示");
+    z2->Use(new User("李四"));
+
+    WebSite *z3 = webfac->getWebSite("产品展示");
+    z3->Use(new User("王五"));
+
+    WebSite *b1 = webfac->getWebSite("博客");
+    b1->Use(new User("小明"));
+    WebSite *b2 = webfac->getWebSite("博客");
+    b2->Use(new User("小花"));
+
+    printf("网站总数：%d\n", webfac->getWebSiteCount());
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

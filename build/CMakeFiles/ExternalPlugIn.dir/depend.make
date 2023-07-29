@@ -13,6 +13,7 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/De
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/DesignPatterns.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Factory/SampleFactory.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/FlyWeight/FlyWeight.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Mediator/Colleague.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Mediator/Mediator.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Memento/Memento.h
@@ -79,6 +80,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Decorator/my
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/DesignPatterns.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Factory/SampleFactory.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/FactoryMethod/FactoryMethod.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/FlyWeight/FlyWeight.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Mediator/Colleague.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Mediator/Mediator.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Memento/Memento.h

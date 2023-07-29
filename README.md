@@ -84,3 +84,6 @@
 
 ## 中介者模式 (Colleague.h Mediator.h) 
 1.联合国 <br />
+
+## 享元模式 (FlyWeight.h) 
+1.网站项目 <br />

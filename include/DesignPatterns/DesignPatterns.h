@@ -23,6 +23,7 @@
 #include "Command.h"
 #include "Responsibility.h"
 #include "Colleague.h"
+#include "FlyWeight.h"
 
 class DesignPatterns
 {
@@ -50,6 +51,7 @@ public:
     void command_display();
     void responsibility_display();
     void mediator_display();
+    void flyWeight_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

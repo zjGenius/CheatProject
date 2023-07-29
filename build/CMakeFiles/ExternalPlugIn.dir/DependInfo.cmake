@@ -47,6 +47,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Command"
   ".././include/DesignPatterns/Responsibility"
   ".././include/DesignPatterns/Mediator"
+  ".././include/DesignPatterns/FlyWeight"
   )
 
 # Targets to which this target links.
