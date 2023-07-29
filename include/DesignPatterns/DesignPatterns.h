@@ -22,6 +22,7 @@
 #include "Bridge.h"
 #include "Command.h"
 #include "Responsibility.h"
+#include "Colleague.h"
 
 class DesignPatterns
 {
@@ -48,6 +49,7 @@ public:
     void bridge_display();
     void command_display();
     void responsibility_display();
+    void mediator_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

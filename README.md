@@ -81,3 +81,6 @@
 
 ## 职责链模式 (Responsibility.h) 
 1.请假加薪 <br />
+
+## 中介者模式 (Colleague.h Mediator.h) 
+1.联合国 <br />

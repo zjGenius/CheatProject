@@ -416,6 +416,23 @@ void DesignPatterns::responsibility_display()
     HR->RequesedHandle(request);
 }
 
+void DesignPatterns::mediator_display()
+{
+    /******************设计模式之中介者模式*************************/
+    printf("中介者模式\n\n");
+
+    UnitedNationsSecurityCouncil *UNSC = new UnitedNationsSecurityCouncil();
+
+    USA *usa = new USA(UNSC);
+    Iraq *iraq = new Iraq(UNSC);
+
+    UNSC->setUSA(usa);
+    UNSC->setIraq(iraq);
+
+    usa->Declare("不准研发核武器,否则将发动战争.");
+    iraq->Declare("我们没有核武器,也不怕发动侵略!");
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }

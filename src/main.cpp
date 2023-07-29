@@ -160,7 +160,8 @@ int main(void)
 	// design->compsite_display();
 	// design->bridge_display();
 	// design->command_display();
-	design->responsibility_display();
+	// design->responsibility_display();
+	design->mediator_display();
 
 
 
