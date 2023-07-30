@@ -24,6 +24,7 @@
 #include "Responsibility.h"
 #include "Colleague.h"
 #include "FlyWeight.h"
+#include "Interpreter.h"
 
 class DesignPatterns
 {
@@ -52,6 +53,7 @@ public:
     void responsibility_display();
     void mediator_display();
     void flyWeight_display();
+    void interpreter_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

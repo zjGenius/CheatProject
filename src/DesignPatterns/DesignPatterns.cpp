@@ -457,6 +457,51 @@ void DesignPatterns::flyWeight_display()
     printf("网站总数：%d\n", webfac->getWebSiteCount());
 }
 
+void DesignPatterns::interpreter_display()
+{
+    /******************设计模式之解释器模式*************************/
+    printf("解释器模式\n\n");
+
+    PlayContext *con = new PlayContext();
+    printf("音乐 上海滩:\n");
+
+    con->setContext("O 2 E 0.5 G 0.5 A 3 E 0.5 G 0.5 D 3 E 0.5 G 0.5 A 0.5 O 3 C 1 O 2 A 0.5 G 1 C 0.5 E 0.5 D 3 ");
+    Expression *expr = nullptr;
+    try
+    {
+        printf("size:%d\n", con->getContext().size());
+        while (con->getContext().size() > 0)
+        {
+            std::string str = con->getContext().substr(0, 1);
+            const char *s_key = str.c_str();
+            switch (s_key[0])
+            {
+            case 'O':
+                expr = new Scale();
+                break;
+            case 'C':
+            case 'D':
+            case 'E':
+            case 'F':
+            case 'G':
+            case 'A':
+            case 'B':
+            case 'P':
+                expr = new Note();
+                break;
+
+            default:
+                break;
+            }
+            expr->Interpreter(con);
+        }
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << "error:" << e.what() << '\n';
+    }
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }
