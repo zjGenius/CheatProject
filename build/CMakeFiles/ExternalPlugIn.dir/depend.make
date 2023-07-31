@@ -27,6 +27,7 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/De
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/State/Work.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Strategy/Strategy.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Template/Template.h
+CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../include/DesignPatterns/Visitor/Visitor.h
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o: ../src/DesignPatterns/DesignPatterns.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o: ../include/DesignPatterns/State/State.h
@@ -95,6 +96,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/State/State.
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/State/Work.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Strategy/Strategy.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Template/Template.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/DesignPatterns/Visitor/Visitor.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/command.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/file_compress_huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/huffman.h

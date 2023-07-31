@@ -160,7 +160,8 @@ int main(void)
 	// design->responsibility_display();
 	// design->mediator_display();
 	// design->flyWeight_display();
-	design->interpreter_display();
+	// design->interpreter_display();
+	design->visitor_display();
 
 	return 0;
 }

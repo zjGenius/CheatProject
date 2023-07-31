@@ -26,6 +26,8 @@
 #include "FlyWeight.h"
 #include "Interpreter.h"
 
+#include "Visitor.h"
+
 class DesignPatterns
 {
 private:
@@ -54,6 +56,7 @@ public:
     void mediator_display();
     void flyWeight_display();
     void interpreter_display();
+    void visitor_display();
 };
 
 #endif // !_DESIGN_PATTERNS_H_

@@ -502,6 +502,33 @@ void DesignPatterns::interpreter_display()
     }
 }
 
+void DesignPatterns::visitor_display()
+{
+    /******************设计模式之访问者模式*************************/
+    printf("访问者模式\n\n");
+
+    ObjectStructure *o = new ObjectStructure();
+    Visitor_Person *man = new Man();
+    Visitor_Person *woman = new Woman();
+    o->Attach(man);
+    o->Attach(woman);
+
+    // 成功时的反应
+    Success *v1 = new Success();
+    o->Display(v1);
+
+    o->Detach(woman);
+
+    // 失败时的反应
+    Failing *v2 = new Failing();
+    o->Display(v2);
+
+    o->Attach(woman);
+
+    Amativeness *v3 = new Amativeness();
+    o->Display(v3);
+}
+
 DesignPatterns::~DesignPatterns()
 {
 }
