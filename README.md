@@ -88,7 +88,7 @@
 ## 享元模式 (FlyWeight.h) 
 1.网站项目 <br />
 
-## 解释器模式 (FlyWeight.h) 
+## 解释器模式 (Interpreter.h) 
 1.音乐解释器 <br />
 
 ## 访问者模式 (Visitor.h) 
