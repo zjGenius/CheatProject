@@ -67,7 +67,7 @@
 ## 适配器模式 (adapter.h) 
 1.NBA翻译 <br />
 
-## 备忘录模式 (adapter.h) 
+## 备忘录模式 (Memento.h) 
 1.打怪存档 <br />
 
 ## 组合模式 (Composite.h) 
@@ -76,7 +76,7 @@
 ## 桥接模式 (Bridge.h) 
 1.手机与手机软件 <br />
 
-## 命令模式 (Bridge.h) 
+## 命令模式 (Command.h) 
 1.点烧烤 <br />
 
 ## 职责链模式 (Responsibility.h) 
