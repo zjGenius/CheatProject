@@ -123,6 +123,24 @@ public:
              << "时,遇事懂也装作不懂." << endl;
     }
 };
+// 结婚
+class Marriage : public Action
+{
+private:
+    string type = "结婚";
+
+public:
+    void GetManConclusion(Visitor_Person *concreteElementA) override
+    {
+        cout << concreteElementA->getType() << this->type
+             << "时,感叹道:恋爱游戏终结时,\'有妻徒刑\'遥无期." << endl;
+    }
+    void GetWomanConclusion(Visitor_Person *concreteElementA) override
+    {
+        cout << concreteElementA->getType() << this->type
+             << "时,欣慰曰:爱情长跑路漫漫,婚姻保险保平安." << endl;
+    }
+};
 
 class ObjectStructure
 {

@@ -1,5 +1,8 @@
 #include "DesignPatterns.h"
 
+#define LINE_ printf("\n");
+#define LINE__ printf("\n\n");
+
 DesignPatterns::DesignPatterns(/* args */)
 {
 }
@@ -516,17 +519,24 @@ void DesignPatterns::visitor_display()
     // 成功时的反应
     Success *v1 = new Success();
     o->Display(v1);
+    LINE_;
 
     o->Detach(woman);
 
     // 失败时的反应
     Failing *v2 = new Failing();
     o->Display(v2);
+    LINE_;
 
     o->Attach(woman);
 
     Amativeness *v3 = new Amativeness();
     o->Display(v3);
+    LINE_;
+
+    Marriage  *v4 = new Marriage();
+    o->Display(v4);
+    LINE_;
 }
 
 DesignPatterns::~DesignPatterns()
