@@ -47,6 +47,7 @@ include_directories(./include)
 include_directories(./include/Huffman)
 include_directories(./include/Learn)
 include_directories(./include/NetWork)
+
 include_directories(./include/DesignPatterns)
 include_directories(./include/DesignPatterns/Factory)
 include_directories(./include/DesignPatterns/Strategy)
@@ -70,6 +71,9 @@ include_directories(./include/DesignPatterns/Mediator)
 include_directories(./include/DesignPatterns/FlyWeight)
 include_directories(./include/DesignPatterns/Interpreter)
 include_directories(./include/DesignPatterns/Visitor)
+
+include_directories(./include/CPlusPlusPrimer)
+include_directories(./include/CPlusPlusPrimer/Chapter1)
 # include_directories(./include/SDR)
 # include_directories(./include/3rdparty)
 # include_directories(./include/Tools)
@@ -89,6 +93,9 @@ aux_source_directory(./src/DesignPatterns/Decorator SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Proxy SRC_LIST)
 aux_source_directory(./src/DesignPatterns/FactoryMethod SRC_LIST)
 aux_source_directory(./src/DesignPatterns/State SRC_LIST)
+
+aux_source_directory(./src/CPlusPlusPrimer SRC_LIST)
+aux_source_directory(./src/CPlusPlusPrimer/Chapter1 SRC_LIST)
 # aux_source_directory(./src/SDR SRC_LIST)
 
 

@@ -1,0 +1,14 @@
+-----------------------------------------
+------------System Start!----------------
+-----------VERSION: 0.0.1-----------
+-----------------------------------------
+
+compressedFile: /home/bekl/zhangjun/code/MyProject/output/CtrPulseResult.hz.bin
+test1:
+0-021-53535-X 2 60 30
+test2:
+book1+book2:
+0-021-53535-X 6 100 16.6667
+test3:
+book1+book2+book3:
+0-021-53535-X 9 160 17.7778

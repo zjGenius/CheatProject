@@ -1,3 +1,13 @@
+/**
+ * @file AbstractFactory.h
+ * @author zhangjun (1905212905@qq.com)
+ * @brief 抽象工厂模式
+ * @version 0.1
+ * @date 2023-08-01
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef _ABSTRACT_FACTORY_H_
 #define _ABSTRACT_FACTORY_H_
 

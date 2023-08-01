@@ -1,3 +1,13 @@
+/**
+ * @file DesignPatterns.h
+ * @author zhangjun (1905212905@qq.com)
+ * @brief 大话设计模式相关代码
+ * @version 0.1
+ * @date 2023-08-01
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef _DESIGN_PATTERNS_H_
 #define _DESIGN_PATTERNS_H_
 

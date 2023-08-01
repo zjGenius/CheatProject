@@ -124,6 +124,36 @@ ExternalPlugIn/fast:
 .PHONY : ExternalPlugIn/fast
 
 # target to build an object file
+src/CPlusPlusPrimer/CPlusPlusPrimer.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o
+.PHONY : src/CPlusPlusPrimer/CPlusPlusPrimer.o
+
+# target to preprocess a source file
+src/CPlusPlusPrimer/CPlusPlusPrimer.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.i
+.PHONY : src/CPlusPlusPrimer/CPlusPlusPrimer.i
+
+# target to generate assembly for a file
+src/CPlusPlusPrimer/CPlusPlusPrimer.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.s
+.PHONY : src/CPlusPlusPrimer/CPlusPlusPrimer.s
+
+# target to build an object file
+src/CPlusPlusPrimer/Chapter1/Grammar.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o
+.PHONY : src/CPlusPlusPrimer/Chapter1/Grammar.o
+
+# target to preprocess a source file
+src/CPlusPlusPrimer/Chapter1/Grammar.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.i
+.PHONY : src/CPlusPlusPrimer/Chapter1/Grammar.i
+
+# target to generate assembly for a file
+src/CPlusPlusPrimer/Chapter1/Grammar.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.s
+.PHONY : src/CPlusPlusPrimer/Chapter1/Grammar.s
+
+# target to build an object file
 src/DesignPatterns/DesignPatterns.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
 .PHONY : src/DesignPatterns/DesignPatterns.o
@@ -342,6 +372,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ExternalPlugIn"
+	@echo "... src/CPlusPlusPrimer/CPlusPlusPrimer.o"
+	@echo "... src/CPlusPlusPrimer/CPlusPlusPrimer.i"
+	@echo "... src/CPlusPlusPrimer/CPlusPlusPrimer.s"
+	@echo "... src/CPlusPlusPrimer/Chapter1/Grammar.o"
+	@echo "... src/CPlusPlusPrimer/Chapter1/Grammar.i"
+	@echo "... src/CPlusPlusPrimer/Chapter1/Grammar.s"
 	@echo "... src/DesignPatterns/DesignPatterns.o"
 	@echo "... src/DesignPatterns/DesignPatterns.i"
 	@echo "... src/DesignPatterns/DesignPatterns.s"

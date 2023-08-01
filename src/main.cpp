@@ -16,8 +16,10 @@
 // #include "device.h"
 
 #include "DesignPatterns.h"
+#include "CPlusPlusPrimer.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
+
 pthread_t signal_IQRecv;
 
 std::string ip = "127.0.0.1";
@@ -161,7 +163,11 @@ int main(void)
 	// design->mediator_display();
 	// design->flyWeight_display();
 	// design->interpreter_display();
-	design->visitor_display();
+	// design->visitor_display();
+
+	/******************C++ Primer 第五版************************/
+	CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
+	cplusplus->chapter1_display();
 
 	return 0;
 }

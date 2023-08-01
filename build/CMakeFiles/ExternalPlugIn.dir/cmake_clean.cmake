@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../output/ExternalPlugIn"
   "../output/ExternalPlugIn.pdb"
+  "CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o"
+  "CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o"
   "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o"
   "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o"
   "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o"

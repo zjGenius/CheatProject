@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/CPlusPlusPrimer.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o"
+  "/home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o"
   "/home/zhangjun/code/CheatProject/src/DesignPatterns/DesignPatterns.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o"
   "/home/zhangjun/code/CheatProject/src/DesignPatterns/State/State.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o"
   "/home/zhangjun/code/CheatProject/src/DesignPatterns/State/Work.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o"
@@ -50,6 +52,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/FlyWeight"
   ".././include/DesignPatterns/Interpreter"
   ".././include/DesignPatterns/Visitor"
+  ".././include/CPlusPlusPrimer"
+  ".././include/CPlusPlusPrimer/Chapter1"
   )
 
 # Targets to which this target links.

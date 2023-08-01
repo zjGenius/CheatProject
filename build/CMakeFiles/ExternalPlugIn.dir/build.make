@@ -239,6 +239,32 @@ CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/DesignPatterns/State/Work.cpp -o CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.s
 
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o: CMakeFiles/ExternalPlugIn.dir/flags.make
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o: ../src/CPlusPlusPrimer/CPlusPlusPrimer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o -c /home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/CPlusPlusPrimer.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/CPlusPlusPrimer.cpp > CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.i
+
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/CPlusPlusPrimer.cpp -o CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.s
+
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o: CMakeFiles/ExternalPlugIn.dir/flags.make
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o: ../src/CPlusPlusPrimer/Chapter1/Grammar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o -c /home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp > CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.i
+
+CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp -o CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.s
+
 # Object files for target ExternalPlugIn
 ExternalPlugIn_OBJECTS = \
 "CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o" \
@@ -254,7 +280,9 @@ ExternalPlugIn_OBJECTS = \
 "CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o" \
 "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o" \
 "CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o" \
-"CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o"
+"CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o" \
+"CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o" \
+"CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o"
 
 # External object files for target ExternalPlugIn
 ExternalPlugIn_EXTERNAL_OBJECTS =
@@ -273,9 +301,11 @@ ExternalPlugIn_EXTERNAL_OBJECTS =
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/DesignPatterns.o
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o
+../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o
+../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/build.make
 ../output/ExternalPlugIn: CMakeFiles/ExternalPlugIn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ../output/ExternalPlugIn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhangjun/code/CheatProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ../output/ExternalPlugIn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ExternalPlugIn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
