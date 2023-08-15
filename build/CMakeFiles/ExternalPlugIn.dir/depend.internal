@@ -62,6 +62,9 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o
  /home/zhangjun/code/CheatProject/src/Learn/container.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
  /home/zhangjun/code/CheatProject/src/Learn/l_opencv.cpp
+CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o
+ ../include/Leetcode/leetcode.h
+ /home/zhangjun/code/CheatProject/src/Leetcode/leetcode.cpp
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o
  ../include/NetWork/IQRecvData.h
  ../include/NetWork/IQTransmitCenter.h
@@ -112,6 +115,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/Huffman/file_compress_huffman.h
  ../include/Huffman/huffman.h
  ../include/Learn/container.h
+ ../include/Leetcode/leetcode.h
  ../include/NetWork/IQRecvData.h
  ../include/NetWork/IQTransmitCenter.h
  ../include/ad9361-iiostream.h

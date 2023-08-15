@@ -17,6 +17,8 @@
 
 #include "DesignPatterns.h"
 #include "CPlusPlusPrimer.h"
+
+#include "leetcode.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -166,8 +168,51 @@ int main(void)
 	// design->visitor_display();
 
 	/******************C++ Primer 第五版************************/
-	CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
-	cplusplus->chapter1_display();
+	// CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
+	// cplusplus->chapter1_display();
+
+	/******************LeedCode************************/
+	LeedCode *lee = new LeedCode();
+	std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
+	// std::vector<int> nums = {3, 2, 2, 3};
+
+	// lee->topic_1(nums, 9);
+	// printf("20 bool:%d\n", lee->topic_20("{)}"));
+	printf("27 vector size:%d\n", lee->topic_27(nums, 2));
 
 	return 0;
 }
+
+/* 库构思
+#IIO
+
+class
+{
+	##初始化:
+	initIIO(string ip); // ip:设备ip; type: 0,初始化iio 1,初始化按键  2,0和1同时用
+	initKeys(void*(int key,int type));	//回调函数
+
+	##蜂鸣器:
+	setBuzzerAlarm(bool _switch, int seconds, int mode) // _switch true开 false关;  seconds 时长(秒);  mode 模式
+
+	##马达:
+	setMotorAlarm(bool _switch, int seconds, int mode) // _switch true开 false关;  seconds 时长(秒);  mode 模式
+
+	##LED:
+	setLedAlarm(bool _switch, int seconds, int mode) // _switch true开 false关;  seconds 时长(秒);  mode 模式
+
+	// 上面三个可提供一个接口?
+
+	##屏幕:
+	setScreen(bool _switch, int light) // _switch true开 false关;  light 亮度
+
+	##开关板:
+	setSignalSwitch(int mode) // mode 通道切换
+
+	##设置值
+	set_control_IIO(int mode, bool _switch)	// mode 控制哪个引脚 _switch 置0还是置1
+
+	##获取值
+	int get_control_IIO(int mode)			// 获取需要寄存器位值
+}
+*/

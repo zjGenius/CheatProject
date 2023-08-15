@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../include/CPlusPlusPrimer/Chapter1/Grammar.h
-
-../include/CPlusPlusPrimer/Chapter1/Sales_item.h
+../include/Leetcode/leetcode.h
 iostream
 -
-string
+vector
 -
 
-/home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp
-Grammar.h
-/home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.h
-Sales_item.h
-/home/zhangjun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Sales_item.h
-iostream
+/home/zhangjun/code/CheatProject/src/Leetcode/leetcode.cpp
+leetcode.h
+/home/zhangjun/code/CheatProject/src/Leetcode/leetcode.h
+algorithm
+-
+map
+-
+algorithm
+-
+stack
 -
 

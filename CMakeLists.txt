@@ -74,6 +74,8 @@ include_directories(./include/DesignPatterns/Visitor)
 
 include_directories(./include/CPlusPlusPrimer)
 include_directories(./include/CPlusPlusPrimer/Chapter1)
+
+include_directories(include/Leetcode)
 # include_directories(./include/SDR)
 # include_directories(./include/3rdparty)
 # include_directories(./include/Tools)
@@ -96,6 +98,8 @@ aux_source_directory(./src/DesignPatterns/State SRC_LIST)
 
 aux_source_directory(./src/CPlusPlusPrimer SRC_LIST)
 aux_source_directory(./src/CPlusPlusPrimer/Chapter1 SRC_LIST)
+
+aux_source_directory(src/Leetcode SRC_LIST)
 # aux_source_directory(./src/SDR SRC_LIST)
 
 

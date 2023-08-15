@@ -62,6 +62,9 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o: ../src/Learn/container.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../src/Learn/l_opencv.cpp
 
+CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o: ../include/Leetcode/leetcode.h
+CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o: ../src/Leetcode/leetcode.cpp
+
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQRecvData.h
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQTransmitCenter.h
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/ad9361-iiostream.h
@@ -111,6 +114,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/command.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/file_compress_huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/container.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Leetcode/leetcode.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQRecvData.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQTransmitCenter.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/ad9361-iiostream.h

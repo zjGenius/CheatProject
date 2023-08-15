@@ -57,6 +57,7 @@
         "mutex": "cpp",
         "thread": "cpp",
         "iomanip": "cpp",
-        "iqtransmitcenter.h": "c"
+        "iqtransmitcenter.h": "c",
+        "stack": "cpp"
     }
 }

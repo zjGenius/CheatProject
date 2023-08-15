@@ -259,6 +259,21 @@ src/Learn/l_opencv.s:
 .PHONY : src/Learn/l_opencv.s
 
 # target to build an object file
+src/Leetcode/leetcode.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o
+.PHONY : src/Leetcode/leetcode.o
+
+# target to preprocess a source file
+src/Leetcode/leetcode.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.i
+.PHONY : src/Leetcode/leetcode.i
+
+# target to generate assembly for a file
+src/Leetcode/leetcode.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.s
+.PHONY : src/Leetcode/leetcode.s
+
+# target to build an object file
 src/NetWork/IQRecvData.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o
 .PHONY : src/NetWork/IQRecvData.o
@@ -399,6 +414,9 @@ help:
 	@echo "... src/Learn/l_opencv.o"
 	@echo "... src/Learn/l_opencv.i"
 	@echo "... src/Learn/l_opencv.s"
+	@echo "... src/Leetcode/leetcode.o"
+	@echo "... src/Leetcode/leetcode.i"
+	@echo "... src/Leetcode/leetcode.s"
 	@echo "... src/NetWork/IQRecvData.o"
 	@echo "... src/NetWork/IQRecvData.i"
 	@echo "... src/NetWork/IQRecvData.s"

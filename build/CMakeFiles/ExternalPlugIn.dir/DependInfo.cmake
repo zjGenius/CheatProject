@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zhangjun/code/CheatProject/src/Huffman/huffman.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o"
   "/home/zhangjun/code/CheatProject/src/Learn/container.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o"
   "/home/zhangjun/code/CheatProject/src/Learn/l_opencv.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o"
+  "/home/zhangjun/code/CheatProject/src/Leetcode/leetcode.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o"
   "/home/zhangjun/code/CheatProject/src/NetWork/IQRecvData.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o"
   "/home/zhangjun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o"
   "/home/zhangjun/code/CheatProject/src/NetWork/tcp_server.cpp" "/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o"
@@ -54,6 +55,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/DesignPatterns/Visitor"
   ".././include/CPlusPlusPrimer"
   ".././include/CPlusPlusPrimer/Chapter1"
+  "../include/Leetcode"
   )
 
 # Targets to which this target links.

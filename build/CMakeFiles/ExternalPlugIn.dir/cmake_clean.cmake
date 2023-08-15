@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o"
+  "CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o"
   "CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o"
   "CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o"
   "CMakeFiles/ExternalPlugIn.dir/src/NetWork/tcp_server.o"
