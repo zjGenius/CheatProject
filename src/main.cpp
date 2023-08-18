@@ -178,7 +178,11 @@ int main(void)
 
 	// lee->topic_1(nums, 9);
 	// printf("20 bool:%d\n", lee->topic_20("{)}"));
-	printf("27 vector size:%d\n", lee->topic_27(nums, 2));
+	// printf("27 vector size:%d\n", lee->topic_27(nums, 2));
+	// lee->topic_2682(5, 2);
+	printf("9 bool:%d\n", lee->topic_9(1234567899));
+
+	// printf("\n\nnum:%d\n", 7 % 5);
 
 	return 0;
 }

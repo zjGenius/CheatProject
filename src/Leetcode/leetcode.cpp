@@ -86,3 +86,103 @@ int LeedCode::topic_27(std::vector<int> &nums, int val)
 
     return nums.size();
 }
+
+std::vector<int> LeedCode::topic_2682(int n, int k)
+{
+    // int step = 1;
+    // int people = 1;
+    // std::map<int, int> num_key;
+    // std::vector<int> num_vec;
+
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     num_key[i] = 0;
+    //     // printf("n:%d ", i);
+    // }
+    // // printf("\n");
+    // for (auto it = num_key.begin(); it != num_key.end(); it++)
+    // {
+    //     printf("key:%d value:%d\n", (*it).first, (*it).second);
+    // }
+
+    // while (1)
+    // {
+    //     printf("people:%d\n", people);
+    //     if (num_key[people] == 1)
+    //         break;
+
+    //     num_key[people] = 1;
+
+    //     people = step * k + people; //
+    //     if (people > n)
+    //         people = people % n;
+    //     if (people == 0)
+    //         people = n;
+    //     step++;
+    // }
+
+    // for (auto it = num_key.begin(); it != num_key.end(); it++)
+    // {
+    //     if ((*it).second != 1)
+    //     {
+    //         num_vec.push_back((*it).first);
+    //     }
+    //     printf("key:%d value:%d\n", (*it).first, (*it).second);
+    // }
+
+    // return num_vec;
+
+    int step = 1;
+    int people = 1;
+    std::vector<int> num_vec;
+
+    for (int i = 1; i <= n; i++)
+    {
+        num_vec.push_back(i);
+    }
+
+    while (1)
+    {
+        printf("people:%d\n", people);
+
+        std::vector<int>::iterator iter = std::find(num_vec.begin(), num_vec.end(), people);
+        if (iter == num_vec.end())
+            return num_vec;
+        else
+            num_vec.erase(iter);
+
+        people = step * k + people; //
+        if (people > n)
+            people = people % n;
+        if (people == 0)
+            people = n;
+        step++;
+    }
+}
+
+bool LeedCode::topic_9(int n)
+{
+    // std::string str = std::to_string(n);
+    // std::string s1(str.rbegin(), str.rend());
+    // // printf("s1:%s,s2:%s\n", str.c_str(), s1.c_str());
+    // if (str.compare(s1))
+    //     return false;
+
+    // return true;
+
+    if (n < 0)
+        return false;
+    if (n > 1e9 && n % 10 > 2)
+        return false;
+    int temp1 = n, temp2 = 0;
+
+    while (n)
+    {
+        temp2 = temp2 * 10 + n % 10;
+        n = n / 10;
+        printf("n:%d ", n);
+    }
+    printf("\n");
+    printf("temp1:%d temp2:%d\n", temp1, temp2);
+    return temp1 == temp2;
+}
