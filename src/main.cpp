@@ -19,6 +19,7 @@
 #include "CPlusPlusPrimer.h"
 
 #include "leetcode.h"
+#include "AddressBook.h"
 // #include "huffman1.h"
 // #include"HuffmanCompressAndUn.h"
 
@@ -173,16 +174,26 @@ int main(void)
 
 	/******************LeedCode************************/
 	LeedCode *lee = new LeedCode();
-	std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
+	// std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
 	// std::vector<int> nums = {3, 2, 2, 3};
 
 	// lee->topic_1(nums, 9);
 	// printf("20 bool:%d\n", lee->topic_20("{)}"));
 	// printf("27 vector size:%d\n", lee->topic_27(nums, 2));
 	// lee->topic_2682(5, 2);
-	printf("9 bool:%d\n", lee->topic_9(1234567899));
+	// printf("9 bool:%d\n", lee->topic_9(1234567899));
 
 	// printf("\n\nnum:%d\n", 7 % 5);
+
+	// int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
+	// for (int i = 0; i < sizeof(arr) / sizeof(int); i++)
+	// {
+	// 	printf("num:%d\n", *arr + i);
+	// }
+
+	/******************黑马教程************************/
+	AddressBook *addressSystem = new AddressBook();
+	addressSystem->startAddressSystem();
 
 	return 0;
 }

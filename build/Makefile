@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhangjun/code/CheatProject
+CMAKE_SOURCE_DIR = /home/jun/code/CheatProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhangjun/code/CheatProject/build
+CMAKE_BINARY_DIR = /home/jun/code/CheatProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangjun/code/CheatProject/build/CMakeFiles /home/zhangjun/code/CheatProject/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jun/code/CheatProject/build/CMakeFiles /home/jun/code/CheatProject/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangjun/code/CheatProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jun/code/CheatProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -229,34 +229,19 @@ src/Huffman/huffman.s:
 .PHONY : src/Huffman/huffman.s
 
 # target to build an object file
-src/Learn/container.o:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o
-.PHONY : src/Learn/container.o
+src/Learn/heima/AddressBook.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o
+.PHONY : src/Learn/heima/AddressBook.o
 
 # target to preprocess a source file
-src/Learn/container.i:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/container.i
-.PHONY : src/Learn/container.i
+src/Learn/heima/AddressBook.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.i
+.PHONY : src/Learn/heima/AddressBook.i
 
 # target to generate assembly for a file
-src/Learn/container.s:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/container.s
-.PHONY : src/Learn/container.s
-
-# target to build an object file
-src/Learn/l_opencv.o:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
-.PHONY : src/Learn/l_opencv.o
-
-# target to preprocess a source file
-src/Learn/l_opencv.i:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.i
-.PHONY : src/Learn/l_opencv.i
-
-# target to generate assembly for a file
-src/Learn/l_opencv.s:
-	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.s
-.PHONY : src/Learn/l_opencv.s
+src/Learn/heima/AddressBook.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.s
+.PHONY : src/Learn/heima/AddressBook.s
 
 # target to build an object file
 src/Leetcode/leetcode.o:
@@ -408,12 +393,9 @@ help:
 	@echo "... src/Huffman/huffman.o"
 	@echo "... src/Huffman/huffman.i"
 	@echo "... src/Huffman/huffman.s"
-	@echo "... src/Learn/container.o"
-	@echo "... src/Learn/container.i"
-	@echo "... src/Learn/container.s"
-	@echo "... src/Learn/l_opencv.o"
-	@echo "... src/Learn/l_opencv.i"
-	@echo "... src/Learn/l_opencv.s"
+	@echo "... src/Learn/heima/AddressBook.o"
+	@echo "... src/Learn/heima/AddressBook.i"
+	@echo "... src/Learn/heima/AddressBook.s"
 	@echo "... src/Leetcode/leetcode.o"
 	@echo "... src/Leetcode/leetcode.i"
 	@echo "... src/Leetcode/leetcode.s"

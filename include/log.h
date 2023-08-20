@@ -72,4 +72,10 @@ typedef enum
         LOG_PRINT(LOG_COLOUR_RED "[ERROR %s %d] " LOG_COLOUR_RESET format, GET_FILE_NAME(__FILE__), __LINE__, ##__VA_ARGS__); \
     }
 
+#define LOG_RED(format, ...) \
+    printf(LOG_COLOUR_RED format LOG_COLOUR_RESET, ##__VA_ARGS__);
+
+#define LOG_GREEN(format, ...) \
+    printf(LOG_COLOUR_GREEN format LOG_COLOUR_RESET, ##__VA_ARGS__);
+
 #endif
