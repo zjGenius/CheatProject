@@ -11,7 +11,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jun/code/CheatProject/src/DesignPatterns/State/Work.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/Work.o"
   "/home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o"
   "/home/jun/code/CheatProject/src/Huffman/huffman.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o"
+  "/home/jun/code/CheatProject/src/Learn/container.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o"
   "/home/jun/code/CheatProject/src/Learn/heima/AddressBook.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o"
+  "/home/jun/code/CheatProject/src/Learn/l_opencv.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o"
   "/home/jun/code/CheatProject/src/Leetcode/leetcode.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o"
   "/home/jun/code/CheatProject/src/NetWork/IQRecvData.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o"
   "/home/jun/code/CheatProject/src/NetWork/IQTransmitCenter.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQTransmitCenter.o"
@@ -55,6 +57,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include/CPlusPlusPrimer"
   ".././include/CPlusPlusPrimer/Chapter1"
   "../include/Leetcode"
+  "../include/Learn"
   "../include/Learn/heima"
   )
 

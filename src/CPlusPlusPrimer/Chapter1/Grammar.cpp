@@ -14,7 +14,7 @@ void Grammar::test_while()
 
 void Grammar::test_sacle_item()
 {
-    // 支持从文件中获取参数 ./ExternalPlugIn <test_in.txt >test_out.txt
+    // 支持从文件中获取参数 命令: ./ExternalPlugIn <test_in.txt >test_out.txt
     Sales_item book1, book2, book3;
     std::cout << "test1:" << std::endl;
     std::cin >> book1;

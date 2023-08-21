@@ -21,7 +21,7 @@
 #include "leetcode.h"
 #include "AddressBook.h"
 // #include "huffman1.h"
-// #include"HuffmanCompressAndUn.h"
+// #include "HuffmanCompressAndUn.h"
 
 pthread_t signal_IQRecv;
 
@@ -30,6 +30,12 @@ int port = 1122;
 std::string readFile = "sig_pragma.dat";
 std::string writeFile = "recv_IQIIO.dat";
 
+/**
+ * @brief udp接收大文件
+ *
+ * @param arg
+ * @return void*
+ */
 void *Recv_relay(void *arg)
 {
 	IQRecv *recv_data = new IQRecv(ip, port);
@@ -41,47 +47,77 @@ void *Recv_relay(void *arg)
 	}
 }
 
-int main(void)
+void heimaStudy()
 {
-	printf("-----------------------------------------\n");
-	printf("------------System Start!----------------\n");
-#if USE_RELEASE_MODE
-	printf("-----------VERSION: %d.%d.%d-----------\n", VERSION_MAJOR, VERSION_MINOR, VERSION_LEVEL3);
-#else
-	printf("------------VERSION:%s %s------------\n", PROJECT_NAME, COMPILE_TIME);
-#endif
-	printf("-----------------------------------------\n\n");
+	// 通讯录管理系统
+	AddressBook *addressSystem = new AddressBook();
+	addressSystem->startAddressSystem();
+}
+void leetcodeStudy()
+{
+	LeedCode *lee = new LeedCode();
+	// std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
+	// std::vector<int> nums = {3, 2, 2, 3};
 
-	/***************读取ini文件********************/
-	// func(200);
-	/**************累加运算********************/
-	int sum1 = 0, sum2 = 0, m = 5, n = 11;
-	sum1 = (m + n) * (n - m + 1) / 2;
-	for (int i = m; i <= n; i++)
-	{
-		sum2 += i;
-	}
-	// printf("sum1:%d sum2:%d\n", sum1, sum2);
+	// lee->topic_1(nums, 9);
+	// printf("20 bool:%d\n", lee->topic_20("{)}"));
+	// printf("27 vector size:%d\n", lee->topic_27(nums, 2));
+	// lee->topic_2682(5, 2);
+	// printf("9 bool:%d\n", lee->topic_9(1234567899));
+}
 
-	/***************容器类学习********************/
-	// deque_test();
-	// list_test();
-	// map_test(0);
-	// set_test(2);
+void DesignPatternsStudy()
+{
+	DesignPatterns *design = new DesignPatterns();
+	// design->sampleFactory_display();
+	// design->strategy_display();
+	// design->decorator_display();
+	// design->proxy_display();
+	// design->factoryMethod_display();
+	// design->prototype_display();
+	// design->template_display();
+	// design->appearance_display();
+	// design->builder_display();
+	// design->observer_display();
+	// design->abstractFactory_display();
+	// design->state_display();
+	// design->adapter_display();
+	// design->memento_display();
+	// design->compsite_display();
+	// design->bridge_display();
+	// design->command_display();
+	// design->responsibility_display();
+	// design->mediator_display();
+	// design->flyWeight_display();
+	// design->interpreter_display();
+	// design->visitor_display();
+}
 
-	/***************opencv学习********************/
+/**
+ * @brief CPlusPlusPrimer 书籍案例
+ */
+void CPlusPlusPrimerStudy()
+{
+	CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
+	cplusplus->chapter1_display();
+}
+
+/**
+ * @brief opencv学习
+ */
+void opencvStudy()
+{
 	// test_imge1();
 	// test_imge2();
 	// test_mat();
 	// test_draw();
+}
 
-	/***************等级打印********************/
-	// LOG_D("hello world sum1:%d sum2:%d\n", sum1, sum2);
-	// LOG_I("hello world\n");
-	// LOG_W("hello world\n");
-	// LOG_E("hello world\n");
-
-	/***************Huffman文件压缩********************/
+/**
+ * @brief 文件压缩，通过哈夫曼树实现
+ */
+void fileCompressByHuffman()
+{
 	string inputFile = "/home/bekl/zhangjun/code/MyProject/output/CtrPulseResult.txt";
 	string compressedFile_path = "/home/bekl/zhangjun/code/MyProject/output/";
 	// string decompressedFile = "/home/bekl/zhangjun/code/MyProject/output/output.txt";
@@ -103,9 +139,63 @@ int main(void)
 	file_compress_huffman file_compress; // 成功案例
 										 // file_compress.compress_file(inputFile);
 										 // file_compress.un_compress_file(compressedFile);
+}
 
-	/******************udp传输文件*************************/
+/**
+ * @brief 容器学习
+ */
+void containerStudy()
+{
+	// deque_test();
+	// list_test();
+	// map_test(0);
+	// set_test(2);
+}
 
+// 错误的写法，默认参数有误
+// void test(int a, int b = 10, int c)
+// {
+// 	printf("sum:%d\n", a + b + c);
+// }
+
+int main(void)
+{
+	printf("-----------------------------------------\n");
+	printf("------------System Start!----------------\n");
+#if USE_RELEASE_MODE
+	printf("------------VERSION: %d.%d.%d---------------\n", VERSION_MAJOR, VERSION_MINOR, VERSION_LEVEL3);
+#else
+	printf("------------VERSION:%s %s------------\n", PROJECT_NAME, COMPILE_TIME);
+#endif
+	printf("-----------------------------------------\n\n");
+
+	/***************读取ini文件********************/
+	// func(200);
+	/**************累加运算********************/
+	int sum1 = 0, sum2 = 0, m = 5, n = 11;
+	sum1 = (m + n) * (n - m + 1) / 2;
+	for (int i = m; i <= n; i++)
+	{
+		sum2 += i;
+	}
+	// printf("sum1:%d sum2:%d\n", sum1, sum2);
+
+	/***************容器类学习********************/
+	containerStudy();
+
+	/***************opencv学习********************/
+	// opencvStudy();
+
+	/***************等级打印********************/
+	// LOG_D("hello world sum1:%d sum2:%d\n", sum1, sum2);
+	// LOG_I("hello world\n");
+	// LOG_W("hello world\n");
+	// LOG_E("hello world\n");
+
+	/***************Huffman文件压缩********************/
+	// fileCompressByHuffman();
+
+	/******************udp传输文件  坤雷科技*********************/
 	// pthread_create(&signal_IQRecv, NULL, *Recv_relay, NULL);
 
 	// IQTransmit *transmit = new IQTransmit(ip, port);
@@ -144,44 +234,13 @@ int main(void)
 	// pDev->_getIQData();
 
 	/******************设计模式************************/
-	DesignPatterns *design = new DesignPatterns();
-	// design->sampleFactory_display();
-	// design->strategy_display();
-	// design->decorator_display();
-	// design->proxy_display();
-	// design->factoryMethod_display();
-	// design->prototype_display();
-	// design->template_display();
-	// design->appearance_display();
-	// design->builder_display();
-	// design->observer_display();
-	// design->abstractFactory_display();
-	// design->state_display();
-	// design->adapter_display();
-	// design->memento_display();
-	// design->compsite_display();
-	// design->bridge_display();
-	// design->command_display();
-	// design->responsibility_display();
-	// design->mediator_display();
-	// design->flyWeight_display();
-	// design->interpreter_display();
-	// design->visitor_display();
+	// DesignPatternsStudy();
 
 	/******************C++ Primer 第五版************************/
-	// CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
-	// cplusplus->chapter1_display();
+	// CPlusPlusPrimerStudy();
 
 	/******************LeedCode************************/
-	LeedCode *lee = new LeedCode();
-	// std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
-	// std::vector<int> nums = {3, 2, 2, 3};
-
-	// lee->topic_1(nums, 9);
-	// printf("20 bool:%d\n", lee->topic_20("{)}"));
-	// printf("27 vector size:%d\n", lee->topic_27(nums, 2));
-	// lee->topic_2682(5, 2);
-	// printf("9 bool:%d\n", lee->topic_9(1234567899));
+	// leetcodeStudy();
 
 	// printf("\n\nnum:%d\n", 7 % 5);
 
@@ -192,8 +251,7 @@ int main(void)
 	// }
 
 	/******************黑马教程************************/
-	AddressBook *addressSystem = new AddressBook();
-	addressSystem->startAddressSystem();
+	// heimaStudy();
 
 	return 0;
 }
