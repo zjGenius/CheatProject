@@ -259,6 +259,21 @@ src/Learn/heima/AddressBook.s:
 .PHONY : src/Learn/heima/AddressBook.s
 
 # target to build an object file
+src/Learn/heima/operator/Operator.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o
+.PHONY : src/Learn/heima/operator/Operator.o
+
+# target to preprocess a source file
+src/Learn/heima/operator/Operator.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.i
+.PHONY : src/Learn/heima/operator/Operator.i
+
+# target to generate assembly for a file
+src/Learn/heima/operator/Operator.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.s
+.PHONY : src/Learn/heima/operator/Operator.s
+
+# target to build an object file
 src/Learn/l_opencv.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
 .PHONY : src/Learn/l_opencv.o
@@ -429,6 +444,9 @@ help:
 	@echo "... src/Learn/heima/AddressBook.o"
 	@echo "... src/Learn/heima/AddressBook.i"
 	@echo "... src/Learn/heima/AddressBook.s"
+	@echo "... src/Learn/heima/operator/Operator.o"
+	@echo "... src/Learn/heima/operator/Operator.i"
+	@echo "... src/Learn/heima/operator/Operator.s"
 	@echo "... src/Learn/l_opencv.o"
 	@echo "... src/Learn/l_opencv.i"
 	@echo "... src/Learn/l_opencv.s"

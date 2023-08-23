@@ -64,6 +64,9 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o
  ../include/Learn/heima/AddressBook.h
  ../include/log.h
  /home/jun/code/CheatProject/src/Learn/heima/AddressBook.cpp
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o
+ ../include/Learn/heima/operator/Operator.h
+ /home/jun/code/CheatProject/src/Learn/heima/operator/Operator.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
  /home/jun/code/CheatProject/src/Learn/l_opencv.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o
@@ -120,6 +123,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/Huffman/huffman.h
  ../include/Learn/container.h
  ../include/Learn/heima/AddressBook.h
+ ../include/Learn/heima/operator/Operator.h
  ../include/Leetcode/leetcode.h
  ../include/NetWork/IQRecvData.h
  ../include/NetWork/IQTransmitCenter.h

@@ -266,6 +266,10 @@ algorithm
 log.h
 ../include/Learn/heima/log.h
 
+../include/Learn/heima/operator/Operator.h
+iostream
+-
+
 ../include/Leetcode/leetcode.h
 iostream
 -
@@ -342,6 +346,10 @@ sstream
 
 ../include/version_config.h
 
+/home/jun/code/CheatProject/src/Learn/heima/operator/Operator.cpp
+operator/Operator.h
+/home/jun/code/CheatProject/src/Learn/heima/operator/operator/Operator.h
+
 /home/jun/code/CheatProject/src/main.cpp
 stdio.h
 -
@@ -375,4 +383,6 @@ leetcode.h
 /home/jun/code/CheatProject/src/leetcode.h
 AddressBook.h
 /home/jun/code/CheatProject/src/AddressBook.h
+operator/Operator.h
+/home/jun/code/CheatProject/src/operator/Operator.h
 

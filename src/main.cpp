@@ -20,6 +20,7 @@
 
 #include "leetcode.h"
 #include "AddressBook.h"
+#include "operator/Operator.h"
 // #include "huffman1.h"
 // #include "HuffmanCompressAndUn.h"
 
@@ -50,8 +51,30 @@ void *Recv_relay(void *arg)
 void heimaStudy()
 {
 	// 通讯录管理系统
-	AddressBook *addressSystem = new AddressBook();
-	addressSystem->startAddressSystem();
+	// AddressBook *addressSystem = new AddressBook();
+	// addressSystem->startAddressSystem();
+
+	// 运算符重载
+	Operator::Person p1;
+	p1.setNumA(10);
+	p1.setNumB(5);
+
+	Operator::Person p2;
+	p2.setNumA(1);
+	p2.setNumB(2);
+
+	Operator::Person p3 = p1 + p2;
+
+	cout << "p1: " << p1 << endl;
+	cout << "p2: " << p2 << endl;
+	cout << "p3: numA:" << p3.getNumA() << " numB:" << p3.getNumB() << endl;
+
+	Operator::MyInteger myInt;
+	cout << ++(++myInt) << endl;
+	cout << myInt++ << endl;
+
+	cout << (myInt++)++ << endl;
+	cout << myInt << endl;
 }
 void leetcodeStudy()
 {
@@ -251,7 +274,7 @@ int main(void)
 	// }
 
 	/******************黑马教程************************/
-	// heimaStudy();
+	heimaStudy();
 
 	return 0;
 }
