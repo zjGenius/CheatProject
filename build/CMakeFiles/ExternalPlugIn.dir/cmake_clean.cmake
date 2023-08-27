@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/container.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o"
+  "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o"

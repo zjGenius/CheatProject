@@ -1,5 +1,5 @@
 #define PROJECT_NAME "myproject"
-#define COMPILE_TIME "0823_2159"
+#define COMPILE_TIME "0827_2250"
 #define VERSION_MAJOR 0
 #define VERSION_MINOR 0
 #define VERSION_LEVEL3 1

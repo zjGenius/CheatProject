@@ -20,7 +20,7 @@
 
 #include "leetcode.h"
 #include "AddressBook.h"
-#include "operator/Operator.h"
+#include "HeimaDisplay.h"
 // #include "huffman1.h"
 // #include "HuffmanCompressAndUn.h"
 
@@ -54,27 +54,9 @@ void heimaStudy()
 	// AddressBook *addressSystem = new AddressBook();
 	// addressSystem->startAddressSystem();
 
-	// 运算符重载
-	Operator::Person p1;
-	p1.setNumA(10);
-	p1.setNumB(5);
-
-	Operator::Person p2;
-	p2.setNumA(1);
-	p2.setNumB(2);
-
-	Operator::Person p3 = p1 + p2;
-
-	cout << "p1: " << p1 << endl;
-	cout << "p2: " << p2 << endl;
-	cout << "p3: numA:" << p3.getNumA() << " numB:" << p3.getNumB() << endl;
-
-	Operator::MyInteger myInt;
-	cout << ++(++myInt) << endl;
-	cout << myInt++ << endl;
-
-	cout << (myInt++)++ << endl;
-	cout << myInt << endl;
+	HeimaDisplay heima;
+	// heima.PolymorphicDisplay();
+	heima.ComputerDisplay();
 }
 void leetcodeStudy()
 {
@@ -275,6 +257,22 @@ int main(void)
 
 	/******************黑马教程************************/
 	heimaStudy();
+
+	// 阶乘定义：3! = 3*2*1
+	// 按照这个思路
+	// cout << "请输入数值：" << endl;
+	// int num, result = 1;
+	// cin >> num;
+	// printf("result: %d!= ", num);
+	// for (int i = num; i > 0; i--)
+	// {
+	// 	result *= i;
+	// 	if (i == 1)
+	// 		printf("%d", i);
+	// 	else
+	// 		printf("%d*", i);
+	// }
+	// printf(" =%d\n", result);
 
 	return 0;
 }

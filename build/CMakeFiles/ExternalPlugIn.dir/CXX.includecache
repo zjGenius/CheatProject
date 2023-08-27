@@ -266,7 +266,27 @@ algorithm
 log.h
 ../include/Learn/heima/log.h
 
+../include/Learn/heima/HeimaDisplay.h
+AddressBook.h
+../include/Learn/heima/AddressBook.h
+Operator.h
+../include/Learn/heima/Operator.h
+Polymorphic.h
+../include/Learn/heima/Polymorphic.h
+ComputerBuild.h
+../include/Learn/heima/ComputerBuild.h
+
 ../include/Learn/heima/operator/Operator.h
+iostream
+-
+
+../include/Learn/heima/polymorphic/ComputerBuild.h
+iostream
+-
+string
+-
+
+../include/Learn/heima/polymorphic/Polymorphic.h
 iostream
 -
 
@@ -346,9 +366,9 @@ sstream
 
 ../include/version_config.h
 
-/home/jun/code/CheatProject/src/Learn/heima/operator/Operator.cpp
-operator/Operator.h
-/home/jun/code/CheatProject/src/Learn/heima/operator/operator/Operator.h
+/home/jun/code/CheatProject/src/Learn/heima/HeimaDisplay.cpp
+HeimaDisplay.h
+/home/jun/code/CheatProject/src/Learn/heima/HeimaDisplay.h
 
 /home/jun/code/CheatProject/src/main.cpp
 stdio.h
@@ -383,6 +403,6 @@ leetcode.h
 /home/jun/code/CheatProject/src/leetcode.h
 AddressBook.h
 /home/jun/code/CheatProject/src/AddressBook.h
-operator/Operator.h
-/home/jun/code/CheatProject/src/operator/Operator.h
+HeimaDisplay.h
+/home/jun/code/CheatProject/src/HeimaDisplay.h
 

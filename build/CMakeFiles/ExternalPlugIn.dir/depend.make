@@ -64,6 +64,14 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o: ../include/Learn/he
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o: ../src/Learn/heima/AddressBook.cpp
 
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/AddressBook.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/HeimaDisplay.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/operator/Operator.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/polymorphic/ComputerBuild.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/polymorphic/Polymorphic.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/log.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../src/Learn/heima/HeimaDisplay.cpp
+
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o: ../include/Learn/heima/operator/Operator.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o: ../src/Learn/heima/operator/Operator.cpp
 
@@ -122,7 +130,10 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/file_compress_huffm
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/container.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/AddressBook.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/HeimaDisplay.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/operator/Operator.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/polymorphic/ComputerBuild.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/polymorphic/Polymorphic.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Leetcode/leetcode.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQRecvData.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQTransmitCenter.h
