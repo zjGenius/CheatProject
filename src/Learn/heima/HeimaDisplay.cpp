@@ -69,3 +69,14 @@ void HeimaDisplay::ComputerDisplay()
     polymorphicComputer::Computer *com3 = new polymorphicComputer::Computer(new polymorphicComputer::IntelCPU(), new polymorphicComputer::LenvolGPU(), new polymorphicComputer::IntelRAM());
     com3->work();
 }
+
+void HeimaDisplay::FileStreamDisplay()
+{
+    using namespace filestream;
+    FileStream *stream;
+    // stream->saveTxtFile("test1.txt");
+    // stream->readTxtFile("test1.txt");
+    // stream->saveBinaryFile("person.txt");
+    // stream->readBinaryFile("person.txt");
+    stream->fileIsEmpty("testEmpty.txt");
+}

@@ -64,13 +64,20 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o: ../include/Learn/he
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o: ../src/Learn/heima/AddressBook.cpp
 
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o: ../include/Learn/heima/FileStream/FileStream.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o: ../src/Learn/heima/FileStream/FileStream.cpp
+
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/AddressBook.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/FileStream/FileStream.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/HeimaDisplay.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/operator/Operator.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/polymorphic/ComputerBuild.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/polymorphic/Polymorphic.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../src/Learn/heima/HeimaDisplay.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o: ../include/Learn/heima/WorkManager.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o: ../src/Learn/heima/WorkManager.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o: ../include/Learn/heima/operator/Operator.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o: ../src/Learn/heima/operator/Operator.cpp
@@ -79,6 +86,9 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o: ../src/Learn/l_opencv.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o: ../include/Leetcode/leetcode.h
 CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o: ../src/Leetcode/leetcode.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/FileServerCenter.o: ../include/NetWork/FileServerCenter.h
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/FileServerCenter.o: ../src/NetWork/FileServerCenter.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQRecvData.h
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o: ../include/NetWork/IQTransmitCenter.h
@@ -130,7 +140,9 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/file_compress_huffm
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Huffman/huffman.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/container.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/AddressBook.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/FileStream/FileStream.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/HeimaDisplay.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/WorkManager.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/operator/Operator.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/polymorphic/ComputerBuild.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/polymorphic/Polymorphic.h

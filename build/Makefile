@@ -259,6 +259,21 @@ src/Learn/heima/AddressBook.s:
 .PHONY : src/Learn/heima/AddressBook.s
 
 # target to build an object file
+src/Learn/heima/FileStream/FileStream.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o
+.PHONY : src/Learn/heima/FileStream/FileStream.o
+
+# target to preprocess a source file
+src/Learn/heima/FileStream/FileStream.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.i
+.PHONY : src/Learn/heima/FileStream/FileStream.i
+
+# target to generate assembly for a file
+src/Learn/heima/FileStream/FileStream.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.s
+.PHONY : src/Learn/heima/FileStream/FileStream.s
+
+# target to build an object file
 src/Learn/heima/HeimaDisplay.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o
 .PHONY : src/Learn/heima/HeimaDisplay.o
@@ -272,6 +287,21 @@ src/Learn/heima/HeimaDisplay.i:
 src/Learn/heima/HeimaDisplay.s:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.s
 .PHONY : src/Learn/heima/HeimaDisplay.s
+
+# target to build an object file
+src/Learn/heima/WorkManager.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o
+.PHONY : src/Learn/heima/WorkManager.o
+
+# target to preprocess a source file
+src/Learn/heima/WorkManager.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.i
+.PHONY : src/Learn/heima/WorkManager.i
+
+# target to generate assembly for a file
+src/Learn/heima/WorkManager.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.s
+.PHONY : src/Learn/heima/WorkManager.s
 
 # target to build an object file
 src/Learn/heima/operator/Operator.o:
@@ -317,6 +347,21 @@ src/Leetcode/leetcode.i:
 src/Leetcode/leetcode.s:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.s
 .PHONY : src/Leetcode/leetcode.s
+
+# target to build an object file
+src/NetWork/FileServerCenter.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/FileServerCenter.o
+.PHONY : src/NetWork/FileServerCenter.o
+
+# target to preprocess a source file
+src/NetWork/FileServerCenter.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/FileServerCenter.i
+.PHONY : src/NetWork/FileServerCenter.i
+
+# target to generate assembly for a file
+src/NetWork/FileServerCenter.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/NetWork/FileServerCenter.s
+.PHONY : src/NetWork/FileServerCenter.s
 
 # target to build an object file
 src/NetWork/IQRecvData.o:
@@ -459,9 +504,15 @@ help:
 	@echo "... src/Learn/heima/AddressBook.o"
 	@echo "... src/Learn/heima/AddressBook.i"
 	@echo "... src/Learn/heima/AddressBook.s"
+	@echo "... src/Learn/heima/FileStream/FileStream.o"
+	@echo "... src/Learn/heima/FileStream/FileStream.i"
+	@echo "... src/Learn/heima/FileStream/FileStream.s"
 	@echo "... src/Learn/heima/HeimaDisplay.o"
 	@echo "... src/Learn/heima/HeimaDisplay.i"
 	@echo "... src/Learn/heima/HeimaDisplay.s"
+	@echo "... src/Learn/heima/WorkManager.o"
+	@echo "... src/Learn/heima/WorkManager.i"
+	@echo "... src/Learn/heima/WorkManager.s"
 	@echo "... src/Learn/heima/operator/Operator.o"
 	@echo "... src/Learn/heima/operator/Operator.i"
 	@echo "... src/Learn/heima/operator/Operator.s"
@@ -471,6 +522,9 @@ help:
 	@echo "... src/Leetcode/leetcode.o"
 	@echo "... src/Leetcode/leetcode.i"
 	@echo "... src/Leetcode/leetcode.s"
+	@echo "... src/NetWork/FileServerCenter.o"
+	@echo "... src/NetWork/FileServerCenter.i"
+	@echo "... src/NetWork/FileServerCenter.s"
 	@echo "... src/NetWork/IQRecvData.o"
 	@echo "... src/NetWork/IQRecvData.i"
 	@echo "... src/NetWork/IQRecvData.s"

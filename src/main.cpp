@@ -20,6 +20,7 @@
 
 #include "leetcode.h"
 #include "AddressBook.h"
+#include "WorkManager.h"
 #include "HeimaDisplay.h"
 // #include "huffman1.h"
 // #include "HuffmanCompressAndUn.h"
@@ -56,7 +57,12 @@ void heimaStudy()
 
 	HeimaDisplay heima;
 	// heima.PolymorphicDisplay();
-	heima.ComputerDisplay();
+	// heima.ComputerDisplay();
+	heima.FileStreamDisplay();
+
+	// using namespace workManagerSpace;
+	// WorkManager *managerSysyem;
+	// managerSysyem->startSystem();
 }
 void leetcodeStudy()
 {

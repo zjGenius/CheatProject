@@ -64,14 +64,21 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o
  ../include/Learn/heima/AddressBook.h
  ../include/log.h
  /home/jun/code/CheatProject/src/Learn/heima/AddressBook.cpp
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o
+ ../include/Learn/heima/FileStream/FileStream.h
+ /home/jun/code/CheatProject/src/Learn/heima/FileStream/FileStream.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o
  ../include/Learn/heima/AddressBook.h
+ ../include/Learn/heima/FileStream/FileStream.h
  ../include/Learn/heima/HeimaDisplay.h
  ../include/Learn/heima/operator/Operator.h
  ../include/Learn/heima/polymorphic/ComputerBuild.h
  ../include/Learn/heima/polymorphic/Polymorphic.h
  ../include/log.h
  /home/jun/code/CheatProject/src/Learn/heima/HeimaDisplay.cpp
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o
+ ../include/Learn/heima/WorkManager.h
+ /home/jun/code/CheatProject/src/Learn/heima/WorkManager.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o
  ../include/Learn/heima/operator/Operator.h
  /home/jun/code/CheatProject/src/Learn/heima/operator/Operator.cpp
@@ -80,6 +87,9 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/l_opencv.o
 CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o
  ../include/Leetcode/leetcode.h
  /home/jun/code/CheatProject/src/Leetcode/leetcode.cpp
+CMakeFiles/ExternalPlugIn.dir/src/NetWork/FileServerCenter.o
+ ../include/NetWork/FileServerCenter.h
+ /home/jun/code/CheatProject/src/NetWork/FileServerCenter.cpp
 CMakeFiles/ExternalPlugIn.dir/src/NetWork/IQRecvData.o
  ../include/NetWork/IQRecvData.h
  ../include/NetWork/IQTransmitCenter.h
@@ -131,7 +141,9 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/Huffman/huffman.h
  ../include/Learn/container.h
  ../include/Learn/heima/AddressBook.h
+ ../include/Learn/heima/FileStream/FileStream.h
  ../include/Learn/heima/HeimaDisplay.h
+ ../include/Learn/heima/WorkManager.h
  ../include/Learn/heima/operator/Operator.h
  ../include/Learn/heima/polymorphic/ComputerBuild.h
  ../include/Learn/heima/polymorphic/Polymorphic.h
