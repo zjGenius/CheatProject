@@ -289,6 +289,21 @@ src/Learn/heima/HeimaDisplay.s:
 .PHONY : src/Learn/heima/HeimaDisplay.s
 
 # target to build an object file
+src/Learn/heima/Template/HeimaTemplate.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o
+.PHONY : src/Learn/heima/Template/HeimaTemplate.o
+
+# target to preprocess a source file
+src/Learn/heima/Template/HeimaTemplate.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.i
+.PHONY : src/Learn/heima/Template/HeimaTemplate.i
+
+# target to generate assembly for a file
+src/Learn/heima/Template/HeimaTemplate.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.s
+.PHONY : src/Learn/heima/Template/HeimaTemplate.s
+
+# target to build an object file
 src/Learn/heima/WorkManager.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o
 .PHONY : src/Learn/heima/WorkManager.o
@@ -510,6 +525,9 @@ help:
 	@echo "... src/Learn/heima/HeimaDisplay.o"
 	@echo "... src/Learn/heima/HeimaDisplay.i"
 	@echo "... src/Learn/heima/HeimaDisplay.s"
+	@echo "... src/Learn/heima/Template/HeimaTemplate.o"
+	@echo "... src/Learn/heima/Template/HeimaTemplate.i"
+	@echo "... src/Learn/heima/Template/HeimaTemplate.s"
 	@echo "... src/Learn/heima/WorkManager.o"
 	@echo "... src/Learn/heima/WorkManager.i"
 	@echo "... src/Learn/heima/WorkManager.s"

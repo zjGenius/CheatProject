@@ -80,3 +80,12 @@ void HeimaDisplay::FileStreamDisplay()
     // stream->readBinaryFile("person.txt");
     stream->fileIsEmpty("testEmpty.txt");
 }
+
+void HeimaDisplay::TemplateDisplay()
+{
+    using namespace template_heima;
+    Template t;
+    // t.templateSwap();
+    // t.templateArraySwap();
+    t.templateCompare();
+}

@@ -71,11 +71,15 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o
  ../include/Learn/heima/AddressBook.h
  ../include/Learn/heima/FileStream/FileStream.h
  ../include/Learn/heima/HeimaDisplay.h
+ ../include/Learn/heima/Template/HeimaTemplate.h
  ../include/Learn/heima/operator/Operator.h
  ../include/Learn/heima/polymorphic/ComputerBuild.h
  ../include/Learn/heima/polymorphic/Polymorphic.h
  ../include/log.h
  /home/jun/code/CheatProject/src/Learn/heima/HeimaDisplay.cpp
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o
+ ../include/Learn/heima/Template/HeimaTemplate.h
+ /home/jun/code/CheatProject/src/Learn/heima/Template/HeimaTemplate.cpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o
  ../include/Learn/heima/WorkManager.h
  /home/jun/code/CheatProject/src/Learn/heima/WorkManager.cpp
@@ -143,6 +147,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o
  ../include/Learn/heima/AddressBook.h
  ../include/Learn/heima/FileStream/FileStream.h
  ../include/Learn/heima/HeimaDisplay.h
+ ../include/Learn/heima/Template/HeimaTemplate.h
  ../include/Learn/heima/WorkManager.h
  ../include/Learn/heima/operator/Operator.h
  ../include/Learn/heima/polymorphic/ComputerBuild.h

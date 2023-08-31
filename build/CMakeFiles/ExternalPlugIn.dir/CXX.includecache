@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/Learn/heima/FileStream/FileStream.h
-fstream
--
+../include/Learn/heima/Template/HeimaTemplate.h
+
+/home/jun/code/CheatProject/src/Learn/heima/Template/HeimaTemplate.cpp
+HeimaTemplate.h
+/home/jun/code/CheatProject/src/Learn/heima/Template/HeimaTemplate.h
 iostream
 -
-
-/home/jun/code/CheatProject/src/Learn/heima/FileStream/FileStream.cpp
-FileStream.h
-/home/jun/code/CheatProject/src/Learn/heima/FileStream/FileStream.h
 

@@ -58,7 +58,8 @@ void heimaStudy()
 	HeimaDisplay heima;
 	// heima.PolymorphicDisplay();
 	// heima.ComputerDisplay();
-	heima.FileStreamDisplay();
+	// heima.FileStreamDisplay();
+	heima.TemplateDisplay();
 
 	// using namespace workManagerSpace;
 	// WorkManager *managerSysyem;
