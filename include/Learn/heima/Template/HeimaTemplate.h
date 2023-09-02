@@ -9,6 +9,8 @@
  *
  */
 #pragma once
+#include <iostream>
+using namespace std;
 
 namespace template_heima
 {
@@ -20,4 +22,23 @@ namespace template_heima
         void templateArraySwap();
         void templateCompare();
     };
+
+    template <class NameType, class AgeType = int> // 类模板可以有默认参数
+    class ClassTemplate
+    {
+    public:
+        ClassTemplate(NameType name, AgeType age)
+        {
+            this->name = name;
+            this->age = age;
+        }
+        void ShowInfo()
+        {
+            cout << "name:" << this->name << " age:" << this->age << endl;
+        }
+        NameType name;
+        AgeType age;
+    };
+
+    
 }

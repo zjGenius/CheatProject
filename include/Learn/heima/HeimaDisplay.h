@@ -15,6 +15,9 @@
 #include "ComputerBuild.h"
 #include "FileStream.h"
 #include "HeimaTemplate.h"
+#include "HeimaClassTemplate.hpp"
+#include "HeimaFriendTemplate.hpp"
+#include "HeimaMyArray.hpp"
 
 class HeimaDisplay
 {

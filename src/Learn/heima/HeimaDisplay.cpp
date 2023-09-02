@@ -81,11 +81,131 @@ void HeimaDisplay::FileStreamDisplay()
     stream->fileIsEmpty("testEmpty.txt");
 }
 
+// 下面是测试三种模板类传入方式
+template <class T1, class T2>
+class Person_T
+{
+public:
+    Person_T(T1 name, T2 age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    void show()
+    {
+        cout << "姓名:" << this->name << " 年龄:" << this->age << endl;
+    }
+    T1 name;
+    T2 age;
+};
+
+// 指定传入类型 *常用
+void printPerson1(Person_T<string, int> &p)
+{
+    cout << "1.指定传入类型" << endl;
+    p.show();
+    cout << endl;
+}
+
+void fun1()
+{
+    Person_T<string, int> p("孙悟空", 888);
+    printPerson1(p);
+}
+
+// 参数模板化
+template <class T1, class T2>
+void printPerson2(Person_T<T1, T2> &p)
+{
+    cout << "2.参数模板化" << endl;
+    p.show();
+    cout << "T1 类型: " << typeid(T1).name() << endl;
+    cout << "T2 类型: " << typeid(T2).name() << endl;
+    cout << endl;
+}
+
+void fun2()
+{
+    Person_T<string, int> p("孙悟空", 888);
+    printPerson2(p);
+}
+
+// 类模板化
+template <class T>
+void printPerson3(T &p)
+{
+    cout << "3.类模板化" << endl;
+    p.show();
+    cout << "T 类型: " << typeid(T).name() << endl;
+    cout << endl;
+}
+
+void fun3()
+{
+    Person_T<string, int> p("孙悟空", 888);
+    printPerson3(p);
+}
+
+void printfHeimaMyArray1(HeimaMyArray<int> &arr)
+{
+    for (int i = 0; i < arr.getSize(); i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 void HeimaDisplay::TemplateDisplay()
 {
     using namespace template_heima;
     Template t;
+    cout << "函数模板:" << endl;
     // t.templateSwap();
     // t.templateArraySwap();
     t.templateCompare();
+
+    ClassTemplate<string, int> c("孙悟空", 999);
+    cout << "类模板:" << endl;
+    c.ShowInfo();
+
+    cout << endl
+         << "三种传入方式:" << endl;
+    // 这里如果打印会有问题，需要在执行时加上 | c++filt -t
+    // https://blog.csdn.net/lovefengruoqing/article/details/93377021
+    fun1();
+    fun2();
+    fun3();
+
+    cout << endl
+         << "模板类构造函数与成员函数 类内申明,内外实现：" << endl;
+    HeimaClassTemplate<string, int> ct("沙师弟", 998);
+    ct.ShowInfo();
+
+    cout << endl
+         << "友元函数 类内实现与类外实现" << endl;
+    HeimaFriendTemplate<string, int> ft("Tom", 12);
+    printfInside(ft);
+    printfOutside(ft);
+
+    cout << endl
+         << "自定义数组" << endl;
+
+    HeimaMyArray<int> arr1(10);
+    for (int i = 0; i < 5; i++)
+    {
+        arr1.Push_Back(i);
+    }
+    cout << "arr1" << endl;
+    printfHeimaMyArray1(arr1);
+    cout << "arr1 index3:  " << arr1[3] << endl;
+    cout << "arr1 size:  " << arr1.getSize() << endl;
+    cout << "arr1 capacity:  " << arr1.getCapacity() << endl;
+
+    HeimaMyArray<int> arr2(arr1);
+    arr2.Pop_Back();
+    cout << "arr2" << endl;
+    printfHeimaMyArray1(arr2);
+    cout << "arr2 index3:  " << arr2[6] << endl;
+    cout << "arr2 size:  " << arr2.getSize() << endl;
+    cout << "arr2 capacity:  " << arr2.getCapacity() << endl;
 }

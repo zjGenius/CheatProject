@@ -1,3 +1,14 @@
+/**
+ * @file HeimaTemplate.cpp
+ * @author zhangjun (zhangjun.sole@qq.com)
+ * @brief
+ * @version 0.1
+ * @date 2023-09-02
+ *
+ * @copyright Copyright (c) 2023
+ *
+ * 可以具体化模板调用,解决模板的局限性
+ */
 #include "HeimaTemplate.h"
 #include <iostream>
 
