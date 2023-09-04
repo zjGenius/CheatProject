@@ -158,10 +158,12 @@ void fileCompressByHuffman()
  */
 void containerStudy()
 {
-	// deque_test();
+	cout << "容器学习" << endl;
+	deque_test();
 	// list_test();
 	// map_test(0);
 	// set_test(2);
+	cout << endl;
 }
 
 // 错误的写法，默认参数有误
@@ -193,7 +195,7 @@ int main(void)
 	// printf("sum1:%d sum2:%d\n", sum1, sum2);
 
 	/***************容器类学习********************/
-	containerStudy();
+	// containerStudy();
 
 	/***************opencv学习********************/
 	// opencvStudy();
@@ -263,7 +265,7 @@ int main(void)
 	// }
 
 	/******************黑马教程************************/
-	heimaStudy();
+	// heimaStudy();
 
 	// 阶乘定义：3! = 3*2*1
 	// 按照这个思路

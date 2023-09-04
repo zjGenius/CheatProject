@@ -14,12 +14,21 @@
  */
 #include "container.h"
 
+void printfDeque(const deque<int> &que)
+{
+    for (deque<int>::const_iterator it = que.begin(); it != que.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
 /**
  * @brief deque队列的测试程序
  *
  */
 void deque_test()
 {
+    cout << "deque学习" << endl;
     int a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     deque<int> q;
     for (int i = 0; i <= 9; i++)
@@ -46,6 +55,15 @@ void deque_test()
         printf(" %d", *it);
     }
     printf("\n");
+
+    deque<int> assginDeque;
+    // 赋值操作
+    assginDeque.assign(q.begin(), q.end());
+    printfDeque(assginDeque);
+
+    assginDeque.push_front(1);
+    assginDeque.push_back(11);
+    printfDeque(assginDeque);
 }
 
 int fun(int acc, int num)
@@ -53,7 +71,9 @@ int fun(int acc, int num)
     return acc + num * 3;
 }
 /**
- * @brief list的测试程序
+ * @brief list的测试程序 
+ * 优点：采用动态存储分配，不会造成内存浪费和溢出；链表插入和删除方便
+ * 缺点：空间（指针域）和时间（遍历）花费比较大
  * List是stl实现的双向链表，与向量(vectors)相比, 它允许快速的插入和删除，但是随机访问却比较慢。使用时需要添加头文件 #include <list>
  * 常用的操作函数:
     Lst1.assign() 给list赋值
@@ -396,8 +416,8 @@ void PrintSet(T &s)
 }
 
 /**
- * @brief set/multiset
- * std::set 是关联容器，含有 Key 类型对象的已排序集
+ * @brief set/multiset multiset可以插入重复数据
+ * std::set 是关联容器，含有 Key 类型对象的已排序集*
  * set 通常以红黑树实现。
  * set中的元素即是键值又是实值，set不允许两个元素有相同的键值。
  * 不能通过set的迭代器去修改set元素，原因是修改元素会破坏set组织。当对容器中的元素进行插入或者删除时，操作之前的所有迭代器在操作之后依然有效。
