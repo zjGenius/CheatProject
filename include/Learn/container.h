@@ -9,6 +9,8 @@
 #include <algorithm>
 #include <map>
 #include <set>
+#include <functional>
+#include <algorithm>
 
 #include "paramRead.h"
 #include "log.h"
@@ -19,5 +21,11 @@ void deque_test();
 void list_test();
 void map_test(int Mode);
 void set_test(int Mode);
+void STL_test();
+void predicateOne_test();
+void predicateTwo_test();
+void functional_test1();
+void functional_test2();
+void functional_test3();
 
 #endif

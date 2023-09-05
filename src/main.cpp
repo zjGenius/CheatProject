@@ -159,10 +159,16 @@ void fileCompressByHuffman()
 void containerStudy()
 {
 	cout << "容器学习" << endl;
-	deque_test();
+	// deque_test();
 	// list_test();
 	// map_test(0);
 	// set_test(2);
+	// STL_test();
+	// predicateOne_test();
+	// predicateTwo_test();
+	functional_test1();
+	functional_test2();
+	functional_test3();
 	cout << endl;
 }
 
@@ -195,7 +201,7 @@ int main(void)
 	// printf("sum1:%d sum2:%d\n", sum1, sum2);
 
 	/***************容器类学习********************/
-	// containerStudy();
+	containerStudy();
 
 	/***************opencv学习********************/
 	// opencvStudy();
@@ -282,6 +288,16 @@ int main(void)
 	// 		printf("%d*", i);
 	// }
 	// printf(" =%d\n", result);
+
+	map<int, int> m1;
+	m1[1] = 10;
+	m1[1] = 20;
+
+	m1.insert(make_pair(10, 100));
+	m1.insert(make_pair(10, 200));
+	cout << "value " << m1[1] << endl;
+	cout << "value " << m1[10] << endl;
+	cout << "value " << m1[11] << endl;
 
 	return 0;
 }

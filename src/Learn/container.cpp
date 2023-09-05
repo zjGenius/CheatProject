@@ -71,7 +71,7 @@ int fun(int acc, int num)
     return acc + num * 3;
 }
 /**
- * @brief list的测试程序 
+ * @brief list的测试程序
  * 优点：采用动态存储分配，不会造成内存浪费和溢出；链表插入和删除方便
  * 缺点：空间（指针域）和时间（遍历）花费比较大
  * List是stl实现的双向链表，与向量(vectors)相比, 它允许快速的插入和删除，但是随机访问却比较慢。使用时需要添加头文件 #include <list>
@@ -204,7 +204,7 @@ void list_test()
 }
 
 /**
- * @brief map的测试程序
+ * @brief map的测试程序     不推荐用map[key] = value;方式赋值
  * 常用的操作函数:
     begin()         返回指向map头部的迭代器
     clear(）        删除所有元素
@@ -499,4 +499,269 @@ void set_test(int Mode)
         // 打印set
         PrintSet(s);
     }
+}
+
+struct Employees
+{
+    string name;
+    int salary;
+};
+
+/**
+ * @brief STL学习 员工分组
+ * 描述：
+ * 公司招聘10名员工(ABCDEFGHIJ),需要指派员工到部门工作
+ * 员工信息：姓名 薪水 ； 部门： 策划、美术、研发
+ * 随机给员工分配部门和工资
+ * 通过multimap进行信息的插入 key(部门编号) value(员工)
+ * 分部门显示员工信息
+ *
+ * 实现步骤
+ * 创建10名员工，放到vector
+ * 遍历vector容器，进行 随机分组
+ * 分组后，员工部门编号作为key，具体员工信息作为value，放入multimap容器中
+ * 分部门显示员工信息
+ */
+void STL_test()
+{
+    cout << endl
+         << "案例情景" << endl;
+    srand(time(NULL)); // 随机种子
+
+    // 添加员工并随机分配薪水
+    char original_employee[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+    vector<Employees> employees;
+    for (int i = 0; i < sizeof(original_employee) / sizeof(char); i++)
+    {
+        Employees e;
+        e.name = original_employee[i];
+        e.salary = rand() % 6000 + 4001;
+        employees.push_back(e);
+    }
+    cout << "员工个数 " << employees.size() << endl;
+
+    multimap<string, Employees> company;
+    for (int i = 0; i < employees.size(); i++)
+    {
+        int select = rand() % 3;
+        if (select == 0)
+        {
+            company.insert(make_pair("策划部", employees[i]));
+        }
+        else if (select == 1)
+        {
+            company.insert(make_pair("美术部", employees[i]));
+        }
+        else if (select == 2)
+        {
+            company.insert(make_pair("研发部", employees[i]));
+        }
+    }
+
+    multimap<string, Employees>::iterator Company_it;
+    pair<multimap<string, Employees>::iterator, multimap<string, Employees>::iterator> ret;
+
+    ret = company.equal_range("美术部");
+    cout << "美术部" << endl;
+    for (Company_it = ret.first; Company_it != ret.second; ++Company_it)
+    {
+        cout << "姓名:" << (*Company_it).second.name << " "
+             << "薪水:" << (*Company_it).second.salary << endl;
+    }
+    cout << endl;
+    ret = company.equal_range("策划部");
+    cout << "策划部" << endl;
+    for (Company_it = ret.first; Company_it != ret.second; ++Company_it)
+    {
+        cout << "姓名:" << (*Company_it).second.name << " "
+             << "薪水:" << (*Company_it).second.salary << endl;
+    }
+    cout << endl;
+    ret = company.equal_range("研发部");
+    cout << "研发部" << endl;
+    for (Company_it = ret.first; Company_it != ret.second; ++Company_it)
+    {
+        cout << "姓名:" << (*Company_it).second.name << " "
+             << "薪水:" << (*Company_it).second.salary << endl;
+    }
+    cout << endl;
+}
+
+/**
+ * @brief 返回值是bool的数据类型，称为谓词
+ */
+class OverFive
+{
+public:
+    bool operator()(int val)
+    {
+        return val > 5;
+    }
+};
+/**
+ * @brief 一元谓词学习
+ */
+void predicateOne_test()
+{
+    cout << endl
+         << "一元谓词" << endl;
+    vector<int> vec;
+
+    for (int i = 0; i < 10; i++)
+    {
+        vec.push_back(i);
+    }
+
+    // OverFive()匿名函数对象  find_if()返回的是迭代器
+    vector<int>::iterator ret = find_if(vec.begin(), vec.end(), OverFive());
+
+    if (ret == vec.end())
+        cout << "没有超过5的数字" << endl;
+    else
+    {
+
+        cout << "超过5的数字: ";
+        for (; ret != vec.end(); ret++)
+        {
+            cout << *ret << " ";
+        }
+        cout << endl;
+    }
+}
+
+/**
+ * @brief 返回值是bool的数据类型，称为谓词
+ */
+class MyCompare
+{
+public:
+    bool operator()(int val1, int val2)
+    {
+        return val1 > val2;
+    }
+};
+/**
+ * @brief 二元谓词学习
+ */
+void predicateTwo_test()
+{
+    cout << endl
+         << "二元谓词" << endl;
+    vector<int> vec;
+    vec.push_back(10);
+    vec.push_back(45);
+    vec.push_back(20);
+    vec.push_back(15);
+    vec.push_back(60);
+
+    sort(vec.begin(), vec.end());
+
+    for (vector<int>::iterator it = vec.begin(); it != vec.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    // 使用函数对象 改变算法策略
+    sort(vec.begin(), vec.end(), MyCompare());
+    for (vector<int>::iterator it = vec.begin(); it != vec.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+/**
+ * @brief 内建函数对象 算术仿函数
+ *
+ * template<class T> bool plus<T>       加法仿函数
+ * template<class T> bool minus<T>      减法仿函数
+ * template<class T> bool multiplies<T> 乘法仿函数
+ * template<class T> bool divides<T>    除法仿函数
+ * template<class T> bool modulus<T>    取模仿函数
+ * template<class T> bool negate<T>     取反仿函数
+ */
+void functional_test1()
+{
+    cout << endl
+         << "内建函数对象使用 算术仿函数" << endl;
+    // 需要包含头文件
+    negate<int> n;
+
+    cout << "取反 " << n(50) << endl;
+
+    plus<int> p;
+    cout << "加法 " << p(50, 10) << endl;
+}
+
+/**
+ * @brief 内建函数对象 关系仿函数
+ *
+ * template<class T> bool equal_to<T>       等于
+ * template<class T> bool not_equal_to<T>   不等于
+ * template<class T> bool greater<T>        大于
+ * template<class T> bool greater_equal<T>  大于等于
+ * template<class T> bool less<T>           小于
+ * template<class T> bool less_equal<T>     小于等于
+ */
+void functional_test2()
+{
+    cout << endl
+         << "内建函数对象使用 关系仿函数" << endl;
+    // 需要包含头文件
+
+    vector<int> vec;
+    vec.push_back(10);
+    vec.push_back(45);
+    vec.push_back(20);
+    vec.push_back(15);
+    vec.push_back(60);
+
+    // sort()底层使用的是less<T>()
+    sort(vec.begin(), vec.end(), greater<int>());
+
+    for (vector<int>::iterator it = vec.begin(); it != vec.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+/**
+ * @brief 内建函数对象 逻辑仿函数
+ *
+ * template<class T> bool logical_and<T>  逻辑与
+ * template<class T> bool logical_or<T>   逻辑或
+ * template<class T> bool logical_not<T>  逻辑非
+ */
+void functional_test3()
+{
+    cout << endl
+         << "内建函数对象使用 逻辑仿函数" << endl;
+    // 需要包含头文件
+
+    vector<bool> vec1;
+    vec1.push_back(true);
+    vec1.push_back(false);
+    vec1.push_back(false);
+    vec1.push_back(true);
+    vec1.push_back(false);
+
+    for (vector<bool>::iterator it = vec1.begin(); it != vec1.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    // 运用逻辑非 将容器vec1搬运到vec2中 并执行逻辑非操作
+    vector<bool> vec2;
+    vec2.resize(vec1.size()); // 这一步需要
+
+    // 需要包含头文件algorithm
+    transform(vec1.begin(), vec1.end(), vec2.begin(), logical_not<bool>());
+
+    for (vector<bool>::iterator it = vec2.begin(); it != vec2.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 }
