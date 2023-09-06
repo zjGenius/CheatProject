@@ -380,6 +380,14 @@ public:
         mAge = age;
     }
 
+    bool operator==(const Person &p)
+    {
+        if (this->mName == p.mName && this->mAge == p.mAge)
+            return true;
+        else
+            return false;
+    }
+
 public:
     string mName;
     int mAge;
@@ -590,7 +598,7 @@ void STL_test()
 /**
  * @brief 返回值是bool的数据类型，称为谓词
  */
-class OverFive
+class OverFive_Int
 {
 public:
     bool operator()(int val)
@@ -612,8 +620,8 @@ void predicateOne_test()
         vec.push_back(i);
     }
 
-    // OverFive()匿名函数对象  find_if()返回的是迭代器
-    vector<int>::iterator ret = find_if(vec.begin(), vec.end(), OverFive());
+    // OverFive_Int()匿名函数对象  find_if()返回的是迭代器
+    vector<int>::iterator ret = find_if(vec.begin(), vec.end(), OverFive_Int());
 
     if (ret == vec.end())
         cout << "没有超过5的数字" << endl;
@@ -685,7 +693,7 @@ void functional_test1()
 {
     cout << endl
          << "内建函数对象使用 算术仿函数" << endl;
-    // 需要包含头文件
+    // 需要包含头文件 functional
     negate<int> n;
 
     cout << "取反 " << n(50) << endl;
@@ -764,4 +772,308 @@ void functional_test3()
         cout << *it << " ";
     }
     cout << endl;
+}
+
+class MyPrintInt
+{
+public:
+    void operator()(int val)
+    {
+        cout << val << " ";
+    }
+    void operator()(const Person &val)
+    {
+        cout << val;
+    }
+};
+
+class MyAssign
+{
+public:
+    int operator()(int val)
+    {
+        return val + 100;
+    }
+};
+
+/**
+ * @brief 常用的遍历算法
+ */
+void algorithm_for()
+{
+    cout << endl
+         << "遍历算法 for_each、transform" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int> v2;
+    v2.resize(v1.size());
+    transform(v1.begin(), v1.end(), v2.begin(), MyAssign());
+
+    cout << "v1 transform to v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_find()
+{
+    cout << endl
+         << "查找算法 find()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int>::iterator it1 = find(v1.begin(), v1.end(), 5);
+    if (it1 != v1.end())
+        cout << "找到了" << endl;
+    else
+        cout << "没找到" << endl;
+
+    Person p1("A", 10);
+    Person p2("B", 20);
+    Person p3("C", 30);
+    Person p4("D", 40);
+    Person p5("E", 50);
+
+    vector<Person> v2;
+
+    v2.push_back(p1);
+    v2.push_back(p2);
+    v2.push_back(p3);
+    v2.push_back(p4);
+    v2.push_back(p5);
+
+    cout << "v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+
+    vector<Person>::iterator it2 = find(v2.begin(), v2.end(), p2);
+    if (it2 != v2.end())
+        cout << "找到了" << endl;
+    else
+        cout << "没找到" << endl;
+}
+
+class Over20_Person
+{
+public:
+    bool operator()(const Person &val)
+    {
+        if (val.mAge > 20)
+            return true;
+        else
+            return false;
+    }
+};
+
+void algorithm_find_if()
+{
+    cout << endl
+         << "查找算法 find_if()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "内置数据类型v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int>::iterator it1 = find_if(v1.begin(), v1.end(), OverFive_Int());
+    if (it1 != v1.end())
+    {
+        cout << "找到了" << endl;
+        for_each(it1, v1.end(), MyPrintInt());
+        cout << endl;
+    }
+    else
+        cout << "没找到" << endl;
+
+    Person p1("A", 10);
+    Person p2("B", 20);
+    Person p3("C", 30);
+    Person p4("D", 40);
+    Person p5("E", 50);
+
+    vector<Person> v2;
+
+    v2.push_back(p1);
+    v2.push_back(p2);
+    v2.push_back(p3);
+    v2.push_back(p4);
+    v2.push_back(p5);
+
+    cout << "自定义数据类型v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+
+    vector<Person>::iterator it2 = find_if(v2.begin(), v2.end(), Over20_Person());
+    if (it2 != v2.end())
+    {
+        cout << "找到了" << endl;
+        for_each(it2, v2.end(), MyPrintInt());
+    }
+    else
+        cout << "没找到" << endl;
+}
+
+void algorithm_adjacent_find()
+{
+    cout << endl
+         << "查找算法 adjacent_find()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int>::iterator it1 = adjacent_find(v1.begin(), v1.end());
+    if (it1 != v1.end())
+        cout << "找到了" << endl;
+    else
+        cout << "没找到" << endl;
+}
+
+void algorithm_binary_search()
+{
+    cout << endl
+         << "查找算法 binary_search()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    bool ret = binary_search(v1.begin(), v1.end(), 5);
+    if (ret)
+        cout << "找到了" << endl;
+    else
+        cout << "没找到" << endl;
+}
+
+void algorithm_count()
+{
+    cout << endl
+         << "查找算法 count()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "内置数据类型v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    int ret1 = count(v1.begin(), v1.end(), 4);
+    if (ret1 != 0)
+    {
+        cout << "存在" << ret1 << "个相同的元素" << endl;
+    }
+    else
+        cout << "不存在相同的元素" << endl;
+
+    Person p1("A", 10);
+    Person p2("B", 20);
+    Person p3("C", 30);
+    Person p4("D", 40);
+    Person p5("E", 50);
+    Person p6("A", 10);
+
+    vector<Person> v2;
+
+    v2.push_back(p1);
+    v2.push_back(p2);
+    v2.push_back(p3);
+    v2.push_back(p4);
+    v2.push_back(p5);
+    v2.push_back(p6);
+
+    cout << "自定义数据类型v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+
+    int ret2 = count(v2.begin(), v2.end(), p1);
+    if (ret2 != 0)
+    {
+        cout << "存在" << ret2 << "个相同的元素" << endl;
+    }
+    else
+        cout << "不存在相同的元素" << endl;
+}
+
+void algorithm_count_if()
+{
+        cout << endl
+         << "查找算法 count_if()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i + 1);
+    }
+    cout << "内置数据类型v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    int ret1 = count_if(v1.begin(), v1.end(), OverFive_Int());
+    cout << "存在" << ret1 << "个超过5的元素" << endl;
+
+    Person p1("A", 10);
+    Person p2("B", 20);
+    Person p3("C", 30);
+    Person p4("D", 40);
+    Person p5("E", 50);
+
+    vector<Person> v2;
+
+    v2.push_back(p1);
+    v2.push_back(p2);
+    v2.push_back(p3);
+    v2.push_back(p4);
+    v2.push_back(p5);
+
+    cout << "自定义数据类型v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+
+    int ret2 = count_if(v2.begin(), v2.end(), Over20_Person());
+    cout << "存在" << ret2 << "个年龄超过20的元素" << endl;
+}
+
+/**
+ * @brief 常见的查找算法
+ * find(iterator beg/开始迭代器, iterator end/结束迭代器, value/查找的元素)                                 查找元素
+ * find_if(iterator beg/开始迭代器, iterator end/结束迭代器, _Pred/函数或谓词(返回bool类型的仿函数))         按条件查找元素
+ * adjacent_find(iterator beg/开始迭代器, iterator end/结束迭代器)                                         查找相邻的重复元素，返回相邻元素第一个位置的迭代器
+ * bool binary_search(iterator beg/开始迭代器, iterator end/结束迭代器, value)                             查找指定元素(二分查找法)，查到返回true 注意：需要在有序序列中使用
+ * count(iterator beg/开始迭代器, iterator end/结束迭代器, value)                                          统计元素个数 对于自定义数据类型，需要重载operator==
+ * count_if(iterator beg/开始迭代器, iterator end/结束迭代器, _Pred/函数或谓词(返回bool类型的仿函数))        按条件统计元素个数
+ */
+void algorithm_find_example()
+{
+    // algorithm_find();
+    // algorithm_find_if();
+    // algorithm_adjacent_find();
+    // algorithm_binary_search();
+    // algorithm_count();
+    algorithm_count_if();
 }

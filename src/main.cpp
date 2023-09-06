@@ -166,9 +166,12 @@ void containerStudy()
 	// STL_test();
 	// predicateOne_test();
 	// predicateTwo_test();
-	functional_test1();
-	functional_test2();
-	functional_test3();
+	// functional_test1();
+	// functional_test2();
+	// functional_test3();
+
+	// algorithm_for();
+	algorithm_find_example();
 	cout << endl;
 }
 

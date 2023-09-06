@@ -28,4 +28,7 @@ void functional_test1();
 void functional_test2();
 void functional_test3();
 
+void algorithm_for();
+void algorithm_find_example();
+
 #endif
