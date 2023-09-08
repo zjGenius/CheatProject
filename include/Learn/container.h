@@ -5,12 +5,12 @@
 #include <stdio.h>
 #include <deque>
 #include <list>
-#include <numeric>
-#include <algorithm>
 #include <map>
 #include <set>
+
 #include <functional>
 #include <algorithm>
+#include <numeric>
 
 #include "paramRead.h"
 #include "log.h"
@@ -30,5 +30,9 @@ void functional_test3();
 
 void algorithm_for();
 void algorithm_find_example();
+void algorithm_sort_example();
+void algorithm_copy_replace_example();
+void numeric_example();
+void setContainer_example();
 
 #endif

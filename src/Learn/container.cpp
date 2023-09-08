@@ -1023,7 +1023,7 @@ void algorithm_count()
 
 void algorithm_count_if()
 {
-        cout << endl
+    cout << endl
          << "查找算法 count_if()" << endl;
     vector<int> v1;
 
@@ -1076,4 +1076,395 @@ void algorithm_find_example()
     // algorithm_binary_search();
     // algorithm_count();
     algorithm_count_if();
+}
+
+void algorithm_sort()
+{
+    cout << endl
+         << "排序算法 sort()" << endl;
+    vector<int> v1;
+
+    v1.push_back(4);
+    v1.push_back(2);
+    v1.push_back(1);
+    v1.push_back(12);
+    v1.push_back(3);
+    v1.push_back(23);
+    v1.push_back(53);
+
+    cout << "原始数据:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    sort(v1.begin(), v1.end());
+    cout << "默认排序:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    sort(v1.begin(), v1.end(), greater<int>());
+    cout << "自定义排序:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_random_shuffle()
+{
+    cout << endl
+         << "排序算法 random_shuffle()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i);
+    }
+    srand(time(NULL)); // 加一个随机数种子调用random_shuffle()就可以实现真正的随机了
+    random_shuffle(v1.begin(), v1.end());
+
+    cout << "随机打乱的数:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_merge()
+{
+    cout << endl
+         << "排序算法 merge()" << endl;
+    vector<int> v1;
+    vector<int> v2;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i * 2);
+        v2.push_back(i * 3);
+    }
+
+    cout << "容器v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    cout << "容器v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int> result;
+    result.resize(v1.size() + v2.size());
+
+    merge(v1.begin(), v1.end(), v2.begin(), v2.end(), result.begin());
+
+    cout << "v1和v2 merge后的容器:" << endl;
+    for_each(result.begin(), result.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_reverse()
+{
+    cout << endl
+         << "排序算法 reverse()" << endl;
+    vector<int> v1;
+
+    v1.push_back(4);
+    v1.push_back(2);
+    v1.push_back(1);
+    v1.push_back(12);
+    v1.push_back(3);
+    v1.push_back(23);
+    v1.push_back(53);
+
+    cout << "反转前:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    reverse(v1.begin(), v1.end());
+
+    cout << "反转后:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+}
+
+/**
+ * @brief 常用的排序算法
+ * sort(iterator beg/开始迭代器, iterator end/结束迭代器, _Pred/函数或谓词(返回bool类型的仿函数))                                       对容器内元素排序
+ * random_shuffle(iterator beg/开始迭代器, iterator end/结束迭代器）                                                                  指定范围内的元素随机调整次序
+ * merge(iterator beg1/容器1开始迭代器, iterator end1/容器1结束迭代器, iterator beg2/容器2开始迭代器, iterator end2/容器2结束迭代器, iterator dest/目标容器开始迭代器)     容器元素合并，存储到另一个容器中。两个容器必须有序
+ * reverse(iterator beg/开始迭代器, iterator end/结束迭代器)                                将容器内元素反转
+ */
+void algorithm_sort_example()
+{
+    // algorithm_sort();
+    // algorithm_random_shuffle();
+    // algorithm_merge();
+    algorithm_reverse();
+}
+
+void algorithm_copy()
+{
+    cout << endl
+         << "拷贝算法 copy()" << endl;
+    vector<int> v1;
+
+    v1.push_back(4);
+    v1.push_back(2);
+    v1.push_back(1);
+    v1.push_back(12);
+    v1.push_back(3);
+    v1.push_back(23);
+    v1.push_back(53);
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int> v2;
+    v2.resize(v1.size());
+
+    copy(v1.begin(), v1.end(), v2.begin());
+
+    cout << "v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_replace()
+{
+    cout << endl
+         << "拷贝算法 replace()" << endl;
+    vector<int> v1;
+
+    v1.push_back(4);
+    v1.push_back(2);
+    v1.push_back(1);
+    v1.push_back(12);
+    v1.push_back(3);
+    v1.push_back(23);
+    v1.push_back(53);
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    replace(v1.begin(), v1.end(), 2, 2000);
+
+    cout << "replace v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_replace_if()
+{
+    cout << endl
+         << "拷贝算法 replace_if()" << endl;
+    vector<int> v1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i);
+    }
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    replace_if(v1.begin(), v1.end(), OverFive_Int(), 100);
+
+    cout << "replace_if v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+}
+
+void algorithm_swap()
+{
+    cout << endl
+         << "拷贝算法 replace_if()" << endl;
+    vector<int> v1;
+    vector<int> v2;
+
+    for (int i = 0; i < 10; i++)
+    {
+        v1.push_back(i);
+        if (i > 7)
+            continue;
+        v2.push_back(i * 5);
+    }
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    cout << "v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+
+    swap(v1, v2);
+
+    cout << "swap v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+
+    cout << "swap v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+}
+
+/**
+ * @brief 常用的拷贝和替换算法
+ * copy(iterator beg/开始迭代器, iterator end/结束迭代器, iterator dest/目标容器开始迭代器)                        容器内指定范围的元素拷贝到另一容器
+ * replace(iterator beg/开始迭代器, iterator end/结束迭代器, oldvalue, newvalue)                                  将容器内指定范围的旧元素改为新元素
+ * replace_if(iterator beg/开始迭代器, iterator end/结束迭代器, _Pred/函数或谓词(返回bool类型的仿函数), newvalue)   按照条件替换元素
+ */
+void algorithm_copy_replace_example()
+{
+    // algorithm_copy();
+    // algorithm_replace();
+    // algorithm_replace_if();
+    algorithm_swap();
+}
+
+void numeric_accumulate()
+{
+    cout << endl
+         << "算术生成算法 accumulate()" << endl;
+    vector<int> v1;
+
+    for (int i = 1; i <= 100; i++)
+    {
+        v1.push_back(i);
+    }
+
+    int total = accumulate(v1.begin(), v1.end(), 0);
+    cout << "总和：" << total << endl;
+}
+
+void numeric_fill()
+{
+    cout << endl
+         << "算术生成算法 fill()" << endl;
+    vector<int> v1;
+    v1.resize(10);
+
+    fill(v1.begin(), v1.end(), 100);
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+}
+
+/** numeric
+ * @brief 常用的算术生成算法
+ * accumulate(iterator beg/开始迭代器, iterator end/结束迭代器, _Pred/函数或谓词(返回bool类型的仿函数), value/起始值)   计算区间容器元素累加
+ * fill(iterator beg/开始迭代器, iterator end/结束迭代器, value/填充值)                                               给容器添加元素
+ */
+void numeric_example()
+{
+    // numeric_accumulate();
+    numeric_fill();
+}
+
+void setContainer_set_intersection()
+{
+    cout << endl
+         << "集合算法 set_intersection()" << endl;
+    vector<int> v1;
+    vector<int> v2;
+
+    for (int i = 0; i <= 10; i++)
+    {
+        v1.push_back(i);
+        v2.push_back(i + 3);
+    }
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+    cout << "v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int> dest;
+    dest.resize(min(v1.size(), v2.size()));
+
+    vector<int>::iterator endIt = set_intersection(v1.begin(), v1.end(), v2.begin(), v2.end(), dest.begin());
+
+    cout << "dest:" << endl;
+    for_each(dest.begin(), endIt, MyPrintInt());
+    cout << endl;
+}
+
+void setContainer_set_union()
+{
+    cout << endl
+         << "集合算法 set_union()" << endl;
+    vector<int> v1;
+    vector<int> v2;
+
+    for (int i = 0; i <= 10; i++)
+    {
+        v1.push_back(i);
+        v2.push_back(i + 3);
+    }
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+    cout << "v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int> dest;
+    dest.resize(v1.size() + v2.size());
+
+    vector<int>::iterator endIt = set_union(v1.begin(), v1.end(), v2.begin(), v2.end(), dest.begin());
+
+    cout << "dest:" << endl;
+    for_each(dest.begin(), endIt, MyPrintInt());
+    cout << endl;
+}
+
+void setContainer_set_difference()
+{
+    cout << endl
+         << "集合算法 set_difference()" << endl;
+    vector<int> v1;
+    vector<int> v2;
+
+    for (int i = 0; i <= 10; i++)
+    {
+        v1.push_back(i);
+        v2.push_back(i + 3);
+    }
+
+    cout << "v1:" << endl;
+    for_each(v1.begin(), v1.end(), MyPrintInt());
+    cout << endl;
+    cout << "v2:" << endl;
+    for_each(v2.begin(), v2.end(), MyPrintInt());
+    cout << endl;
+
+    vector<int> dest;
+    dest.resize(max(v1.size(), v2.size()));
+
+    vector<int>::iterator endIt = set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), dest.begin());
+
+    cout << "v1和v2的差集:" << endl;
+    for_each(dest.begin(), endIt, MyPrintInt());
+    cout << endl;
+
+    dest.clear();
+    endIt = set_difference(v2.begin(), v2.end(), v1.begin(), v1.end(), dest.begin());
+
+    cout << "v2和v1的差集:" << endl;
+    for_each(dest.begin(), endIt, MyPrintInt());
+    cout << endl;
+}
+
+/** algorithm
+ * @brief 常用的集合算法    注：所有的容器需是有序的容器
+ * set_intersection(iterator beg1/容器1开始迭代器, iterator end1/容器1结束迭代器, iterator beg2/容器2开始迭代器, iterator end2/容器2结束迭代器, iterator dest/目标容器迭代器)   求两个容器的交集
+ * set_union(iterator beg1/容器1开始迭代器, iterator end1/容器1结束迭代器, iterator beg2/容器2开始迭代器, iterator end2/容器2结束迭代器, iterator dest/目标容器迭代器)          求两个容器的并集
+ * set_difference(iterator beg1/容器1开始迭代器, iterator end1/容器1结束迭代器, iterator beg2/容器2开始迭代器, iterator end2/容器2结束迭代器, iterator dest/目标容器迭代器)     求两个容器的差集
+ */
+void setContainer_example()
+{
+    // setContainer_set_intersection();
+    // setContainer_set_union();
+    setContainer_set_difference();
 }

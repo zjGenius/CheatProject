@@ -171,7 +171,11 @@ void containerStudy()
 	// functional_test3();
 
 	// algorithm_for();
-	algorithm_find_example();
+	// algorithm_find_example();
+	// algorithm_sort_example();
+	// algorithm_copy_replace_example();
+	// numeric_example();
+	setContainer_example();
 	cout << endl;
 }
 
