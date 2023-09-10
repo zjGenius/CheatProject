@@ -70,6 +70,7 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o: ../src/Le
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/AddressBook.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/FileStream/FileStream.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/HeimaDisplay.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/ScoringSystem/ScoringSystem.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/Template/HeimaClassTemplate.hpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/Template/HeimaFriendTemplate.hpp
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/Template/HeimaMyArray.hpp
@@ -79,6 +80,10 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/Learn/heima/polymorphic/Polymorphic.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../include/log.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o: ../src/Learn/heima/HeimaDisplay.cpp
+
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o: ../include/Learn/heima/ScoringSystem/ScoringSystem.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o: ../include/log.h
+CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o: ../src/Learn/heima/ScoringSystem/ScoringSystem.cpp
 
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o: ../include/Learn/heima/Template/HeimaTemplate.h
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o: ../src/Learn/heima/Template/HeimaTemplate.cpp
@@ -149,6 +154,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/container.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/AddressBook.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/FileStream/FileStream.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/HeimaDisplay.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/ScoringSystem/ScoringSystem.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/Template/HeimaClassTemplate.hpp
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/Template/HeimaFriendTemplate.hpp
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/Template/HeimaMyArray.hpp

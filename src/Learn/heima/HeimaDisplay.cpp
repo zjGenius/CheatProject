@@ -209,3 +209,10 @@ void HeimaDisplay::TemplateDisplay()
     cout << "arr2 size:  " << arr2.getSize() << endl;
     cout << "arr2 capacity:  " << arr2.getCapacity() << endl;
 }
+
+
+void HeimaDisplay::ScoringSystemDisplay()
+{
+    ScoringSystem s;
+    s.startSystem();
+}

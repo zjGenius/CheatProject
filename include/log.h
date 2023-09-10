@@ -73,9 +73,12 @@ typedef enum
     }
 
 #define LOG_RED(format, ...) \
-    printf(LOG_COLOUR_RED format LOG_COLOUR_RESET, ##__VA_ARGS__);
+    printf(LOG_COLOUR_RED format "\n" LOG_COLOUR_RESET, ##__VA_ARGS__);
+
+#define LOG_YELLOW(format, ...) \
+    printf(LOG_COLOUR_YELLOW format "\n" LOG_COLOUR_RESET, ##__VA_ARGS__);
 
 #define LOG_GREEN(format, ...) \
-    printf(LOG_COLOUR_GREEN format LOG_COLOUR_RESET, ##__VA_ARGS__);
+    printf(LOG_COLOUR_GREEN format "\n" LOG_COLOUR_RESET, ##__VA_ARGS__);
 
 #endif

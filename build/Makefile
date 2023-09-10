@@ -289,6 +289,21 @@ src/Learn/heima/HeimaDisplay.s:
 .PHONY : src/Learn/heima/HeimaDisplay.s
 
 # target to build an object file
+src/Learn/heima/ScoringSystem/ScoringSystem.o:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o
+.PHONY : src/Learn/heima/ScoringSystem/ScoringSystem.o
+
+# target to preprocess a source file
+src/Learn/heima/ScoringSystem/ScoringSystem.i:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.i
+.PHONY : src/Learn/heima/ScoringSystem/ScoringSystem.i
+
+# target to generate assembly for a file
+src/Learn/heima/ScoringSystem/ScoringSystem.s:
+	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.s
+.PHONY : src/Learn/heima/ScoringSystem/ScoringSystem.s
+
+# target to build an object file
 src/Learn/heima/Template/HeimaTemplate.o:
 	$(MAKE) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o
 .PHONY : src/Learn/heima/Template/HeimaTemplate.o
@@ -525,6 +540,9 @@ help:
 	@echo "... src/Learn/heima/HeimaDisplay.o"
 	@echo "... src/Learn/heima/HeimaDisplay.i"
 	@echo "... src/Learn/heima/HeimaDisplay.s"
+	@echo "... src/Learn/heima/ScoringSystem/ScoringSystem.o"
+	@echo "... src/Learn/heima/ScoringSystem/ScoringSystem.i"
+	@echo "... src/Learn/heima/ScoringSystem/ScoringSystem.s"
 	@echo "... src/Learn/heima/Template/HeimaTemplate.o"
 	@echo "... src/Learn/heima/Template/HeimaTemplate.i"
 	@echo "... src/Learn/heima/Template/HeimaTemplate.s"

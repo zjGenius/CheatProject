@@ -473,7 +473,6 @@ void AddressBook::startAddressSystem()
             return;
         }
         default:
-            // LOG_RED("没有此项服务\n");
             LOG_RED("没有此项服务\n");
             PAUSE();
             system("clear");

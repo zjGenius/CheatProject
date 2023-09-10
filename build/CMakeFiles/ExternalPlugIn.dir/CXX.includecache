@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
-../include/Learn/container.h
+../include/Learn/heima/ScoringSystem/ScoringSystem.h
 iostream
 -
-stdio.h
--
-deque
+vector
 -
 list
 -
-map
--
-set
--
-functional
+signal.h
 -
 algorithm
 -
 numeric
 -
-paramRead.h
-../include/Learn/paramRead.h
+fstream
+-
 log.h
-../include/Learn/log.h
+../include/Learn/heima/ScoringSystem/log.h
 
 ../include/log.h
 string.h
@@ -36,21 +30,7 @@ string.h
 stdio.h
 -
 
-../include/paramRead.h
-stdio.h
--
-string.h
--
-vector
--
-stdlib.h
--
-string
--
-sstream
--
-
-/home/jun/code/CheatProject/src/Learn/container.cpp
-container.h
-/home/jun/code/CheatProject/src/Learn/container.h
+/home/jun/code/CheatProject/src/Learn/heima/ScoringSystem/ScoringSystem.cpp
+ScoringSystem.h
+/home/jun/code/CheatProject/src/Learn/heima/ScoringSystem/ScoringSystem.h
 

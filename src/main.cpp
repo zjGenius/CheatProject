@@ -59,7 +59,8 @@ void heimaStudy()
 	// heima.PolymorphicDisplay();
 	// heima.ComputerDisplay();
 	// heima.FileStreamDisplay();
-	heima.TemplateDisplay();
+	// heima.TemplateDisplay();
+	heima.ScoringSystemDisplay();
 
 	// using namespace workManagerSpace;
 	// WorkManager *managerSysyem;
@@ -208,7 +209,7 @@ int main(void)
 	// printf("sum1:%d sum2:%d\n", sum1, sum2);
 
 	/***************容器类学习********************/
-	containerStudy();
+	// containerStudy();
 
 	/***************opencv学习********************/
 	// opencvStudy();
@@ -278,7 +279,7 @@ int main(void)
 	// }
 
 	/******************黑马教程************************/
-	// heimaStudy();
+	heimaStudy();
 
 	// 阶乘定义：3! = 3*2*1
 	// 按照这个思路
@@ -296,15 +297,6 @@ int main(void)
 	// }
 	// printf(" =%d\n", result);
 
-	map<int, int> m1;
-	m1[1] = 10;
-	m1[1] = 20;
-
-	m1.insert(make_pair(10, 100));
-	m1.insert(make_pair(10, 200));
-	cout << "value " << m1[1] << endl;
-	cout << "value " << m1[10] << endl;
-	cout << "value " << m1[11] << endl;
 
 	return 0;
 }

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jun/code/CheatProject/src/Learn/heima/AddressBook.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o"
   "/home/jun/code/CheatProject/src/Learn/heima/FileStream/FileStream.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o"
   "/home/jun/code/CheatProject/src/Learn/heima/HeimaDisplay.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o"
+  "/home/jun/code/CheatProject/src/Learn/heima/ScoringSystem/ScoringSystem.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o"
   "/home/jun/code/CheatProject/src/Learn/heima/Template/HeimaTemplate.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o"
   "/home/jun/code/CheatProject/src/Learn/heima/WorkManager.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o"
   "/home/jun/code/CheatProject/src/Learn/heima/operator/Operator.cpp" "/home/jun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o"
@@ -69,6 +70,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include/Learn/heima/polymorphic"
   "../include/Learn/heima/FileStream"
   "../include/Learn/heima/Template"
+  "../include/Learn/heima/ScoringSystem"
   )
 
 # Targets to which this target links.

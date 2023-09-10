@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/AddressBook.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/HeimaDisplay.o"
+  "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/WorkManager.o"
   "CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o"

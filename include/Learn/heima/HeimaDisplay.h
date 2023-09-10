@@ -18,6 +18,7 @@
 #include "HeimaClassTemplate.hpp"
 #include "HeimaFriendTemplate.hpp"
 #include "HeimaMyArray.hpp"
+#include "ScoringSystem.h"
 
 class HeimaDisplay
 {
@@ -27,4 +28,5 @@ public:
     void ComputerDisplay();
     void FileStreamDisplay();
     void TemplateDisplay();
+    void ScoringSystemDisplay();
 };
