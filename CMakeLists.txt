@@ -146,7 +146,7 @@ message(${CMAKE_HOST_SYSTEM_PROCESSOR})
 # endif()
 
 # 添加c++ 11标准支持
-set( CMAKE_CXX_FLAGS "-std=c++11 -O0" )
+set( CMAKE_CXX_FLAGS "-std=c++14 -O0" )
 
 
 

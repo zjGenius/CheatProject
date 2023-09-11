@@ -163,6 +163,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/WorkManager.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/operator/Operator.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/polymorphic/ComputerBuild.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/heima/polymorphic/Polymorphic.h
+CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Learn/smartPointer.hpp
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/Leetcode/leetcode.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQRecvData.h
 CMakeFiles/ExternalPlugIn.dir/src/main.o: ../include/NetWork/IQTransmitCenter.h

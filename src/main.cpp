@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <deque>
 #include <pthread.h>
+#include <assert.h>
 
 #include "func.h"
 #include "paramRead.h"
@@ -22,6 +23,8 @@
 #include "AddressBook.h"
 #include "WorkManager.h"
 #include "HeimaDisplay.h"
+
+#include "smartPointer.hpp"
 // #include "huffman1.h"
 // #include "HuffmanCompressAndUn.h"
 
