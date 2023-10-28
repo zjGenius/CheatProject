@@ -115,7 +115,7 @@ void DesignPatternsStudy()
 void CPlusPlusPrimerStudy()
 {
 	CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
-	cplusplus->chapter1_display();
+	// cplusplus->chapter1_display();
 }
 
 /**
@@ -268,7 +268,7 @@ int main(void)
 	// DesignPatternsStudy();
 
 	/******************C++ Primer 第五版************************/
-	// CPlusPlusPrimerStudy();
+	CPlusPlusPrimerStudy();
 
 	/******************LeedCode************************/
 	// leetcodeStudy();
@@ -282,7 +282,7 @@ int main(void)
 	// }
 
 	/******************黑马教程************************/
-	heimaStudy();
+	// heimaStudy();
 
 	// 阶乘定义：3! = 3*2*1
 	// 按照这个思路
@@ -300,40 +300,54 @@ int main(void)
 	// }
 	// printf(" =%d\n", result);
 
+	constexpr size_t sz = 5;
+	int arr[sz] = {1, 2, 3, 4, 5};
+	int *arrp = arr;
+
+	cout << "sizeof sz:" << sizeof(sz) << endl;		// long 8
+	cout << "sizeof arr:" << sizeof(arr) << endl;	// （int) 4 * 5 = 20
+	cout << "sizeof arrp:" << sizeof(arrp) << endl; // long 8
+
+	int aa = 5;
+	int *aaa = &aa;
+	cout << "sizeof aa:" << sizeof(aa) << " aaa:" << sizeof(aaa) << endl; // int 4 , int * 8
+
+	char bb = '1';
+	char *bbb = &bb;
+	cout << "sizeof bb:" << sizeof(bb) << " bbb:" << sizeof(bbb) << endl; // char 1 , char * 8
+
+	float cc = 1.2f;
+	float *ccc = &cc;
+	cout << "sizeof cc:" << sizeof(cc) << " ccc:" << sizeof(ccc) << endl;
+
+	double dd = 1.2f;
+	double *ddd = &dd;
+	cout << "sizeof dd:" << sizeof(dd) << " ddd:" << sizeof(ddd) << endl;
+
+	long long ee = 1;
+	long long *eee = &ee;
+	cout << "sizeof ee:" << sizeof(ee) << " eee:" << sizeof(eee) << endl;
+
+	int ia[3][4] = {{1, 2}, 3, 4, 5};
+
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			cout << ia[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	for (auto &as : ia)
+	{
+		for (auto &ass : as)
+		{
+			cout << ass << " ";
+		}
+		cout << endl;
+	}
 
 	return 0;
 }
-
-/* 库构思
-#IIO
-
-class
-{
-	##初始化:
-	initIIO(string ip); // ip:设备ip; type: 0,初始化iio 1,初始化按键  2,0和1同时用
-	initKeys(void*(int key,int type));	//回调函数
-
-	##蜂鸣器:
-	setBuzzerAlarm(bool _switch, int seconds, int mode) // _switch true开 false关;  seconds 时长(秒);  mode 模式
-
-	##马达:
-	setMotorAlarm(bool _switch, int seconds, int mode) // _switch true开 false关;  seconds 时长(秒);  mode 模式
-
-	##LED:
-	setLedAlarm(bool _switch, int seconds, int mode) // _switch true开 false关;  seconds 时长(秒);  mode 模式
-
-	// 上面三个可提供一个接口?
-
-	##屏幕:
-	setScreen(bool _switch, int light) // _switch true开 false关;  light 亮度
-
-	##开关板:
-	setSignalSwitch(int mode) // mode 通道切换
-
-	##设置值
-	set_control_IIO(int mode, bool _switch)	// mode 控制哪个引脚 _switch 置0还是置1
-
-	##获取值
-	int get_control_IIO(int mode)			// 获取需要寄存器位值
-}
-*/

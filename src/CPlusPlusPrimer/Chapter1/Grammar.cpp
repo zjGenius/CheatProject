@@ -12,6 +12,57 @@ void Grammar::test_while()
     std::cout << "sum:" << sum << std::endl;
 }
 
+void Grammar::test_count()
+{
+    int count = 1, num, old_num = 0;
+
+    while (std::cin >> num)
+    {
+        if (count == 1 && old_num == 0)
+        {
+            old_num = num;
+            continue;
+        }
+
+        if (num == old_num)
+        {
+            count++;
+        }
+        else
+        {
+            std::cout << "num:" << old_num << " " << count << " times" << std::endl;
+            count = 1;
+        }
+
+        old_num = num;
+    }
+    std::cout << "num:" << old_num << " " << count << " times" << std::endl;
+}
+
+void Grammar::test_count1()
+{
+    int currVal, val;
+
+    if (std::cin >> currVal)
+    {
+        int num = 1;
+        while (std::cin >> val)
+        {
+            if (currVal == val)
+            {
+                num++;
+            }
+            else
+            {
+                std::cout << "num:" << currVal << " " << num << " times" << std::endl;
+                currVal = val;
+                num = 1;
+            }
+        }
+        std::cout << "num:" << currVal << " " << num << " times" << std::endl;
+    }
+}
+
 void Grammar::test_sacle_item()
 {
     // 支持从文件中获取参数 命令: ./ExternalPlugIn <test_in.txt >test_out.txt

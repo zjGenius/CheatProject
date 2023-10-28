@@ -7,6 +7,8 @@ private:
     /* data */
 public:
     void test_while();
+    void test_count();
+    void test_count1();
     void test_sacle_item();
 };
 

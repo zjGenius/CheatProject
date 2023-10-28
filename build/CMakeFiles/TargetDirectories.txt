@@ -1,3 +1,0 @@
-/home/zhangjun/code/CheatProject/build/CMakeFiles/rebuild_cache.dir
-/home/zhangjun/code/CheatProject/build/CMakeFiles/edit_cache.dir
-/home/zhangjun/code/CheatProject/build/CMakeFiles/ExternalPlugIn.dir
