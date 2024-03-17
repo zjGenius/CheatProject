@@ -116,6 +116,7 @@ void CPlusPlusPrimerStudy()
 {
 	CPlusPlusPrimer *cplusplus = new CPlusPlusPrimer();
 	// cplusplus->chapter1_display();
+	cplusplus->chapter10_display();
 }
 
 /**

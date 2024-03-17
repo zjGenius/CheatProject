@@ -12,6 +12,7 @@
 #define _CPLUSPLUS_PRIMER_H_
 
 #include "./Chapter1/Grammar.h"
+#include "./Chapter10/GenericOperation.h"
 
 class CPlusPlusPrimer
 {
@@ -22,6 +23,7 @@ public:
     ~CPlusPlusPrimer();
 
     void chapter1_display();
+    void chapter10_display();
 };
 
 #endif // !_CPLUSPLUS_PRIMER_H_

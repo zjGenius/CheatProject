@@ -58,6 +58,14 @@
         "thread": "cpp",
         "iomanip": "cpp",
         "iqtransmitcenter.h": "c",
-        "stack": "cpp"
-    }
+        "stack": "cpp",
+        "bitset": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "shared_mutex": "cpp",
+        "stop_token": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
