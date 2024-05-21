@@ -4,15 +4,16 @@
  * @brief C++ primer 练习
  * @version 0.1
  * @date 2023-08-01
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
 #ifndef _CPLUSPLUS_PRIMER_H_
 #define _CPLUSPLUS_PRIMER_H_
 
 #include "./Chapter1/Grammar.h"
 #include "./Chapter10/GenericOperation.h"
+#include "./Chapter12/TextQuery.h"
 
 class CPlusPlusPrimer
 {
@@ -24,6 +25,7 @@ public:
 
     void chapter1_display();
     void chapter10_display();
+    void chapter12_display();
 };
 
 #endif // !_CPLUSPLUS_PRIMER_H_

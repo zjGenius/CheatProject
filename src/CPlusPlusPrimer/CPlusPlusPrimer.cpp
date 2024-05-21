@@ -18,6 +18,20 @@ void CPlusPlusPrimer::chapter1_display()
     // g->test_sacle_item();
 }
 
+void CPlusPlusPrimer::chapter12_display()
+{
+    ifstream infile("./text.txt");
+    TextQuery tq(infile);
+    while (1)
+    {
+        cout << "enter word to look for, or q to quit: ";
+        string s;
+        if (!(cin >> s) || s == "q")
+            break;
+        print(cout, tq.query(s)) << endl;
+    }
+}
+
 void CPlusPlusPrimer::chapter10_display()
 {
     // test_lambda();
