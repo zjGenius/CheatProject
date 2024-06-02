@@ -80,6 +80,18 @@ void leetcodeStudy()
 	// printf("27 vector size:%d\n", lee->topic_27(nums, 2));
 	// lee->topic_2682(5, 2);
 	// printf("9 bool:%d\n", lee->topic_9(1234567899));
+
+	// std::vector<int> nums_575 = {1, 2, 2, 4};
+	// int ret_575 = lee->topic_575(nums_575);
+	// printf("ret_575:%d\n", ret_575);
+
+	std::vector<std::string> ret_0807 = lee->topic_0807("DiLN");
+	printf("LeedCode 0807: ");
+	for(int i = 0; i < ret_0807.size(); i++)
+	{
+		printf("%s ", ret_0807[i].c_str());
+	}
+	printf("\n");
 }
 
 void DesignPatternsStudy()
@@ -270,10 +282,10 @@ int main(void)
 	// DesignPatternsStudy();
 
 	/******************C++ Primer 第五版************************/
-	CPlusPlusPrimerStudy();
+	// CPlusPlusPrimerStudy();
 
 	/******************LeedCode************************/
-	// leetcodeStudy();
+	leetcodeStudy();
 
 	// printf("\n\nnum:%d\n", 7 % 5);
 
@@ -301,55 +313,6 @@ int main(void)
 	// 		printf("%d*", i);
 	// }
 	// printf(" =%d\n", result);
-
-	constexpr size_t sz = 5;
-	int arr[sz] = {1, 2, 3, 4, 5};
-	int *arrp = arr;
-
-	cout << "sizeof sz:" << sizeof(sz) << endl;		// long 8
-	cout << "sizeof arr:" << sizeof(arr) << endl;	// （int) 4 * 5 = 20
-	cout << "sizeof arrp:" << sizeof(arrp) << endl; // long 8
-
-	int aa = 5;
-	int *aaa = &aa;
-	cout << "sizeof aa:" << sizeof(aa) << " aaa:" << sizeof(aaa) << endl; // int 4 , int * 8
-
-	char bb = '1';
-	char *bbb = &bb;
-	cout << "sizeof bb:" << sizeof(bb) << " bbb:" << sizeof(bbb) << endl; // char 1 , char * 8
-
-	float cc = 1.2f;
-	float *ccc = &cc;
-	cout << "sizeof cc:" << sizeof(cc) << " ccc:" << sizeof(ccc) << endl;
-
-	double dd = 1.2f;
-	double *ddd = &dd;
-	cout << "sizeof dd:" << sizeof(dd) << " ddd:" << sizeof(ddd) << endl;
-
-	long long ee = 1;
-	long long *eee = &ee;
-	cout << "sizeof ee:" << sizeof(ee) << " eee:" << sizeof(eee) << endl;
-
-	int ia[3][4] = {{1, 2}, 3, 4, 5};
-
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 4; j++)
-		{
-			cout << ia[i][j] << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
-	for (auto &as : ia)
-	{
-		for (auto &ass : as)
-		{
-			cout << ass << " ";
-		}
-		cout << endl;
-	}
 
 	return 0;
 }

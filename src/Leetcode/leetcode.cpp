@@ -186,3 +186,68 @@ bool LeedCode::topic_9(int n)
     printf("temp1:%d temp2:%d\n", temp1, temp2);
     return temp1 == temp2;
 }
+// 耗时最短的
+int distributeCandies_575(std::vector<int>& candyType) {
+    std::bitset<200001> bs;
+    for(const int& i : candyType){
+        bs.set(i + 100000);
+    }
+    return std::min(bs.count(), candyType.size() / 2);
+}
+int LeedCode::topic_575(std::vector<int>& candyType) 
+{
+    if(candyType.size() % 2 != 0)
+        return -1;
+
+    int vec_size = candyType.size();
+    
+    // for(int i = 0; i < candyType.size(); i++)
+    // {
+    //     printf("%d ", candyType[i]);
+    // }
+    // printf("\n");
+
+    std::set<int> s(candyType.begin(), candyType.end());
+    candyType.assign(s.begin(), s.end());
+
+    // for(int i = 0; i < candyType.size(); i++)
+    // {
+    //     printf("%d ", candyType[i]);
+    // }
+    // printf("\n");
+
+    if(candyType.size() >= vec_size / 2)
+        return vec_size / 2;
+    else
+        return candyType.size();
+}
+
+
+std::vector<std::string> LeedCode::topic_0807(std::string S) 
+{
+    if(S.size() > 1)
+    {
+        char first_code = S.front();
+        printf("first_code-%c\n", first_code);
+        std::vector<std::string> ret = topic_0807(S.substr(1, -1));
+        std::vector<std::string> temp_s;
+        for(int i = 0; i < ret.size(); i++)
+        {
+            for(int j = 0; j < ret[i].size(); j++)
+            {
+                std::string str = ret[i];
+                str = str.insert(j, 1, first_code);
+                printf("str:%s\n", str.c_str());
+                temp_s.push_back(str);
+            }
+            printf("\n");
+        }
+        return temp_s;
+    }
+    else
+    {
+        std::vector<std::string> temp_s = {S};
+        printf("--%s\n", S.c_str());
+        return temp_s;
+    }
+}

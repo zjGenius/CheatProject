@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <vector>
+#include <set>
+#include <bitset>
 
 class LeedCode
 {
@@ -15,6 +17,8 @@ public:
     int topic_27(std::vector<int> &nums, int val);
     std::vector<int> topic_2682(int n, int k);
     bool topic_9(int n);
+    int topic_575(std::vector<int>& candyType);
+    std::vector<std::string> topic_0807(std::string S);
 };
 
 #endif // !_LEETCODE_H_
