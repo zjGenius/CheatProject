@@ -19,6 +19,10 @@ public:
     bool topic_9(int n);
     int topic_575(std::vector<int>& candyType);
     std::vector<std::string> topic_0807(std::string S);
+    std::vector<int> topic_1103(int candies, int num_people);
+    int topic_1334(int n, std::vector<std::vector<int>> &edges, int distanceThreshold);
+    bool topic_292(int n);
+    bool topic_3127(std::vector<std::vector<char>> &grid);
 };
 
 #endif // !_LEETCODE_H_

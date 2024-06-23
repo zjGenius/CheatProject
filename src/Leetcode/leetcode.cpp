@@ -187,20 +187,22 @@ bool LeedCode::topic_9(int n)
     return temp1 == temp2;
 }
 // 耗时最短的
-int distributeCandies_575(std::vector<int>& candyType) {
+int distributeCandies_575(std::vector<int> &candyType)
+{
     std::bitset<200001> bs;
-    for(const int& i : candyType){
+    for (const int &i : candyType)
+    {
         bs.set(i + 100000);
     }
     return std::min(bs.count(), candyType.size() / 2);
 }
-int LeedCode::topic_575(std::vector<int>& candyType) 
+int LeedCode::topic_575(std::vector<int> &candyType)
 {
-    if(candyType.size() % 2 != 0)
+    if (candyType.size() % 2 != 0)
         return -1;
 
     int vec_size = candyType.size();
-    
+
     // for(int i = 0; i < candyType.size(); i++)
     // {
     //     printf("%d ", candyType[i]);
@@ -216,24 +218,23 @@ int LeedCode::topic_575(std::vector<int>& candyType)
     // }
     // printf("\n");
 
-    if(candyType.size() >= vec_size / 2)
+    if (candyType.size() >= vec_size / 2)
         return vec_size / 2;
     else
         return candyType.size();
 }
 
-
-std::vector<std::string> LeedCode::topic_0807(std::string S) 
+std::vector<std::string> LeedCode::topic_0807(std::string S)
 {
-    if(S.size() > 1)
+    if (S.size() > 1)
     {
         char first_code = S.front();
         printf("first_code-%c\n", first_code);
         std::vector<std::string> ret = topic_0807(S.substr(1, -1));
         std::vector<std::string> temp_s;
-        for(int i = 0; i < ret.size(); i++)
+        for (int i = 0; i < ret.size(); i++)
         {
-            for(int j = 0; j < ret[i].size(); j++)
+            for (int j = 0; j < ret[i].size(); j++)
             {
                 std::string str = ret[i];
                 str = str.insert(j, 1, first_code);
@@ -250,4 +251,161 @@ std::vector<std::string> LeedCode::topic_0807(std::string S)
         printf("--%s\n", S.c_str());
         return temp_s;
     }
+}
+
+std::vector<int> LeedCode::topic_1103(int candies, int num_people)
+{
+    // std::vector<int> temp_vec;
+    // temp_vec.resize(num_people);
+    // int temp = 0;
+
+    // while (candies > 0)
+    // {
+    //     if (candies <= temp)
+    //     {
+    //         temp_vec[temp % num_people] += candies;
+    //         break;
+    //     }
+    //     temp_vec[temp++ % num_people] += temp;
+    //     candies -= temp;
+    // }
+    // return temp_vec;
+
+    std::vector<int> temp_vec(num_people);
+    for (int i = 1; candies > 0; i++)
+    {
+        temp_vec[(i - 1) % num_people] += std::min(i, candies);
+        candies -= i;
+    }
+    return temp_vec;
+}
+// 未写出来
+int LeedCode::topic_1334(int n, std::vector<std::vector<int>> &edges, int distanceThreshold)
+{
+    int max_num = 0;
+    std::vector<std::map<int, int>> temp_vec(n);
+    for (int i = 0; i < edges.size(); i++)
+    {
+        if (edges[i][2] <= distanceThreshold)
+        {
+            // printf("%d %d\n", edges[i][0], edges[i][1]);
+            temp_vec[edges[i][0]].insert(std::pair<int, int>(edges[i][1], edges[i][2]));
+            temp_vec[edges[i][1]].insert(std::pair<int, int>(edges[i][0], edges[i][2]));
+            max_num = std::max(edges[i][1], edges[i][0]);
+        }
+    }
+    if (max_num + 1 != n)
+        return -1;
+    printf("---\n");
+
+    for (int i = 0; i < temp_vec.size(); i++)
+    {
+        printf("%d: ", i);
+        for (std::map<int, int>::iterator it = temp_vec[i].begin(); it != temp_vec[i].end(); it++)
+            printf("%d:%d, ", it->first, it->second);
+        printf("\n");
+    }
+
+    std::vector<std::map<int, int>> temptemp_vec = temp_vec;
+
+    for (int i = 0; i < temp_vec.size(); i++)
+    {
+        int minNum = 0;
+        int temp_vec_size = temp_vec[i].size();
+        printf("\ntemp_vec----------------------\n");
+        int handleNum = 0;
+        for (std::map<int, int>::iterator it = temp_vec[i].begin(); it != temp_vec[i].end(), handleNum < temp_vec_size; it++)
+        {
+            minNum = it->second;
+            std::vector<int> index_vec;
+            for (std::map<int, int>::iterator it_1 = temp_vec[i].begin(); it_1 != temp_vec[i].end(); it_1++)
+            {
+                index_vec.push_back(it_1->first);
+            }
+            printf("\nwhile start%d:%d %d %d\n", i, minNum, index_vec.size(), temp_vec[i].size());
+            while (minNum < distanceThreshold)
+            {
+                if (index_vec.size() == 0 || handleNum == temp_vec_size)
+                    break;
+                std::map<int, int> temp_find_vec = temp_vec[index_vec.back()];
+                printf("- %d %d ", index_vec.size(), index_vec.back());
+                printf("sum:%d\n\n", (minNum + temp_vec[i].at(index_vec.back())));
+                if ((minNum + temp_vec[i].at(index_vec.back())) > distanceThreshold && index_vec.back() != it->first)
+                {
+                    index_vec.pop_back();
+                    continue;
+                }
+                else
+                    index_vec.pop_back();
+
+                for (std::map<int, int>::iterator it_temp = temp_find_vec.begin(); it_temp != temp_find_vec.end(); it_temp++)
+                {
+                    printf("%d:%d, ", it_temp->first, it_temp->second);
+                    if ((minNum + it_temp->second) <= distanceThreshold && it_temp->first != i)
+                    {
+                        temptemp_vec[i].insert(std::pair<int, int>(it_temp->first, it_temp->second));
+
+                        minNum += it_temp->second;
+                        printf("insert: key:%d value:%d minNum:%d\n", it_temp->first, it_temp->second, minNum);
+                        if (std::find(index_vec.begin(), index_vec.end(), it_temp->first) == index_vec.end())
+                            index_vec.push_back(it_temp->first);
+                    }
+                }
+            }
+
+            handleNum++;
+        }
+    }
+    printf("\n\n");
+    for (int i = 0; i < temp_vec.size(); i++)
+    {
+        printf("%d: ", i);
+        for (std::map<int, int>::iterator it = temp_vec[i].begin(); it != temp_vec[i].end(); it++)
+            printf("%d:%d, ", it->first, it->second);
+        printf("\n");
+    }
+
+    printf("\ntemp:\n");
+    for (int i = 0; i < temptemp_vec.size(); i++)
+    {
+        printf("%d: ", i);
+        for (std::map<int, int>::iterator it = temptemp_vec[i].begin(); it != temptemp_vec[i].end(); it++)
+            printf("%d:%d, ", it->first, it->second);
+        printf("\n");
+    }
+
+    int temp = 0;
+    for (int i = 1; i < n; i++)
+    {
+        if ((int)temptemp_vec[temp].size() < (int)temptemp_vec[i].size())
+            continue;
+        else
+            temp = i;
+    }
+
+    return temp;
+}
+
+bool LeedCode::topic_292(int n)
+{
+    return (n % 4) != 0;
+}
+
+bool LeedCode::topic_3127(std::vector<std::vector<char>> &grid)
+{
+    auto check = [&](int row, int col) -> bool
+    {
+        int retB = 0, retW = 0;
+        for (int i = row; i <= row + 1; i++)
+            for (int j = col; j <= col + 1; j++)
+            {
+                if (grid[i][j] == 'W')
+                    retW++;
+                else
+                    retB++;
+            }
+        return retB >= 3 || retW >= 3;
+    };
+
+    return check(0, 0) || check(0, 1) || check(1, 0) || check(1, 1);
 }

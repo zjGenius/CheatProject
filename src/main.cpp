@@ -85,13 +85,79 @@ void leetcodeStudy()
 	// int ret_575 = lee->topic_575(nums_575);
 	// printf("ret_575:%d\n", ret_575);
 
-	std::vector<std::string> ret_0807 = lee->topic_0807("DiLN");
-	printf("LeedCode 0807: ");
-	for(int i = 0; i < ret_0807.size(); i++)
-	{
-		printf("%s ", ret_0807[i].c_str());
-	}
-	printf("\n");
+	// std::vector<std::string> ret_0807 = lee->topic_0807("DiLN");
+	// printf("LeedCode 0807: ");
+	// for(int i = 0; i < ret_0807.size(); i++)
+	// {
+	// 	printf("%s ", ret_0807[i].c_str());
+	// }
+	// printf("\n");
+
+	// std::vector<int> ret_1103 = lee->topic_1103(90, 4);
+	// printf("LeedCode 1103: ");
+	// for(int i = 0; i < ret_1103.size(); i++)
+	// {
+	// 	printf("%d ", ret_1103[i]);
+	// }
+	// printf("\n");
+
+	// std::vector<int> temp1{0, 1, 2};
+	// std::vector<int> temp2{0, 4, 8};
+	// std::vector<int> temp3{1, 2, 3};
+	// std::vector<int> temp4{1, 4, 2};
+	// std::vector<int> temp5{2, 3, 1};
+	// std::vector<int> temp6{3, 4, 1};
+	// std::vector<std::vector<int>> temp_vec;
+	// temp_vec.push_back(temp1);
+	// temp_vec.push_back(temp2);
+	// temp_vec.push_back(temp3);
+	// temp_vec.push_back(temp4);
+	// temp_vec.push_back(temp5);
+	// temp_vec.push_back(temp6);
+
+	// std::vector<int> temp1{0, 3, 7};
+	// std::vector<int> temp2{2, 4, 1};
+	// std::vector<int> temp3{0, 1, 5};
+	// std::vector<int> temp4{2, 3, 10};
+	// std::vector<int> temp5{1, 3, 6};
+	// std::vector<int> temp6{1, 2, 1};
+	// std::vector<std::vector<int>> temp_vec;
+	// temp_vec.push_back(temp1);
+	// temp_vec.push_back(temp2);
+	// temp_vec.push_back(temp3);
+	// temp_vec.push_back(temp4);
+	// temp_vec.push_back(temp5);
+	// temp_vec.push_back(temp6);
+
+	// std::vector<int> temp1{0, 3, 5};
+	// std::vector<int> temp2{2, 3, 7};
+	// std::vector<int> temp3{0, 5, 2};
+	// std::vector<int> temp4{0, 2, 5};
+	// std::vector<int> temp5{1, 2, 6};
+	// std::vector<int> temp6{1, 4, 7};
+	// std::vector<int> temp7{3, 4, 4};
+	// std::vector<int> temp8{2, 5, 5};
+	// std::vector<int> temp9{1, 5, 8};
+	// std::vector<std::vector<int>> temp_vec;
+	// temp_vec.push_back(temp1);
+	// temp_vec.push_back(temp2);
+	// temp_vec.push_back(temp3);
+	// temp_vec.push_back(temp4);
+	// temp_vec.push_back(temp5);
+	// temp_vec.push_back(temp6);
+	// temp_vec.push_back(temp7);
+	// temp_vec.push_back(temp8);
+	// temp_vec.push_back(temp9);
+
+	// int ret_1334 = lee->topic_1334(6, temp_vec, 8279);
+	// printf("LeedCode 1103:%d\n", ret_1334);
+
+	// bool ret_292 = lee->topic_292(8);
+	// printf("LeedCode 292:%d\n", ret_292);
+
+	std::vector<std::vector<char>> grid = {{'B', 'W', 'B'}, {'W', 'B', 'W'}, {'B', 'W', 'B'}};
+	bool ret_3127 = lee->topic_3127(grid);
+	printf("LeedCode 3127:%d\n", ret_3127);
 }
 
 void DesignPatternsStudy()
