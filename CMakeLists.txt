@@ -71,6 +71,7 @@ include_directories(./include/DesignPatterns/Mediator)
 include_directories(./include/DesignPatterns/FlyWeight)
 include_directories(./include/DesignPatterns/Interpreter)
 include_directories(./include/DesignPatterns/Visitor)
+include_directories(./include/DesignPatterns/PImpl)
 
 include_directories(./include/CPlusPlusPrimer)
 include_directories(./include/CPlusPlusPrimer/Chapter1)
@@ -85,6 +86,8 @@ include_directories(include/Learn/heima/polymorphic)
 include_directories(include/Learn/heima/FileStream)
 include_directories(include/Learn/heima/Template)
 include_directories(include/Learn/heima/ScoringSystem)
+
+include_directories(include/Transmission)
 # include_directories(./include/SDR)
 # include_directories(./include/3rdparty)
 # include_directories(./include/Tools)
@@ -109,6 +112,8 @@ aux_source_directory(./src/DesignPatterns/Decorator SRC_LIST)
 aux_source_directory(./src/DesignPatterns/Proxy SRC_LIST)
 aux_source_directory(./src/DesignPatterns/FactoryMethod SRC_LIST)
 aux_source_directory(./src/DesignPatterns/State SRC_LIST)
+aux_source_directory(./src/DesignPatterns/PImpl SRC_LIST)
+aux_source_directory(./src/Transmission SRC_LIST)
 
 aux_source_directory(./src/CPlusPlusPrimer SRC_LIST)
 aux_source_directory(./src/CPlusPlusPrimer/Chapter1 SRC_LIST)
@@ -155,6 +160,6 @@ set( CMAKE_CXX_FLAGS "-std=c++14 -O0" )
 
 
 #链接库
-TARGET_LINK_LIBRARIES( ExternalPlugIn pthread )
+TARGET_LINK_LIBRARIES( ExternalPlugIn pthread rt)
 # TARGET_LINK_LIBRARIES( ExternalPlugIn pthread iio )
 #TARGET_LINK_LIBRARIES( E310 pthread iio gprofHelp_cxx)

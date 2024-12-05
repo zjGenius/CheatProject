@@ -25,6 +25,10 @@
 #include "HeimaDisplay.h"
 
 #include "smartPointer.hpp"
+#include "ShareMemery.h"
+#include "CallBackFuntion.h"
+#include "ImplBook.h"
+#include "Design_guanchazhe.hpp"
 // #include "huffman1.h"
 // #include "HuffmanCompressAndUn.h"
 
@@ -269,6 +273,370 @@ void containerStudy()
 // 	printf("sum:%d\n", a + b + c);
 // }
 
+typedef struct Node
+{
+	int data;
+	Node *next;
+};
+
+void Node_Create_Head(Node *list, int n)
+{
+	Node *p;
+	int j = 0;
+	// list = (Node *)malloc(sizeof(Node));
+	list->next = NULL;
+
+	int num = 0;
+	while (j++ < n)
+	{
+		p = (Node *)malloc(sizeof(Node));
+		p->data = num++;
+		p->next = list->next;
+		list->next = p;
+		// printf("Node_Create\n");
+	}
+	printf("Node_Create_Head OK!\n");
+}
+
+// Node *Node_Creat(Node *list)
+// {
+// 	Node *p;
+// 	p = (Node *)malloc(sizeof(Node));
+// 	list->next = p;
+// 	p->data = list->data+1;
+// 	return p;
+// }
+
+// void Node_Create_Head(Node *list, int n)
+// {
+// 	Node *p = list;
+// 	int j = 0;
+// 	while(j++ < n)
+// 	{
+// 		p = Node_Creat(p);
+// 	}
+// 	printf("Node_Create_Head OK!\n");
+// }
+
+void Node_Create_End(Node *list, int n)
+{
+	Node *p;
+	list->next = NULL;
+
+	int num = 0;
+	int j = 0;
+	while (j++ < n)
+	{
+		p = (Node *)malloc(sizeof(Node));
+		p->data = num++;
+		p->next = list->next;
+		list->next = p;
+		list = p;
+	}
+	list->next = NULL;
+}
+
+int Node_Insert_Head(Node *list, int n, int data)
+{
+	Node *p;
+
+	int j = 1;
+	while (list->next != NULL && j < n)
+	{
+		list = list->next;
+		j++;
+	}
+
+	if (list->next == NULL || j > n)
+		return 0;
+
+	p = (Node *)malloc(sizeof(Node));
+	p->data = data;
+	p->next = list->next;
+	list->next = p;
+
+	return 1;
+}
+
+int Node_Insert_End(Node *list, int n, int data)
+{
+	Node *p;
+
+	int j = 0;
+	while (list->next != NULL && j < n)
+	{
+		list = list->next;
+		j++;
+	}
+
+	if (list == NULL || j > n)
+		return 0;
+
+	p = (Node *)malloc(sizeof(Node));
+	p->data = data;
+	p->next = list->next;
+	list->next = p;
+
+	return 1;
+}
+
+int Node_Delete(Node *list, int n)
+{
+	Node *p;
+
+	int j = 1;
+	while (list->next != NULL && j < n)
+	{
+		list = list->next;
+		j++;
+	}
+
+	if (list->next == NULL || j > n)
+		return 0;
+
+	p = list->next;
+	list->next = p->next;
+	free(p);
+	return 1;
+}
+
+int Node_Clear(Node *list)
+{
+	Node *p;
+	p = list->next;
+
+	while (p)
+	{
+		list->next = p->next;
+		free(p);
+		p = list->next;
+	}
+	// list->next = NULL;
+
+	return 1;
+}
+
+void Node_Printf(Node *list)
+{
+	Node *p = list->next;
+	// printf("Node_Printf:%d\n", p->data);
+	printf("Node_Printf:\n");
+	if (p == NULL)
+	{
+		printf("Empty List!!\n");
+		return;
+	}
+	while (p != NULL)
+	{
+		printf("%d ", p->data);
+		p = p->next;
+	}
+	printf("\n");
+}
+
+//** 静态链表 **//
+#define MAX_SIZE 100
+typedef struct
+{
+	int data;
+	int index;
+} Const_List[MAX_SIZE];
+
+// 创建链表
+int Create_Const_List(Const_List L)
+{
+	for (int i = 0; i < MAX_SIZE - 1; i++)
+	{
+		L[i].index = i + 1;
+	}
+
+	L[MAX_SIZE - 1].index = 0;
+	return 1;
+}
+
+int Length_Const_List(Const_List L)
+{
+	int k, j = 0;
+	k = L[MAX_SIZE - 1].index;
+
+	while (k)
+	{
+		k = L[k].index;
+		j++;
+	}
+
+	return j;
+}
+
+// 找到空闲位置
+int Malloc_Const_List(Const_List L)
+{
+	int i = L[0].index;
+
+	if (L[0].index)
+		L[0].index = L[i].index;
+
+	return i;
+}
+
+// 收回空闲位置
+void Free_Const_List(Const_List L, int k)
+{
+	L[k].index = L[0].index;
+	L[0].index = k;
+}
+
+int Insert_Const_List(Const_List L, int n, int data)
+{
+	int j, k, l;
+	k = MAX_SIZE - 1; // k是最后一个元素的下标
+
+	if (n < 1 && n > Length_Const_List(L) + 1)
+		return 0;
+
+	j = Malloc_Const_List(L); // 找到空闲index
+
+	if (j)
+	{
+		L[j].data = data;
+		for (l = 1; l <= n - 1; l++)
+			k = L[k].index;
+		L[j].index = L[k].index;
+		L[k].index = j;
+		return 1;
+	}
+	return 0;
+}
+
+int Delete_Const_List(Const_List L, int i)
+{
+	int j, k;
+
+	if (1 < i && i > Length_Const_List(L) + 1)
+		return 0;
+
+	k = MAX_SIZE - 1;
+	for (j = 1; j <= i - 1; j++)
+		k = L[k].index;
+	j = L[k].index;
+	L[k].index = L[j].index;
+	Free_Const_List(L, j);
+	return 1;
+}
+
+void Print_Const_List(Const_List L)
+{
+	int k;
+	k = L[MAX_SIZE - 1].index;
+	printf("const list value:\n");
+
+	if (!k)
+	{
+		printf("Empty Const List!!\n");
+		return;
+	}
+
+	while (k)
+	{
+		// printf("i:%d d:%d| ", L[k].index, L[k].data);
+		printf("%d ", L[k].data);
+		k = L[k].index;
+	}
+	printf("\n");
+}
+
+#define MAX_STR_SIZE 128
+#define LEFT_BRACKET "("
+#define RIGHT_BRACKET ")"
+#define ADD "+"
+#define SUB "-"
+#define MUL "*"
+#define DIV "/"
+
+typedef struct LinkData
+{
+	char data[10];
+	LinkData *next;
+} LinkData;
+
+typedef struct
+{
+	LinkData *top;
+	int count;
+} LinkOperatorData;
+
+int LinkDataPush()
+{
+}
+
+int LinkDataPop()
+{
+}
+
+int transmitStr(char *inputStr /*, LinkOperatorData *data*/)
+{
+	int strLength = 1;
+
+	char splitStr[100][10];
+	memset(splitStr, 0, 100 * 10);
+
+	char strIndex[2];
+	memset(strIndex, 0, 2);
+
+	char NUMBER[] = "0123456789";
+
+	while (strcmp(strncpy(strIndex, inputStr++, 1), "\0") != 0)
+	{
+		if (strstr(NUMBER, strIndex) != NULL)
+		{
+			if (strstr(NUMBER, splitStr[strLength - 1]) == NULL)
+				strcpy(splitStr[++strLength - 1], strIndex);
+			else
+				strcat(splitStr[strLength - 1], strIndex);
+		}
+		else
+		{
+			strcpy(splitStr[++strLength - 1], strIndex);
+		}
+		// printf("splitStr:%s size:%d\n", splitStr[strLength-1], strLength);
+	}
+
+	printf("str:%d\n", strLength);
+	for (int i = 0; i < strLength; i++)
+	{
+		printf("|%s| ", splitStr[i]);
+	}
+	printf("\n");
+
+	return 0;
+}
+
+int calcFourOperations(char *inputStr)
+{
+	LinkOperatorData *linkOperatorData;
+	linkOperatorData->top = NULL;
+	linkOperatorData->count = 0;
+}
+
+void InsertSort(std::vector<int> &nums, int n)
+{
+	if(n <= 1) return;
+	for(int i = 0; i < n; ++i)
+	{
+		printf("i:%d->", i);
+		for(int j = i; j > 0 && nums[j] < nums[j - 1]; --j)
+		{
+			printf("%d %d__", nums[j], nums[j-1]);
+			std::swap(nums[j], nums[j - 1]);
+			printf("%d %d\n", nums[j], nums[j-1]);
+		}
+		for(int testi = 0; testi < nums.size(); ++testi)
+			printf("%d ", nums[testi]);
+		printf("\n");
+		printf("\n");
+	}
+}
+
 int main(void)
 {
 	printf("-----------------------------------------\n");
@@ -345,7 +713,7 @@ int main(void)
 	// pDev->_getIQData();
 
 	/******************设计模式************************/
-	// DesignPatternsStudy();
+	DesignPatternsStudy();
 
 	/******************C++ Primer 第五版************************/
 	// CPlusPlusPrimerStudy();
@@ -379,6 +747,129 @@ int main(void)
 	// 		printf("%d*", i);
 	// }
 	// printf(" =%d\n", result);
+
+	ShareMemery *shareMer = new ShareMemery();
+	// shareMer->sendShmData();
+	// shareMer->recvShmData();
+
+	CallBackFuntion callback;
+	// callback.display();
+
+	// PBook mPBook("Primer c++", 59.5);
+	// mPBook.display();
+
+	pair<int, string> person = {18, "李四"};
+	auto [age, name] = person;
+	cout << "age:" << age << " (" << typeid(age).name() << ")";
+	cout << " name:" << name << " (" << typeid(name).name() << ")";
+	cout << endl;
+
+	printf("\n********单链表测试********\n");
+	Node *list1;
+	list1 = (Node *)malloc(sizeof(Node));
+	list1->data = 10;
+	Node_Printf(list1);
+	Node_Create_Head(list1, 10);
+	printf("list1 size:%d\n", sizeof(list1));
+	Node_Printf(list1);
+	Node_Insert_Head(list1, 10, 55);
+	Node_Printf(list1);
+
+	Node *list2;
+	list2 = (Node *)malloc(sizeof(Node));
+	Node_Create_End(list2, 10);
+	printf("list2 size:%d\n", sizeof(list2));
+	Node_Printf(list2);
+	Node_Insert_End(list2, 10, 55);
+	Node_Printf(list2);
+
+	Node_Delete(list2, 5);
+	Node_Printf(list2);
+	Node_Clear(list2);
+	Node_Printf(list2);
+
+	printf("\n********静态链表测试********\n");
+	Const_List constList;
+	Create_Const_List(constList);
+
+	Print_Const_List(constList);
+
+	Insert_Const_List(constList, 1, 1);
+	Insert_Const_List(constList, 1, 2);
+	Insert_Const_List(constList, 1, 3);
+	Insert_Const_List(constList, 1, 4);
+	Insert_Const_List(constList, 1, 5);
+	Insert_Const_List(constList, 1, 6);
+	Insert_Const_List(constList, 1, 7);
+	Print_Const_List(constList);
+
+	printf("const list length:%d\n", Length_Const_List(constList));
+
+	Insert_Const_List(constList, 5, 55);
+	Print_Const_List(constList);
+
+	Delete_Const_List(constList, 5);
+	Print_Const_List(constList);
+
+	printf("\n********栈实现四则运算********\n");
+	char testData[128];
+	memset(testData, 0, 128);
+	strcpy(testData, "9+(3-1)*3+10/2");
+	transmitStr(testData);
+
+	char testdata111[10];
+
+	char number[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+	char *serial = "HANT0424040III";
+
+	string number_str = "0123456789";
+	string serial_str = "HANT0424040III";
+
+	int first = serial_str.find_first_of(number_str);
+	int last = serial_str.find_last_of(number_str);
+	printf("find first number:%d last:%d\n", first, last);
+
+	serial_str = serial_str.substr(first, last - first + 1);
+	printf("serial_str:%s\n", serial_str.c_str());
+
+
+	char c_serial[20];
+	// memset(c_serial, 255, 20);
+	// strcpy(c_serial, "HANT0424040III");
+	
+	int ret_num = strcmp(c_serial, "");
+	printf("ret_num:%d\n", ret_num);
+
+
+	// strcat(testdata111, "1");
+	// strcat(testdata111, "2");
+	// strcat(testdata111, "3");
+	// strcat(testdata111, "4");
+	// printf("test:%s\n", testdata111);
+
+	std::vector<int> sortNums{4, 6, 5, 2, 3, 1};
+	printf("origin nums:");
+	for(int testi = 0; testi < sortNums.size(); ++testi)
+		printf("%d ", sortNums[testi]);
+	printf("\n");
+	InsertSort(sortNums, sizeof(sortNums) / sizeof(int));
+	printf("sort nums:");
+	for(int testi = 0; testi < sortNums.size(); ++testi)
+		printf("%d ", sortNums[testi]);
+	printf("\n");
+
+	Test_Viewer *v = new Test_Viewer();
+	Test_Observer *nba_o = new Test_NBA_Observer("nba摸鱼者", v);
+	Test_Observer *stock_o = new Test_Stock_Observer("股票摸鱼者", v);
+
+	v->addObserver(nba_o);
+	v->addObserver(stock_o);
+
+	v->text = "吃饭去了!";
+	v->notify();
+
+	v->text = "老板来了!";
+	v->notify();
 
 	return 0;
 }
