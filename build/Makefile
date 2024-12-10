@@ -220,6 +220,21 @@ src/DesignPatterns/DesignPatterns.s:
 .PHONY : src/DesignPatterns/DesignPatterns.s
 
 # target to build an object file
+src/DesignPatterns/PImpl/ImplBook.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/PImpl/ImplBook.o
+.PHONY : src/DesignPatterns/PImpl/ImplBook.o
+
+# target to preprocess a source file
+src/DesignPatterns/PImpl/ImplBook.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/PImpl/ImplBook.i
+.PHONY : src/DesignPatterns/PImpl/ImplBook.i
+
+# target to generate assembly for a file
+src/DesignPatterns/PImpl/ImplBook.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/PImpl/ImplBook.s
+.PHONY : src/DesignPatterns/PImpl/ImplBook.s
+
+# target to build an object file
 src/DesignPatterns/State/State.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/DesignPatterns/State/State.o
 .PHONY : src/DesignPatterns/State/State.o
@@ -278,6 +293,21 @@ src/Huffman/huffman.i:
 src/Huffman/huffman.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.s
 .PHONY : src/Huffman/huffman.s
+
+# target to build an object file
+src/Learn/CallBackFuntion.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/CallBackFuntion.o
+.PHONY : src/Learn/CallBackFuntion.o
+
+# target to preprocess a source file
+src/Learn/CallBackFuntion.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/CallBackFuntion.i
+.PHONY : src/Learn/CallBackFuntion.i
+
+# target to generate assembly for a file
+src/Learn/CallBackFuntion.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Learn/CallBackFuntion.s
+.PHONY : src/Learn/CallBackFuntion.s
 
 # target to build an object file
 src/Learn/container.o:
@@ -490,6 +520,36 @@ src/NetWork/tcp_server.s:
 .PHONY : src/NetWork/tcp_server.s
 
 # target to build an object file
+src/Transmission/MessageQueue.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Transmission/MessageQueue.o
+.PHONY : src/Transmission/MessageQueue.o
+
+# target to preprocess a source file
+src/Transmission/MessageQueue.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Transmission/MessageQueue.i
+.PHONY : src/Transmission/MessageQueue.i
+
+# target to generate assembly for a file
+src/Transmission/MessageQueue.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Transmission/MessageQueue.s
+.PHONY : src/Transmission/MessageQueue.s
+
+# target to build an object file
+src/Transmission/ShareMemery.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Transmission/ShareMemery.o
+.PHONY : src/Transmission/ShareMemery.o
+
+# target to preprocess a source file
+src/Transmission/ShareMemery.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Transmission/ShareMemery.i
+.PHONY : src/Transmission/ShareMemery.i
+
+# target to generate assembly for a file
+src/Transmission/ShareMemery.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/Transmission/ShareMemery.s
+.PHONY : src/Transmission/ShareMemery.s
+
+# target to build an object file
 src/ad9361-iiostream.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExternalPlugIn.dir/build.make CMakeFiles/ExternalPlugIn.dir/src/ad9361-iiostream.o
 .PHONY : src/ad9361-iiostream.o
@@ -576,6 +636,9 @@ help:
 	@echo "... src/DesignPatterns/DesignPatterns.o"
 	@echo "... src/DesignPatterns/DesignPatterns.i"
 	@echo "... src/DesignPatterns/DesignPatterns.s"
+	@echo "... src/DesignPatterns/PImpl/ImplBook.o"
+	@echo "... src/DesignPatterns/PImpl/ImplBook.i"
+	@echo "... src/DesignPatterns/PImpl/ImplBook.s"
 	@echo "... src/DesignPatterns/State/State.o"
 	@echo "... src/DesignPatterns/State/State.i"
 	@echo "... src/DesignPatterns/State/State.s"
@@ -588,6 +651,9 @@ help:
 	@echo "... src/Huffman/huffman.o"
 	@echo "... src/Huffman/huffman.i"
 	@echo "... src/Huffman/huffman.s"
+	@echo "... src/Learn/CallBackFuntion.o"
+	@echo "... src/Learn/CallBackFuntion.i"
+	@echo "... src/Learn/CallBackFuntion.s"
 	@echo "... src/Learn/container.o"
 	@echo "... src/Learn/container.i"
 	@echo "... src/Learn/container.s"
@@ -630,6 +696,12 @@ help:
 	@echo "... src/NetWork/tcp_server.o"
 	@echo "... src/NetWork/tcp_server.i"
 	@echo "... src/NetWork/tcp_server.s"
+	@echo "... src/Transmission/MessageQueue.o"
+	@echo "... src/Transmission/MessageQueue.i"
+	@echo "... src/Transmission/MessageQueue.s"
+	@echo "... src/Transmission/ShareMemery.o"
+	@echo "... src/Transmission/ShareMemery.i"
+	@echo "... src/Transmission/ShareMemery.s"
 	@echo "... src/ad9361-iiostream.o"
 	@echo "... src/ad9361-iiostream.i"
 	@echo "... src/ad9361-iiostream.s"
