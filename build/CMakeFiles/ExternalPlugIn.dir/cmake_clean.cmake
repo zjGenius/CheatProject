@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/jun/code/CheatProject/output/ExternalPlugIn"
-  "/home/jun/code/CheatProject/output/ExternalPlugIn.pdb"
+  "../output/ExternalPlugIn"
+  "../output/ExternalPlugIn.pdb"
   "CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o"
   "CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/CPlusPlusPrimer.o.d"
   "CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o"

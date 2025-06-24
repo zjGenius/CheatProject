@@ -409,3 +409,34 @@ bool LeedCode::topic_3127(std::vector<std::vector<char>> &grid)
 
     return check(0, 0) || check(0, 1) || check(1, 0) || check(1, 1);
 }
+
+std::vector<int> LeedCode::topic_2200(std::vector<int>& nums, int key, int k) {
+    int index = 0;
+    std::vector<int> keyNums;
+    std::vector<int> returnKeyNums;
+    // 先找到key的索引存入到keyNums容器中
+    for(; index < nums.size(); ++index)
+    {
+        if(nums[index] == key)
+        {
+            // printf("insert index:%d\n", index);
+            keyNums.push_back(index);
+        }
+    }
+    for(index = 0; index < nums.size(); ++index)
+    {
+        for(auto keyNum : keyNums)
+        {
+            int abs_ret = std::abs(keyNum - index);
+            // printf("index:%d keyNum:%d k:%d abs:%d\n", index, keyNum, k, abs_ret);
+            if(abs_ret <= k)
+            {
+                // printf(" insert num:%d\n", index);
+                returnKeyNums.push_back(index);
+                break;
+            }
+            // printf("\n");
+        }
+    }
+    return returnKeyNums;
+}

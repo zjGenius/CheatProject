@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Transmission/MessageQueue.o: \
- /home/jun/code/CheatProject/src/Transmission/MessageQueue.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Transmission/MessageQueue.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/include/Transmission/MessageQueue.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Transmission/MessageQueue.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

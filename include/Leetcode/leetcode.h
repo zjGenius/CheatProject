@@ -23,6 +23,7 @@ public:
     int topic_1334(int n, std::vector<std::vector<int>> &edges, int distanceThreshold);
     bool topic_292(int n);
     bool topic_3127(std::vector<std::vector<char>> &grid);
+    std::vector<int> topic_2200(std::vector<int>& nums, int key, int k);
 };
 
 #endif // !_LEETCODE_H_

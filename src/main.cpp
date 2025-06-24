@@ -159,9 +159,18 @@ void leetcodeStudy()
 	// bool ret_292 = lee->topic_292(8);
 	// printf("LeedCode 292:%d\n", ret_292);
 
-	std::vector<std::vector<char>> grid = {{'B', 'W', 'B'}, {'W', 'B', 'W'}, {'B', 'W', 'B'}};
-	bool ret_3127 = lee->topic_3127(grid);
-	printf("LeedCode 3127:%d\n", ret_3127);
+	// std::vector<std::vector<char>> grid = {{'B', 'W', 'B'}, {'W', 'B', 'W'}, {'B', 'W', 'B'}};
+	// bool ret_3127 = lee->topic_3127(grid);
+	// printf("LeedCode 3127:%d\n", ret_3127);
+
+	std::vector<int> nums = {2, 2, 2, 2, 2};
+	auto ret = lee->topic_2200(nums, 2, 2);
+	printf("LeedCode 2200:");
+	for(int i = 0; i < ret.size(); i++)
+	{
+		printf("%d ", ret[i]);
+	}
+	printf("\n");
 }
 
 void DesignPatternsStudy()

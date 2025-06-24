@@ -1,8 +1,8 @@
 CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter12/TextQuery.o: \
- /home/jun/code/CheatProject/src/CPlusPlusPrimer/Chapter12/TextQuery.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/CPlusPlusPrimer/Chapter12/TextQuery.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/Chapter12/TextQuery.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/Chapter12/QueryResult.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/Chapter12/TextQuery.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/Chapter12/QueryResult.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

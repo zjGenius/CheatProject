@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Leetcode/leetcode.o: \
- /home/jun/code/CheatProject/src/Leetcode/leetcode.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Leetcode/leetcode.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/include/Leetcode/leetcode.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Leetcode/leetcode.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

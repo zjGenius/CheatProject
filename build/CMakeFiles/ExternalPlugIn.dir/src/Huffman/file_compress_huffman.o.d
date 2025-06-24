@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o: \
- /home/jun/code/CheatProject/src/Huffman/file_compress_huffman.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Huffman/file_compress_huffman.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/./include/Huffman/file_compress_huffman.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/file_compress_huffman.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -132,8 +132,8 @@ CMakeFiles/ExternalPlugIn.dir/src/Huffman/file_compress_huffman.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/jun/code/CheatProject/./include/Huffman/command.h \
- /home/jun/code/CheatProject/./include/Huffman/huffman_tree.hpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/command.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/huffman_tree.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \

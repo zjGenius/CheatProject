@@ -1,6 +1,6 @@
 CMakeFiles/ExternalPlugIn.dir/src/func.o: \
- /home/jun/code/CheatProject/src/func.cpp /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/func.cpp \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -24,8 +24,9 @@ CMakeFiles/ExternalPlugIn.dir/src/func.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/jun/code/CheatProject/./include/func.h \
- /home/jun/code/CheatProject/./include/paramRead.h /usr/include/string.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/func.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/paramRead.h \
+ /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/c++/11/vector \

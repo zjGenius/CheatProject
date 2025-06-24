@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o: \
- /home/jun/code/CheatProject/src/Learn/heima/ScoringSystem/ScoringSystem.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Learn/heima/ScoringSystem/ScoringSystem.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/include/Learn/heima/ScoringSystem/ScoringSystem.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/ScoringSystem/ScoringSystem.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -194,5 +194,5 @@ CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/ScoringSystem/ScoringSystem.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/jun/code/CheatProject/./include/log.h /usr/include/string.h \
- /usr/include/strings.h
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/log.h \
+ /usr/include/string.h /usr/include/strings.h

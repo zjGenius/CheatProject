@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/operator/Operator.o: \
- /home/jun/code/CheatProject/src/Learn/heima/operator/Operator.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Learn/heima/operator/Operator.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/include/Learn/heima/operator/Operator.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/operator/Operator.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -1,8 +1,8 @@
 CMakeFiles/ExternalPlugIn.dir/src/CPlusPlusPrimer/Chapter1/Grammar.o: \
- /home/jun/code/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/CPlusPlusPrimer/Chapter1/Grammar.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/Chapter1/Grammar.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/Chapter1/Sales_item.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/Chapter1/Grammar.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/Chapter1/Sales_item.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

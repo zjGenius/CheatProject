@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/Template/HeimaTemplate.o: \
- /home/jun/code/CheatProject/src/Learn/heima/Template/HeimaTemplate.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Learn/heima/Template/HeimaTemplate.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/include/Learn/heima/Template/HeimaTemplate.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/Template/HeimaTemplate.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

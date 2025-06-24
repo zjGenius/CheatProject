@@ -1,6 +1,8 @@
 CMakeFiles/ExternalPlugIn.dir/src/paramRead.o: \
- /home/jun/code/CheatProject/src/paramRead.cpp /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/./include/paramRead.h /usr/include/stdio.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/paramRead.cpp \
+ /usr/include/stdc-predef.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/paramRead.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

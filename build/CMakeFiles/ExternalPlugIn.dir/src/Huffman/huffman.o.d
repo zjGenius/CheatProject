@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o: \
- /home/jun/code/CheatProject/src/Huffman/huffman.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Huffman/huffman.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/./include/Huffman/huffman.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/huffman.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -168,6 +168,6 @@ CMakeFiles/ExternalPlugIn.dir/src/Huffman/huffman.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/jun/code/CheatProject/./include/paramRead.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/paramRead.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc

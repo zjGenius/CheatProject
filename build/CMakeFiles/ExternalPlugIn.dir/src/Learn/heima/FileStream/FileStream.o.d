@@ -1,7 +1,7 @@
 CMakeFiles/ExternalPlugIn.dir/src/Learn/heima/FileStream/FileStream.o: \
- /home/jun/code/CheatProject/src/Learn/heima/FileStream/FileStream.cpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/Learn/heima/FileStream/FileStream.cpp \
  /usr/include/stdc-predef.h \
- /home/jun/code/CheatProject/include/Learn/heima/FileStream/FileStream.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/FileStream/FileStream.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

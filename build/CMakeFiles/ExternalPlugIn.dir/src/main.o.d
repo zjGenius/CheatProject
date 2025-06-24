@@ -1,6 +1,6 @@
 CMakeFiles/ExternalPlugIn.dir/src/main.o: \
- /home/jun/code/CheatProject/src/main.cpp /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/src/main.cpp \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -82,9 +82,10 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/assert.h /home/jun/code/CheatProject/./include/func.h \
- /home/jun/code/CheatProject/./include/paramRead.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/c++/11/vector \
+ /usr/include/assert.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/func.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/paramRead.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/functional_hash.h \
@@ -156,9 +157,9 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/jun/code/CheatProject/./include/paramRead.h \
- /home/jun/code/CheatProject/./include/version_config.h \
- /home/jun/code/CheatProject/./include/Huffman/huffman.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/paramRead.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/version_config.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/huffman.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/fstream \
  /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -176,10 +177,10 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/jun/code/CheatProject/./include/Huffman/file_compress_huffman.h \
- /home/jun/code/CheatProject/./include/Huffman/command.h \
- /home/jun/code/CheatProject/./include/log.h \
- /home/jun/code/CheatProject/./include/Learn/container.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/file_compress_huffman.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Huffman/command.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/log.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Learn/container.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
@@ -194,7 +195,7 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/bit \
- /home/jun/code/CheatProject/./include/NetWork/IQTransmitCenter.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/NetWork/IQTransmitCenter.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -219,12 +220,12 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/arpa/inet.h \
- /home/jun/code/CheatProject/./include/ad9361-iiostream.h \
- /home/jun/code/CheatProject/./include/NetWork/IQRecvData.h \
- /home/jun/code/CheatProject/./include/NetWork/IQTransmitCenter.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/DesignPatterns.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Factory/SampleFactory.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Strategy/Strategy.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/ad9361-iiostream.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/NetWork/IQRecvData.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/NetWork/IQTransmitCenter.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/DesignPatterns.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Factory/SampleFactory.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Strategy/Strategy.h \
  /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -235,38 +236,38 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Decorator/Decorator.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Decorator/myDecorator.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Proxy/Proxy.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/FactoryMethod/FactoryMethod.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Prototype/Prototype.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Template/Template.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Appearance/Appearance.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Builder/Builder.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Observer/Subject.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Observer/Observer.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Observer/Subject.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Observer/Observer.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/AbstractFactory/AbstractFactory.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/State/Work.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/State/State.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Adapter/adapter.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Memento/Memento.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Composite/Composite.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Bridge/Bridge.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Command/Command.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Responsibility/Responsibility.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Mediator/Colleague.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Mediator/Mediator.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/FlyWeight/FlyWeight.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Interpreter/Interpreter.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/Visitor/Visitor.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/CPlusPlusPrimer.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/./Chapter1/Grammar.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/./Chapter10/GenericOperation.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Decorator/Decorator.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Decorator/myDecorator.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Proxy/Proxy.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/FactoryMethod/FactoryMethod.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Prototype/Prototype.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Template/Template.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Appearance/Appearance.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Builder/Builder.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Observer/Subject.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Observer/Observer.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Observer/Subject.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Observer/Observer.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/AbstractFactory/AbstractFactory.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/State/Work.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/State/State.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Adapter/adapter.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Memento/Memento.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Composite/Composite.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Bridge/Bridge.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Command/Command.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Responsibility/Responsibility.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Mediator/Colleague.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Mediator/Mediator.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/FlyWeight/FlyWeight.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Interpreter/Interpreter.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/Visitor/Visitor.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/CPlusPlusPrimer.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/./Chapter1/Grammar.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/./Chapter10/GenericOperation.h \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/./Chapter12/TextQuery.h \
- /home/jun/code/CheatProject/./include/CPlusPlusPrimer/./Chapter12/QueryResult.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/./Chapter12/TextQuery.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/CPlusPlusPrimer/./Chapter12/QueryResult.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bits/unique_ptr.h \
@@ -277,21 +278,21 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /home/jun/code/CheatProject/include/Leetcode/leetcode.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Leetcode/leetcode.h \
  /usr/include/c++/11/bitset \
- /home/jun/code/CheatProject/include/Learn/heima/AddressBook.h \
- /home/jun/code/CheatProject/include/Learn/heima/WorkManager.h \
- /home/jun/code/CheatProject/include/Learn/heima/HeimaDisplay.h \
- /home/jun/code/CheatProject/include/Learn/heima/AddressBook.h \
- /home/jun/code/CheatProject/include/Learn/heima/operator/Operator.h \
- /home/jun/code/CheatProject/include/Learn/heima/polymorphic/Polymorphic.h \
- /home/jun/code/CheatProject/include/Learn/heima/polymorphic/ComputerBuild.h \
- /home/jun/code/CheatProject/include/Learn/heima/FileStream/FileStream.h \
- /home/jun/code/CheatProject/include/Learn/heima/Template/HeimaTemplate.h \
- /home/jun/code/CheatProject/include/Learn/heima/Template/HeimaClassTemplate.hpp \
- /home/jun/code/CheatProject/include/Learn/heima/Template/HeimaFriendTemplate.hpp \
- /home/jun/code/CheatProject/include/Learn/heima/Template/HeimaMyArray.hpp \
- /home/jun/code/CheatProject/include/Learn/heima/ScoringSystem/ScoringSystem.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/AddressBook.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/WorkManager.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/HeimaDisplay.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/AddressBook.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/operator/Operator.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/polymorphic/Polymorphic.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/polymorphic/ComputerBuild.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/FileStream/FileStream.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/Template/HeimaTemplate.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/Template/HeimaClassTemplate.hpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/Template/HeimaFriendTemplate.hpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/Template/HeimaMyArray.hpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Learn/heima/ScoringSystem/ScoringSystem.h \
  /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -314,8 +315,8 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/jun/code/CheatProject/./include/Learn/smartPointer.hpp \
- /home/jun/code/CheatProject/include/Transmission/ShareMemery.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Learn/smartPointer.hpp \
+ /home/zhangjun/code/CPlusPlus/CheatProject/include/Transmission/ShareMemery.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -341,6 +342,6 @@ CMakeFiles/ExternalPlugIn.dir/src/main.o: \
  /usr/include/x86_64-linux-gnu/bits/shmlba.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h \
- /home/jun/code/CheatProject/./include/Learn/CallBackFuntion.h \
- /home/jun/code/CheatProject/./include/DesignPatterns/PImpl/ImplBook.h \
- /home/jun/code/CheatProject/./include/Learn/Design_guanchazhe.hpp
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Learn/CallBackFuntion.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/DesignPatterns/PImpl/ImplBook.h \
+ /home/zhangjun/code/CPlusPlus/CheatProject/./include/Learn/Design_guanchazhe.hpp
